@@ -34,7 +34,7 @@ uint32_t initShader(const char *vertexPath, const char *fragmentPath) {
   // Vertex shader
 
   vertex = glCreateShader(GL_VERTEX_SHADER);
-  glShaderSource(vertex, 1, (const char* const *)&vertexCode, NULL);
+  glShaderSource(vertex, 1, (const char *const *)&vertexCode, NULL);
   glCompileShader(vertex);
 
   // Error checking
@@ -50,7 +50,7 @@ uint32_t initShader(const char *vertexPath, const char *fragmentPath) {
   // Fragmen shader
 
   fragment = glCreateShader(GL_FRAGMENT_SHADER);
-  glShaderSource(fragment, 1, (const char* const *)&fragmentCode, NULL);
+  glShaderSource(fragment, 1, (const char *const *)&fragmentCode, NULL);
   glCompileShader(fragment);
 
   // Error checking
@@ -62,30 +62,29 @@ uint32_t initShader(const char *vertexPath, const char *fragmentPath) {
 
     exit(EXIT_FAILURE);
   }
-	
-	// Shader program
-	
-	uint32_t id;
-	
-	id = glCreateProgram();
-	glAttachShader(id, vertex);
-	glAttachShader(id, fragment);
-	
-	glLinkProgram(id);
-	
-	// Error checking
 
-	glGetProgramiv(id, GL_LINK_STATUS, &success);
+  // Shader program
+
+  uint32_t id;
+
+  id = glCreateProgram();
+  glAttachShader(id, vertex);
+  glAttachShader(id, fragment);
+
+  glLinkProgram(id);
+
+  // Error checking
+
+  glGetProgramiv(id, GL_LINK_STATUS, &success);
   if (!success) {
-		glGetProgramInfoLog(id, 512, NULL, infolog);
+    glGetProgramInfoLog(id, 512, NULL, infolog);
     fprintf(stderr, "Shader program linking failed\n%s\n", infolog);
 
     exit(EXIT_FAILURE);
   }
-	
-	
-	glDeleteShader(vertex);
-	glDeleteShader(fragment);
 
-	return id;
+  glDeleteShader(vertex);
+  glDeleteShader(fragment);
+
+  return id;
 }

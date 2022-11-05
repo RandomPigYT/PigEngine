@@ -6,7 +6,6 @@
 
 #include "glad/glad.h"
 
-
 uint32_t initShader(const char *vertexPath, const char *fragmentPath);
 
 void useShader();

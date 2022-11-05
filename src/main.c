@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+
 #include "../include/PigEngine.h"
 #include "../include/shader.h"
 
@@ -13,12 +14,12 @@ int main(void) {
 
   glViewport(0, 0, 800, 600);
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-	
-	char buf[256];
-	
-	initShader("./shaders/vertex", "./shaders/fragment");
-	
-	printf("%s\n", buf);
+
+  char buf[256];
+
+  initShader("./shaders/vertex", "./shaders/fragment");
+
+  printf("%s\n", buf);
   while (!glfwWindowShouldClose(window)) {
     glfwSwapBuffers(window);
 
