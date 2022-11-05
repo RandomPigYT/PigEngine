@@ -16,7 +16,7 @@ APIENTRY	include/glad/glad.h	/^#define APIENTRY$/;"	d
 APIENTRYP	include/glad/glad.h	/^#define APIENTRYP /;"	d
 BIN	Makefile	/^BIN:=bin$/;"	m
 CC	Makefile	/^CC:=gcc$/;"	m
-CFLAGS	Makefile	/^CFLAGS:=-Wall -Wextra -g -std=gnu17 $/;"	m
+CFLAGS	Makefile	/^CFLAGS:=-Wall -Wextra -g -std=gnu17 -O2 $/;"	m
 CREATE_DIR_COMMAND	Makefile	/^CREATE_DIR_COMMAND:=.\/dirs.sh$/;"	m
 DIRS	Makefile	/^DIRS:=$(patsubst $(SRC)\/%, $(OBJ)\/%, $(shell find $(SRC)\/ -mindepth 1 -type d))$/;"	m
 GLAD_GL_VERSION_1_0	include/glad/glad.h	/^GLAPI int GLAD_GL_VERSION_1_0;$/;"	v	typeref:typename:GLAPI int
@@ -64,6 +64,7 @@ GLDEBUGPROC	include/glad/glad.h	/^typedef void(APIENTRY *GLDEBUGPROC)(GLenum sou
 GLDEBUGPROCAMD	include/glad/glad.h	/^typedef void(APIENTRY *GLDEBUGPROCAMD)(GLuint id, GLenum category,$/;"	t	typeref:typename:void (APIENTRY *)(GLuint id,GLenum category,GLenum severity,GLsizei length,const GLchar * message,void * userParam)
 GLDEBUGPROCARB	include/glad/glad.h	/^typedef void(APIENTRY *GLDEBUGPROCARB)(GLenum source, GLenum type, GLuint id,$/;"	t	typeref:typename:void (APIENTRY *)(GLenum source,GLenum type,GLuint id,GLenum severity,GLsizei length,const GLchar * message,const void * userParam)
 GLDEBUGPROCKHR	include/glad/glad.h	/^typedef void(APIENTRY *GLDEBUGPROCKHR)(GLenum source, GLenum type, GLuint id,$/;"	t	typeref:typename:void (APIENTRY *)(GLenum source,GLenum type,GLuint id,GLenum severity,GLsizei length,const GLchar * message,const void * userParam)
+GLFW_INCLUDE_NONE	include/PigEngine.h	/^#define GLFW_INCLUDE_NONE$/;"	d
 GLVULKANPROCNV	include/glad/glad.h	/^typedef void(APIENTRY *GLVULKANPROCNV)(void);$/;"	t	typeref:typename:void (APIENTRY *)(void)
 GLVersion	include/glad/glad.h	/^GLAPI struct gladGLversionStruct GLVersion;$/;"	v	typeref:struct:gladGLversionStruct
 GLVersion	src/glad.c	/^struct gladGLversionStruct GLVersion = {0, 0};$/;"	v	typeref:struct:gladGLversionStruct
@@ -2226,6 +2227,8 @@ PFNGLWAITSYNCPROC	include/glad/glad.h	/^typedef void(APIENTRYP PFNGLWAITSYNCPROC
 PFNGLXGETPROCADDRESSPROC_PRIVATE	src/glad.c	/^typedef void *(APIENTRYP PFNGLXGETPROCADDRESSPROC_PRIVATE)(const char *);$/;"	t	typeref:typename:void * (APIENTRYP)(const char *)	file:
 PFNWGLGETPROCADDRESSPROC_PRIVATE	src/glad.c	/^typedef void *(APIENTRYP PFNWGLGETPROCADDRESSPROC_PRIVATE)(const char *);$/;"	t	typeref:typename:void * (APIENTRYP)(const char *)	file:
 PIG_ENGINE_H	include/PigEngine.h	/^#define PIG_ENGINE_H$/;"	d
+PIG_SHADER_H	include/shader.h	/^#define PIG_SHADER_H$/;"	d
+PIG_UTIL_H	include/util.h	/^#define PIG_UTIL_H$/;"	d
 PigEngine	README.md	/^# PigEngine/;"	c
 SRC	Makefile	/^SRC:=src$/;"	m
 SRCS	Makefile	/^SRCS:=$(shell find $(SRC) -type  f -name "*.c")$/;"	m
@@ -2244,7 +2247,7 @@ exts_i	src/glad.c	/^static char **exts_i = NULL;$/;"	v	typeref:typename:char **	
 find_coreGL	src/glad.c	/^static void find_coreGL(void) {$/;"	f	typeref:typename:void	file:
 find_extensionsGL	src/glad.c	/^static int find_extensionsGL(void) {$/;"	f	typeref:typename:int	file:
 format	Makefile	/^format:$/;"	t
-framebuffer_size_callback	src/main.c	/^void framebuffer_size_callback(GLFWwindow* window, int width, int height) {$/;"	f	typeref:typename:void
+framebuffer_size_callback	src/main.c	/^void framebuffer_size_callback(GLFWwindow *window, int width, int height) {$/;"	f	typeref:typename:void
 free_exts	src/glad.c	/^static void free_exts(void) {$/;"	f	typeref:typename:void	file:
 get_exts	src/glad.c	/^static int get_exts(void) {$/;"	f	typeref:typename:int	file:
 get_proc	src/glad.c	/^static void *get_proc(const char *namez) {$/;"	f	typeref:typename:void *	file:
@@ -3229,7 +3232,7 @@ glad_glDrawArraysIndirect	src/glad.c	/^PFNGLDRAWARRAYSINDIRECTPROC glad_glDrawAr
 glad_glDrawArraysInstanced	include/glad/glad.h	/^GLAPI PFNGLDRAWARRAYSINSTANCEDPROC glad_glDrawArraysInstanced;$/;"	v	typeref:typename:GLAPI PFNGLDRAWARRAYSINSTANCEDPROC
 glad_glDrawArraysInstanced	src/glad.c	/^PFNGLDRAWARRAYSINSTANCEDPROC glad_glDrawArraysInstanced = NULL;$/;"	v	typeref:typename:PFNGLDRAWARRAYSINSTANCEDPROC
 glad_glDrawArraysInstancedBaseInstance	include/glad/glad.h	/^    glad_glDrawArraysInstancedBaseInstance;$/;"	v	typeref:typename:GLAPI PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC
-glad_glDrawArraysInstancedBaseInstance	src/glad.c	/^    glad_glDrawArraysInstancedBaseInstance = NULL;$/;"	v	typeref:typename:PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC
+glad_glDrawArraysInstancedBaseInstance	src/glad.c	/^glad_glDrawArraysInstancedBaseInstance = NULL;$/;"	v	typeref:typename:PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC
 glad_glDrawBuffer	include/glad/glad.h	/^GLAPI PFNGLDRAWBUFFERPROC glad_glDrawBuffer;$/;"	v	typeref:typename:GLAPI PFNGLDRAWBUFFERPROC
 glad_glDrawBuffer	src/glad.c	/^PFNGLDRAWBUFFERPROC glad_glDrawBuffer = NULL;$/;"	v	typeref:typename:PFNGLDRAWBUFFERPROC
 glad_glDrawBuffers	include/glad/glad.h	/^GLAPI PFNGLDRAWBUFFERSPROC glad_glDrawBuffers;$/;"	v	typeref:typename:GLAPI PFNGLDRAWBUFFERSPROC
@@ -3243,11 +3246,11 @@ glad_glDrawElementsIndirect	src/glad.c	/^PFNGLDRAWELEMENTSINDIRECTPROC glad_glDr
 glad_glDrawElementsInstanced	include/glad/glad.h	/^GLAPI PFNGLDRAWELEMENTSINSTANCEDPROC glad_glDrawElementsInstanced;$/;"	v	typeref:typename:GLAPI PFNGLDRAWELEMENTSINSTANCEDPROC
 glad_glDrawElementsInstanced	src/glad.c	/^PFNGLDRAWELEMENTSINSTANCEDPROC glad_glDrawElementsInstanced = NULL;$/;"	v	typeref:typename:PFNGLDRAWELEMENTSINSTANCEDPROC
 glad_glDrawElementsInstancedBaseInstance	include/glad/glad.h	/^    glad_glDrawElementsInstancedBaseInstance;$/;"	v	typeref:typename:GLAPI PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC
-glad_glDrawElementsInstancedBaseInstance	src/glad.c	/^    glad_glDrawElementsInstancedBaseInstance = NULL;$/;"	v	typeref:typename:PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC
+glad_glDrawElementsInstancedBaseInstance	src/glad.c	/^glad_glDrawElementsInstancedBaseInstance = NULL;$/;"	v	typeref:typename:PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC
 glad_glDrawElementsInstancedBaseVertex	include/glad/glad.h	/^    glad_glDrawElementsInstancedBaseVertex;$/;"	v	typeref:typename:GLAPI PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC
-glad_glDrawElementsInstancedBaseVertex	src/glad.c	/^    glad_glDrawElementsInstancedBaseVertex = NULL;$/;"	v	typeref:typename:PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC
+glad_glDrawElementsInstancedBaseVertex	src/glad.c	/^glad_glDrawElementsInstancedBaseVertex = NULL;$/;"	v	typeref:typename:PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC
 glad_glDrawElementsInstancedBaseVertexBaseInstance	include/glad/glad.h	/^    glad_glDrawElementsInstancedBaseVertexBaseInstance;$/;"	v	typeref:typename:GLAPI PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC
-glad_glDrawElementsInstancedBaseVertexBaseInstance	src/glad.c	/^    glad_glDrawElementsInstancedBaseVertexBaseInstance = NULL;$/;"	v	typeref:typename:PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC
+glad_glDrawElementsInstancedBaseVertexBaseInstance	src/glad.c	/^glad_glDrawElementsInstancedBaseVertexBaseInstance = NULL;$/;"	v	typeref:typename:PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC
 glad_glDrawRangeElements	include/glad/glad.h	/^GLAPI PFNGLDRAWRANGEELEMENTSPROC glad_glDrawRangeElements;$/;"	v	typeref:typename:GLAPI PFNGLDRAWRANGEELEMENTSPROC
 glad_glDrawRangeElements	src/glad.c	/^PFNGLDRAWRANGEELEMENTSPROC glad_glDrawRangeElements = NULL;$/;"	v	typeref:typename:PFNGLDRAWRANGEELEMENTSPROC
 glad_glDrawRangeElementsBaseVertex	include/glad/glad.h	/^GLAPI PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC glad_glDrawRangeElementsBaseVertex;$/;"	v	typeref:typename:GLAPI PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC
@@ -3259,7 +3262,7 @@ glad_glDrawTransformFeedbackInstanced	src/glad.c	/^PFNGLDRAWTRANSFORMFEEDBACKINS
 glad_glDrawTransformFeedbackStream	include/glad/glad.h	/^GLAPI PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC glad_glDrawTransformFeedbackStream;$/;"	v	typeref:typename:GLAPI PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC
 glad_glDrawTransformFeedbackStream	src/glad.c	/^PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC glad_glDrawTransformFeedbackStream = NULL;$/;"	v	typeref:typename:PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC
 glad_glDrawTransformFeedbackStreamInstanced	include/glad/glad.h	/^    glad_glDrawTransformFeedbackStreamInstanced;$/;"	v	typeref:typename:GLAPI PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC
-glad_glDrawTransformFeedbackStreamInstanced	src/glad.c	/^    glad_glDrawTransformFeedbackStreamInstanced = NULL;$/;"	v	typeref:typename:PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC
+glad_glDrawTransformFeedbackStreamInstanced	src/glad.c	/^glad_glDrawTransformFeedbackStreamInstanced = NULL;$/;"	v	typeref:typename:PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC
 glad_glEnable	include/glad/glad.h	/^GLAPI PFNGLENABLEPROC glad_glEnable;$/;"	v	typeref:typename:GLAPI PFNGLENABLEPROC
 glad_glEnable	src/glad.c	/^PFNGLENABLEPROC glad_glEnable = NULL;$/;"	v	typeref:typename:PFNGLENABLEPROC
 glad_glEnableVertexArrayAttrib	include/glad/glad.h	/^GLAPI PFNGLENABLEVERTEXARRAYATTRIBPROC glad_glEnableVertexArrayAttrib;$/;"	v	typeref:typename:GLAPI PFNGLENABLEVERTEXARRAYATTRIBPROC
@@ -3383,7 +3386,7 @@ glad_glGetFragDataIndex	src/glad.c	/^PFNGLGETFRAGDATAINDEXPROC glad_glGetFragDat
 glad_glGetFragDataLocation	include/glad/glad.h	/^GLAPI PFNGLGETFRAGDATALOCATIONPROC glad_glGetFragDataLocation;$/;"	v	typeref:typename:GLAPI PFNGLGETFRAGDATALOCATIONPROC
 glad_glGetFragDataLocation	src/glad.c	/^PFNGLGETFRAGDATALOCATIONPROC glad_glGetFragDataLocation = NULL;$/;"	v	typeref:typename:PFNGLGETFRAGDATALOCATIONPROC
 glad_glGetFramebufferAttachmentParameteriv	include/glad/glad.h	/^    glad_glGetFramebufferAttachmentParameteriv;$/;"	v	typeref:typename:GLAPI PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC
-glad_glGetFramebufferAttachmentParameteriv	src/glad.c	/^    glad_glGetFramebufferAttachmentParameteriv = NULL;$/;"	v	typeref:typename:PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC
+glad_glGetFramebufferAttachmentParameteriv	src/glad.c	/^glad_glGetFramebufferAttachmentParameteriv = NULL;$/;"	v	typeref:typename:PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC
 glad_glGetFramebufferParameteriv	include/glad/glad.h	/^GLAPI PFNGLGETFRAMEBUFFERPARAMETERIVPROC glad_glGetFramebufferParameteriv;$/;"	v	typeref:typename:GLAPI PFNGLGETFRAMEBUFFERPARAMETERIVPROC
 glad_glGetFramebufferParameteriv	src/glad.c	/^PFNGLGETFRAMEBUFFERPARAMETERIVPROC glad_glGetFramebufferParameteriv = NULL;$/;"	v	typeref:typename:PFNGLGETFRAMEBUFFERPARAMETERIVPROC
 glad_glGetGraphicsResetStatus	include/glad/glad.h	/^GLAPI PFNGLGETGRAPHICSRESETSTATUSPROC glad_glGetGraphicsResetStatus;$/;"	v	typeref:typename:GLAPI PFNGLGETGRAPHICSRESETSTATUSPROC
@@ -3411,11 +3414,11 @@ glad_glGetNamedBufferPointerv	src/glad.c	/^PFNGLGETNAMEDBUFFERPOINTERVPROC glad_
 glad_glGetNamedBufferSubData	include/glad/glad.h	/^GLAPI PFNGLGETNAMEDBUFFERSUBDATAPROC glad_glGetNamedBufferSubData;$/;"	v	typeref:typename:GLAPI PFNGLGETNAMEDBUFFERSUBDATAPROC
 glad_glGetNamedBufferSubData	src/glad.c	/^PFNGLGETNAMEDBUFFERSUBDATAPROC glad_glGetNamedBufferSubData = NULL;$/;"	v	typeref:typename:PFNGLGETNAMEDBUFFERSUBDATAPROC
 glad_glGetNamedFramebufferAttachmentParameteriv	include/glad/glad.h	/^    glad_glGetNamedFramebufferAttachmentParameteriv;$/;"	v	typeref:typename:GLAPI PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC
-glad_glGetNamedFramebufferAttachmentParameteriv	src/glad.c	/^    glad_glGetNamedFramebufferAttachmentParameteriv = NULL;$/;"	v	typeref:typename:PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC
+glad_glGetNamedFramebufferAttachmentParameteriv	src/glad.c	/^glad_glGetNamedFramebufferAttachmentParameteriv = NULL;$/;"	v	typeref:typename:PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC
 glad_glGetNamedFramebufferParameteriv	include/glad/glad.h	/^    glad_glGetNamedFramebufferParameteriv;$/;"	v	typeref:typename:GLAPI PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC
 glad_glGetNamedFramebufferParameteriv	src/glad.c	/^PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC glad_glGetNamedFramebufferParameteriv =$/;"	v	typeref:typename:PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC
 glad_glGetNamedRenderbufferParameteriv	include/glad/glad.h	/^    glad_glGetNamedRenderbufferParameteriv;$/;"	v	typeref:typename:GLAPI PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC
-glad_glGetNamedRenderbufferParameteriv	src/glad.c	/^    glad_glGetNamedRenderbufferParameteriv = NULL;$/;"	v	typeref:typename:PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC
+glad_glGetNamedRenderbufferParameteriv	src/glad.c	/^glad_glGetNamedRenderbufferParameteriv = NULL;$/;"	v	typeref:typename:PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC
 glad_glGetObjectLabel	include/glad/glad.h	/^GLAPI PFNGLGETOBJECTLABELPROC glad_glGetObjectLabel;$/;"	v	typeref:typename:GLAPI PFNGLGETOBJECTLABELPROC
 glad_glGetObjectLabel	src/glad.c	/^PFNGLGETOBJECTLABELPROC glad_glGetObjectLabel = NULL;$/;"	v	typeref:typename:PFNGLGETOBJECTLABELPROC
 glad_glGetObjectPtrLabel	include/glad/glad.h	/^GLAPI PFNGLGETOBJECTPTRLABELPROC glad_glGetObjectPtrLabel;$/;"	v	typeref:typename:GLAPI PFNGLGETOBJECTPTRLABELPROC
@@ -3437,7 +3440,7 @@ glad_glGetProgramResourceIndex	src/glad.c	/^PFNGLGETPROGRAMRESOURCEINDEXPROC gla
 glad_glGetProgramResourceLocation	include/glad/glad.h	/^GLAPI PFNGLGETPROGRAMRESOURCELOCATIONPROC glad_glGetProgramResourceLocation;$/;"	v	typeref:typename:GLAPI PFNGLGETPROGRAMRESOURCELOCATIONPROC
 glad_glGetProgramResourceLocation	src/glad.c	/^PFNGLGETPROGRAMRESOURCELOCATIONPROC glad_glGetProgramResourceLocation = NULL;$/;"	v	typeref:typename:PFNGLGETPROGRAMRESOURCELOCATIONPROC
 glad_glGetProgramResourceLocationIndex	include/glad/glad.h	/^    glad_glGetProgramResourceLocationIndex;$/;"	v	typeref:typename:GLAPI PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC
-glad_glGetProgramResourceLocationIndex	src/glad.c	/^    glad_glGetProgramResourceLocationIndex = NULL;$/;"	v	typeref:typename:PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC
+glad_glGetProgramResourceLocationIndex	src/glad.c	/^glad_glGetProgramResourceLocationIndex = NULL;$/;"	v	typeref:typename:PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC
 glad_glGetProgramResourceName	include/glad/glad.h	/^GLAPI PFNGLGETPROGRAMRESOURCENAMEPROC glad_glGetProgramResourceName;$/;"	v	typeref:typename:GLAPI PFNGLGETPROGRAMRESOURCENAMEPROC
 glad_glGetProgramResourceName	src/glad.c	/^PFNGLGETPROGRAMRESOURCENAMEPROC glad_glGetProgramResourceName = NULL;$/;"	v	typeref:typename:PFNGLGETPROGRAMRESOURCENAMEPROC
 glad_glGetProgramResourceiv	include/glad/glad.h	/^GLAPI PFNGLGETPROGRAMRESOURCEIVPROC glad_glGetProgramResourceiv;$/;"	v	typeref:typename:GLAPI PFNGLGETPROGRAMRESOURCEIVPROC
@@ -3615,7 +3618,7 @@ glad_glInvalidateFramebuffer	src/glad.c	/^PFNGLINVALIDATEFRAMEBUFFERPROC glad_gl
 glad_glInvalidateNamedFramebufferData	include/glad/glad.h	/^    glad_glInvalidateNamedFramebufferData;$/;"	v	typeref:typename:GLAPI PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC
 glad_glInvalidateNamedFramebufferData	src/glad.c	/^PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC glad_glInvalidateNamedFramebufferData =$/;"	v	typeref:typename:PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC
 glad_glInvalidateNamedFramebufferSubData	include/glad/glad.h	/^    glad_glInvalidateNamedFramebufferSubData;$/;"	v	typeref:typename:GLAPI PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC
-glad_glInvalidateNamedFramebufferSubData	src/glad.c	/^    glad_glInvalidateNamedFramebufferSubData = NULL;$/;"	v	typeref:typename:PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC
+glad_glInvalidateNamedFramebufferSubData	src/glad.c	/^glad_glInvalidateNamedFramebufferSubData = NULL;$/;"	v	typeref:typename:PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC
 glad_glInvalidateSubFramebuffer	include/glad/glad.h	/^GLAPI PFNGLINVALIDATESUBFRAMEBUFFERPROC glad_glInvalidateSubFramebuffer;$/;"	v	typeref:typename:GLAPI PFNGLINVALIDATESUBFRAMEBUFFERPROC
 glad_glInvalidateSubFramebuffer	src/glad.c	/^PFNGLINVALIDATESUBFRAMEBUFFERPROC glad_glInvalidateSubFramebuffer = NULL;$/;"	v	typeref:typename:PFNGLINVALIDATESUBFRAMEBUFFERPROC
 glad_glInvalidateTexImage	include/glad/glad.h	/^GLAPI PFNGLINVALIDATETEXIMAGEPROC glad_glInvalidateTexImage;$/;"	v	typeref:typename:GLAPI PFNGLINVALIDATETEXIMAGEPROC
@@ -3723,7 +3726,7 @@ glad_glNamedFramebufferTextureLayer	src/glad.c	/^PFNGLNAMEDFRAMEBUFFERTEXTURELAY
 glad_glNamedRenderbufferStorage	include/glad/glad.h	/^GLAPI PFNGLNAMEDRENDERBUFFERSTORAGEPROC glad_glNamedRenderbufferStorage;$/;"	v	typeref:typename:GLAPI PFNGLNAMEDRENDERBUFFERSTORAGEPROC
 glad_glNamedRenderbufferStorage	src/glad.c	/^PFNGLNAMEDRENDERBUFFERSTORAGEPROC glad_glNamedRenderbufferStorage = NULL;$/;"	v	typeref:typename:PFNGLNAMEDRENDERBUFFERSTORAGEPROC
 glad_glNamedRenderbufferStorageMultisample	include/glad/glad.h	/^    glad_glNamedRenderbufferStorageMultisample;$/;"	v	typeref:typename:GLAPI PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC
-glad_glNamedRenderbufferStorageMultisample	src/glad.c	/^    glad_glNamedRenderbufferStorageMultisample = NULL;$/;"	v	typeref:typename:PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC
+glad_glNamedRenderbufferStorageMultisample	src/glad.c	/^glad_glNamedRenderbufferStorageMultisample = NULL;$/;"	v	typeref:typename:PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC
 glad_glNormalP3ui	include/glad/glad.h	/^GLAPI PFNGLNORMALP3UIPROC glad_glNormalP3ui;$/;"	v	typeref:typename:GLAPI PFNGLNORMALP3UIPROC
 glad_glNormalP3ui	src/glad.c	/^PFNGLNORMALP3UIPROC glad_glNormalP3ui = NULL;$/;"	v	typeref:typename:PFNGLNORMALP3UIPROC
 glad_glNormalP3uiv	include/glad/glad.h	/^GLAPI PFNGLNORMALP3UIVPROC glad_glNormalP3uiv;$/;"	v	typeref:typename:GLAPI PFNGLNORMALP3UIVPROC
@@ -4351,6 +4354,8 @@ glad_glViewportIndexedfv	src/glad.c	/^PFNGLVIEWPORTINDEXEDFVPROC glad_glViewport
 glad_glWaitSync	include/glad/glad.h	/^GLAPI PFNGLWAITSYNCPROC glad_glWaitSync;$/;"	v	typeref:typename:GLAPI PFNGLWAITSYNCPROC
 glad_glWaitSync	src/glad.c	/^PFNGLWAITSYNCPROC glad_glWaitSync = NULL;$/;"	v	typeref:typename:PFNGLWAITSYNCPROC
 has_ext	src/glad.c	/^static int has_ext(const char *ext) {$/;"	f	typeref:typename:int	file:
+init	src/init.c	/^GLFWwindow *init(int w, int h, const char *title) {$/;"	f	typeref:typename:GLFWwindow *
+initShader	src/shader.c	/^uint32_t initShader(const char *vertexPath, const char *fragmentPath) {$/;"	f	typeref:typename:uint32_t
 khronos_boolean_enum_t	include/KHR/khrplatform.h	/^} khronos_boolean_enum_t;$/;"	t	typeref:enum:__anonb15c29ec0103
 khronos_float_t	include/KHR/khrplatform.h	/^typedef float khronos_float_t;$/;"	t	typeref:typename:float
 khronos_int16_t	include/KHR/khrplatform.h	/^typedef signed short int khronos_int16_t;$/;"	t	typeref:typename:signed short int
@@ -4410,6 +4415,8 @@ max_loaded_major	src/glad.c	/^static int max_loaded_major;$/;"	v	typeref:typenam
 max_loaded_minor	src/glad.c	/^static int max_loaded_minor;$/;"	v	typeref:typename:int	file:
 minor	include/glad/glad.h	/^  int minor;$/;"	m	struct:gladGLversionStruct	typeref:typename:int
 num_exts_i	src/glad.c	/^static int num_exts_i = 0;$/;"	v	typeref:typename:int	file:
+openFile	src/util/fileIO.c	/^char *openFile(const char *path, size_t *len) {$/;"	f	typeref:typename:char *
 open_gl	src/glad.c	/^static int open_gl(void) {$/;"	f	typeref:typename:int	file:
 run	Makefile	/^run: $(TARGET)$/;"	t
+unmapFile	src/util/fileIO.c	/^void unmapFile(const char *file, size_t len) { munmap((void *)file, len); }$/;"	f	typeref:typename:void
 valgrind	Makefile	/^valgrind:$/;"	t

@@ -1,7 +1,7 @@
 CC:=gcc
 LD:=ld
 
-CFLAGS:=-Wall -Wextra -g -std=gnu17 
+CFLAGS:=-Wall -Wextra -g -std=gnu17 -O2 
 LDFLAGS:=-L/usr/local/lib -lglfw -pthread -lGL -lrt -lXrandr -lXxf86vm -lXi -lXinerama -lX11
 
 BIN:=bin
