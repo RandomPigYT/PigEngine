@@ -17,7 +17,7 @@ int main(void) {
 
   char buf[256];
 
-  initShader("./shaders/vertex", "./shaders/fragment");
+  initShader("./shaders/vertex.vert", "./shaders/fragment.frag");
 
   printf("%s\n", buf);
   while (!glfwWindowShouldClose(window)) {

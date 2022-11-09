@@ -1,11 +1,11 @@
-#include "../include/shader.h"
+#include "../../../include/shader.h"
 
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../include/PigEngine.h"
-#include "../include/util.h"
+#include "../../../include/PigEngine.h"
+#include "../../../include/util.h"
 
 uint32_t initShader(const char *vertexPath, const char *fragmentPath) {
   size_t vertexSrcSize, fragSrcSize;
@@ -86,5 +86,22 @@ uint32_t initShader(const char *vertexPath, const char *fragmentPath) {
   glDeleteShader(vertex);
   glDeleteShader(fragment);
 
+  unmapFile(vertexCode, vertexSrcSize);
+  unmapFile(fragmentCode, fragSrcSize);
+
   return id;
+}
+
+void useShader(uint32_t id) { glUseProgram(id); }
+
+void setBool(uint32_t id, const char *uniformName, bool value) {
+  glUniform1i(glGetUniformLocation(id, uniformName), (int)value);
+}
+
+void setInt(uint32_t id, const char *uniformName, int value) {
+  glUniform1i(glGetUniformLocation(id, uniformName), value);
+}
+
+void setFloat(uint32_t id, const char *uniformName, float value) {
+  glUniform1f(glGetUniformLocation(id, uniformName), value);
 }
