@@ -398,7 +398,7 @@ CURSOR_FRAME_COUNT	glfw/tests/cursor.c	/^#define CURSOR_FRAME_COUNT /;"	d	file:
 CYAN	cglm/test/include/common.h	/^#define CYAN /;"	d
 CYAN	cglm/test/include/common.h	/^#define CYAN$/;"	d
 C_Cpp.default.configurationProvider	cglm/.vscode/settings.json	/^  "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",$/;"	s
-Camera	include/render.h	/^}	Camera;$/;"	t	typeref:struct:__anon5c99124e0608
+Camera	include/render.h	/^}	Camera;$/;"	t	typeref:struct:__anon5c99124e0708
 Capacity	include/util.h	/^} Capacity;$/;"	t	typeref:struct:__anon7081f46c0108
 ChangeProperty	glfw/src/x11_platform.h	/^        PFN_XChangeProperty ChangeProperty;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XChangeProperty
 ChangeWindowAttributes	glfw/src/x11_platform.h	/^        PFN_XChangeWindowAttributes ChangeWindowAttributes;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XChangeWindowAttributes
@@ -1185,7 +1185,7 @@ DestroySurface	glfw/src/internal.h	/^        PFN_eglDestroySurface       Destroy
 DestroyWindow	glfw/src/x11_platform.h	/^        PFN_XDestroyWindow DestroyWindow;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XDestroyWindow
 DestroyWindow	glfw/src/x11_platform.h	/^    PFNGLXDESTROYWINDOWPROC             DestroyWindow;$/;"	m	struct:_GLFWlibraryGLX	typeref:typename:PFNGLXDESTROYWINDOWPROC
 DirectInput8Create	glfw/src/win32_platform.h	/^#define DirectInput8Create /;"	d
-Direction	include/render.h	/^	vec3 Direction;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
+Direction	include/render.h	/^	vec3 Direction;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
 DisplayKeycodes	glfw/src/x11_platform.h	/^        PFN_XDisplayKeycodes DisplayKeycodes;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XDisplayKeycodes
 DllMain	glfw/src/win32_init.c	/^BOOL WINAPI DllMain(HINSTANCE instance, DWORD reason, LPVOID reserved)$/;"	f	typeref:typename:BOOL WINAPI
 Documentation (Sphinx):	cglm/docs/source/build.rst	/^Documentation (Sphinx):$/;"	c	title:Build cglm
@@ -5982,7 +5982,7 @@ LPSYSMOUSEA	glfw/deps/mingw/dinput.h	/^typedef struct SysMouseA *LPSYSMOUSEA;$/;
 LSRequiresCarbon	glfw/CMake/Info.plist.in	/^	<key>LSRequiresCarbon<\/key>$/;"	k
 LibraryLoadImage	glfw/src/x11_platform.h	/^        PFN_XcursorLibraryLoadImage LibraryLoadImage;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0708	typeref:typename:PFN_XcursorLibraryLoadImage
 License	cglm/README.md	/^## License$/;"	s	chapter:🎥 OpenGL Mathematics (glm) for `C`
-Light	include/render.h	/^}	Light;$/;"	t	typeref:struct:__anon5c99124e0508
+Light	include/render.h	/^}	Light;$/;"	t	typeref:struct:__anon5c99124e0608
 LookupString	glfw/src/x11_platform.h	/^        PFN_XLookupString LookupString;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XLookupString
 MAGENTA	cglm/test/include/common.h	/^#define MAGENTA /;"	d
 MAGENTA	cglm/test/include/common.h	/^#define MAGENTA$/;"	d
@@ -6627,6 +6627,7 @@ OSMesaGetColorBuffer	glfw/src/internal.h	/^#define OSMesaGetColorBuffer /;"	d
 OSMesaGetDepthBuffer	glfw/src/internal.h	/^#define OSMesaGetDepthBuffer /;"	d
 OSMesaGetProcAddress	glfw/src/internal.h	/^#define OSMesaGetProcAddress /;"	d
 OSMesaMakeCurrent	glfw/src/internal.h	/^#define OSMesaMakeCurrent /;"	d
+Object	include/render.h	/^}	Object;$/;"	t	typeref:struct:__anon5c99124e0508
 OpenIM	glfw/src/x11_platform.h	/^        PFN_XOpenIM OpenIM;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XOpenIM
 Option 1	cglm/README.md	/^#### Option 1$/;"	t	subsection:🎥 OpenGL Mathematics (glm) for `C`""How to use""Example: Computing MVP matrix
 Option 2	cglm/README.md	/^#### Option 2$/;"	t	subsection:🎥 OpenGL Mathematics (glm) for `C`""How to use""Example: Computing MVP matrix
@@ -8747,7 +8748,9 @@ PFN_xkb_state_mod_index_is_active	glfw/src/wl_platform.h	/^typedef int (* PFN_xk
 PFN_xkb_state_new	glfw/src/wl_platform.h	/^typedef struct xkb_state* (* PFN_xkb_state_new)(struct xkb_keymap*);$/;"	t	typeref:struct:xkb_state * (*)(struct xkb_keymap *)
 PFN_xkb_state_unref	glfw/src/wl_platform.h	/^typedef void (* PFN_xkb_state_unref)(struct xkb_state*);$/;"	t	typeref:typename:void (*)(struct xkb_state *)
 PFN_xkb_state_update_mask	glfw/src/wl_platform.h	/^typedef enum xkb_state_component (* PFN_xkb_state_update_mask)(struct xkb_state*, xkb_mod_mask_t/;"	t	typeref:enum:xkb_state_component (*)(struct xkb_state *,xkb_mod_mask_t,xkb_mod_mask_t,xkb_mod_mask_t,xkb_layout_index_t,xkb_layout_index_t,xkb_layout_index_t)
+PIG_CAMERA_H	include/camera.h	/^#define PIG_CAMERA_H$/;"	d
 PIG_ENGINE_H	include/PigEngine.h	/^#define PIG_ENGINE_H$/;"	d
+PIG_INPUT_H	include/input.h	/^#define PIG_INPUT_H$/;"	d
 PIG_RENDER_H	include/render.h	/^#define PIG_RENDER_H$/;"	d
 PIG_SHADER_H	include/shader.h	/^#define PIG_SHADER_H$/;"	d
 PIG_UTIL_H	include/util.h	/^#define PIG_UTIL_H$/;"	d
@@ -8878,7 +8881,7 @@ STRATEGY_NAME_LOSE	glfw/tests/glfwinfo.c	/^#define STRATEGY_NAME_LOSE /;"	d	file
 STRATEGY_NAME_NONE	glfw/tests/glfwinfo.c	/^#define STRATEGY_NAME_NONE /;"	d	file:
 SYN_DROPPED	glfw/src/linux_joystick.c	/^#define SYN_DROPPED /;"	d	file:
 SaveContext	glfw/src/x11_platform.h	/^        PFN_XSaveContext SaveContext;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XSaveContext
-Scene	include/render.h	/^}	Scene;$/;"	t	typeref:struct:__anon5c99124e0708
+Scene	include/render.h	/^}	Scene;$/;"	t	typeref:struct:__anon5c99124e0808
 SelectEventDetails	glfw/src/x11_platform.h	/^        PFN_XkbSelectEventDetails SelectEventDetails;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0408	typeref:typename:PFN_XkbSelectEventDetails
 SelectEvents	glfw/src/x11_platform.h	/^        PFN_XISelectEvents SelectEvents;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0b08	typeref:typename:PFN_XISelectEvents
 SelectInput	glfw/src/x11_platform.h	/^        PFN_XRRSelectInput SelectInput;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0308	typeref:typename:PFN_XRRSelectInput
@@ -12401,6 +12404,7 @@ __anon5c99124e0408	include/render.h	/^typedef struct {$/;"	s
 __anon5c99124e0508	include/render.h	/^typedef struct {$/;"	s
 __anon5c99124e0608	include/render.h	/^typedef struct {$/;"	s
 __anon5c99124e0708	include/render.h	/^typedef struct {$/;"	s
+__anon5c99124e0808	include/render.h	/^typedef struct {$/;"	s
 __anon5cec09d90108	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
 __anon5cec09d90208	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
 __anon5cec09d90308	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
@@ -13468,7 +13472,7 @@ callbacks	glfw/src/internal.h	/^    } callbacks;$/;"	m	struct:_GLFWwindow	typere
 calls	glfw/deps/nuklear.h	/^    nk_size calls;$/;"	m	struct:nk_buffer	typeref:typename:nk_size
 calls	glfw/deps/nuklear.h	/^    nk_size calls;$/;"	m	struct:nk_memory_status	typeref:typename:nk_size
 camera	cglm/docs/source/cam.rst	/^camera$/;"	H
-camera	include/render.h	/^	Camera camera;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Camera
+camera	include/render.h	/^	Camera camera;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Camera
 canBecomeKeyView	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 canBecomeKeyWindow	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWWindow
 canBecomeMainWindow	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWWindow
@@ -13487,6 +13491,7 @@ cbTypeSpecificParams	glfw/deps/mingw/dinput.h	/^	DWORD			cbTypeSpecificParams;$/
 cc	cglm/meson.build	/^cc = meson.get_compiler('c')$/;"	V
 cc	glfw/docs/spaces.svg	/^   sodipodi:docname="spaces.svg">$/;"	n	uri:http://creativecommons.org/ns#
 centerCursor	glfw/src/internal.h	/^    GLFWbool      centerCursor;$/;"	m	struct:_GLFWwndconfig	typeref:typename:GLFWbool
+centre	include/render.h	/^	vec3 centre;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
 cglm	cglm/CMakeLists.txt	/^project(cglm$/;"	p
 cglm	cglm/Makefile.am	/^cglmdir=$(includedir)\/cglm$/;"	d
 cglm	cglm/configure.ac	/^AC_INIT([cglm], [0.8.7], [info@recp.me])$/;"	p
@@ -13796,7 +13801,7 @@ colorWriteMask	glfw/deps/glad/vulkan.h	/^    VkColorComponentFlags    colorWrite
 color_space	glfw/tests/triangle-vulkan.c	/^    VkColorSpaceKHR color_space;$/;"	m	struct:demo	typeref:typename:VkColorSpaceKHR	file:
 colormap	glfw/src/x11_platform.h	/^    Colormap        colormap;$/;"	m	struct:_GLFWwindowX11	typeref:typename:Colormap
 colors	glfw/deps/nuklear.h	/^    struct nk_config_stack_color colors;$/;"	m	struct:nk_configuration_stacks	typeref:struct:nk_config_stack_color
-colour	include/render.h	/^	vec3 colour;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
+colour	include/render.h	/^	vec3 colour;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
 columns	glfw/deps/nuklear.h	/^    int columns;$/;"	m	struct:nk_row_layout	typeref:typename:int
 combinedImageSamplerDescriptorCount	glfw/deps/glad/vulkan.h	/^    uint32_t                           combinedImageSamplerDescriptorCount;$/;"	m	struct:VkSamplerYcbcrConversionImageFormatProperties	typeref:typename:uint32_t
 combo	glfw/deps/nuklear.h	/^    struct nk_style_combo combo;$/;"	m	struct:nk_style	typeref:struct:nk_style_combo
@@ -22578,7 +22583,7 @@ id	glfw/deps/nuklear.h	/^    int id;$/;"	m	struct:nk_rp_rect	typeref:typename:in
 id	glfw/deps/nuklear.h	/^typedef union {void *ptr; int id;} nk_handle;$/;"	m	union:__anonb47b8ca7020a	typeref:typename:int
 id	glfw/src/cocoa_platform.h	/^typedef void* id;$/;"	t
 id	glfw/tests/threads.c	/^    thrd_t id;$/;"	m	struct:__anon9a0fd3a20108	typeref:typename:thrd_t	file:
-id	include/render.h	/^	uint32_t id;$/;"	m	struct:__anon5c99124e0708	typeref:typename:uint32_t
+id	include/render.h	/^	uint32_t id;$/;"	m	struct:__anon5c99124e0808	typeref:typename:uint32_t
 id	include/render.h	/^  uint32_t id;$/;"	m	struct:__anon5c99124e0208	typeref:typename:uint32_t
 idleInhibitManager	glfw/src/wl_platform.h	/^    struct zwp_idle_inhibit_manager_v1*     idleInhibitManager;$/;"	m	struct:_GLFWlibraryWayland	typeref:struct:zwp_idle_inhibit_manager_v1 *
 idleInhibitor	glfw/src/wl_platform.h	/^    struct zwp_idle_inhibitor_v1*          idleInhibitor;$/;"	m	struct:_GLFWwindowWayland	typeref:struct:zwp_idle_inhibitor_v1 *
@@ -23119,8 +23124,8 @@ libcglm.la	cglm/Makefile.am	/^lib_LTLIBRARIES = libcglm.la$/;"	T	directory:lib
 libcglm_la_LDFLAGS	cglm/Makefile.am	/^libcglm_la_LDFLAGS = -no-undefined -version-info 0:1:0$/;"	m
 libcglm_la_SOURCES	cglm/Makefile.am	/^libcglm_la_SOURCES=\\$/;"	m
 life	glfw/examples/particles.c	/^    float life;      \/\/ Life of particle (1.0 = newborn, < 0.0 = dead)$/;"	m	struct:__anonfdcf762a0408	typeref:typename:float	file:
-lightCapacity	include/render.h	/^	Capacity lightCapacity;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Capacity
-lights	include/render.h	/^	Light* lights;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Light *
+lightCapacity	include/render.h	/^	Capacity lightCapacity;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Capacity
+lights	include/render.h	/^	Light* lights;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Light *
 limits	glfw/deps/glad/vulkan.h	/^    VkPhysicalDeviceLimits   limits;$/;"	m	struct:VkPhysicalDeviceProperties	typeref:typename:VkPhysicalDeviceLimits
 line	glfw/docs/extra.scss	/^div.line {$/;"	c
 lineWidth	glfw/deps/glad/vulkan.h	/^    float                    lineWidth;$/;"	m	struct:VkPipelineRasterizationStateCreateInfo	typeref:typename:float
@@ -23570,9 +23575,9 @@ menu_padding	glfw/deps/nuklear.h	/^    struct nk_vec2 menu_padding;$/;"	m	struct
 menubar	glfw/src/internal.h	/^        GLFWbool  menubar;$/;"	m	struct:_GLFWinitconfig::__anon8afddc4e0108	typeref:typename:GLFWbool
 merge_mode	glfw/deps/nuklear.h	/^    unsigned char merge_mode;$/;"	m	struct:nk_font_config	typeref:typename:unsigned char
 mesh	glfw/examples/heightmap.c	/^static GLuint mesh;$/;"	v	typeref:typename:GLuint	file:
-meshCapacity	include/render.h	/^	Capacity meshCapacity;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Capacity
+meshCapacity	include/render.h	/^	Capacity meshCapacity;$/;"	m	struct:__anon5c99124e0508	typeref:typename:Capacity
 mesh_vbo	glfw/examples/heightmap.c	/^static GLuint mesh_vbo[4];$/;"	v	typeref:typename:GLuint[4]	file:
-meshes	include/render.h	/^	Mesh* meshes;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Mesh *
+meshes	include/render.h	/^	Mesh* meshes;$/;"	m	struct:__anon5c99124e0508	typeref:typename:Mesh *
 message-box	glfw/docs/extra.scss	/^@mixin message-box($base-color){$/;"	m
 metadata7	glfw/docs/spaces.svg	/^     id="metadata7">$/;"	i
 min	glfw/deps/nuklear.h	/^    float min, max, range;$/;"	m	struct:nk_chart_slot	typeref:typename:float
@@ -24796,10 +24801,12 @@ numer	glfw/src/internal.h	/^    int                 numer, denom;$/;"	m	struct:_
 object	glfw/src/cocoa_platform.h	/^    id                object;$/;"	E	struct:_GLFWcontextNSGL
 object	glfw/src/cocoa_platform.h	/^    id              object;$/;"	E	struct:_GLFWwindowNS
 object	glfw/src/cocoa_platform.h	/^    id              object;$/;"	t
+objectCapacity	include/render.h	/^	Capacity objectCapacity;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Capacity
 objectCount	glfw/src/win32_joystick.c	/^    int                     objectCount;$/;"	m	struct:_GLFWobjenumWin32	typeref:typename:int	file:
 objectCount	glfw/src/win32_joystick.h	/^    int                     objectCount;$/;"	m	struct:_GLFWjoystickWin32	typeref:typename:int
 objects	glfw/src/win32_joystick.c	/^    _GLFWjoyobjectWin32*    objects;$/;"	m	struct:_GLFWobjenumWin32	typeref:typename:_GLFWjoyobjectWin32 *	file:
 objects	glfw/src/win32_joystick.h	/^    _GLFWjoyobjectWin32*    objects;$/;"	m	struct:_GLFWjoystickWin32	typeref:typename:_GLFWjoyobjectWin32 *
+objects	include/render.h	/^	Object* objects;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Object *
 occluded	glfw/src/cocoa_platform.h	/^    GLFWbool        occluded;$/;"	E	struct:_GLFWwindowNS
 occlusionQueryEnable	glfw/deps/glad/vulkan.h	/^    VkBool32                 occlusionQueryEnable;$/;"	m	struct:VkCommandBufferInheritanceInfo	typeref:typename:VkBool32
 occlusionQueryPrecise	glfw/deps/glad/vulkan.h	/^    VkBool32                 occlusionQueryPrecise;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
@@ -25522,8 +25529,10 @@ pos	glfw/deps/nuklear.h	/^    struct nk_vec2 pos;$/;"	m	struct:nk_mouse	typeref:
 pos	glfw/examples/triangle-opengl.c	/^    vec2 pos;$/;"	m	struct:Vertex	typeref:typename:vec2	file:
 pos	glfw/examples/triangle-opengles.c	/^    vec2 pos;$/;"	m	struct:Vertex	typeref:typename:vec2	file:
 pos	glfw/src/internal.h	/^        GLFWwindowposfun          pos;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowposfun
+pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0408	typeref:typename:vec3
 pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
 pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
+pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
 pos	include/render.h	/^  vec3 pos;$/;"	m	struct:__anon5c99124e0108	typeref:typename:vec3
 position	glfw/deps/nuklear_glfw_gl2.h	/^    float position[2];$/;"	m	struct:nk_glfw_vertex	typeref:typename:float[2]
 post	glfw/docs/extra.scss	/^.note a,.pre a,.post a,.invariant a,.warning a,.attention a,.deprecated a,.bug a,.todo a,.test a/;"	c
@@ -25810,7 +25819,7 @@ rgptCalloutLine	glfw/deps/mingw/dinput.h	/^	POINT	rgptCalloutLine[5];$/;"	m	stru
 rgptCalloutLine	glfw/deps/mingw/dinput.h	/^	POINT	rgptCalloutLine[5];$/;"	m	struct:_DIDEVICEIMAGEINFOW	typeref:typename:POINT[5]
 right	glfw/deps/nuklear.h	/^    struct nk_color right;$/;"	m	struct:nk_command_rect_multi_color	typeref:struct:nk_color
 right	glfw/src/wl_platform.h	/^        _GLFWdecorationWayland             top, left, right, bottom;$/;"	m	struct:_GLFWwindowWayland::__anona2c0ed980408	typeref:typename:_GLFWdecorationWayland
-right	include/render.h	/^	vec3 right;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
+right	include/render.h	/^	vec3 right;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
 rightDecoration	glfw/src/wl_platform.h	/^    rightDecoration,$/;"	e	enum:_GLFWdecorationSideWayland
 rightMouseDown:	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 rightMouseDragged:	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
@@ -25826,6 +25835,8 @@ root	glfw/src/x11_platform.h	/^    Window          root;$/;"	m	struct:_GLFWlibra
 rot_x	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
 rot_y	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
 rot_z	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
+rotation	include/render.h	/^	vec3 rotation;$/;"	m	struct:__anon5c99124e0408	typeref:typename:vec3
+rotation	include/render.h	/^	vec3 rotation;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_button	typeref:typename:float
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_chart	typeref:typename:float
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_combo	typeref:typename:float
@@ -26118,6 +26129,8 @@ scale	glfw/deps/nuklear.h	/^    float scale;$/;"	m	struct:nk_font	typeref:typena
 scale	glfw/src/internal.h	/^        GLFWwindowcontentscalefun scale;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowcontentscalefun
 scale	glfw/src/wl_platform.h	/^    int                         scale;$/;"	m	struct:_GLFWmonitorWayland	typeref:typename:int
 scale	glfw/src/wl_platform.h	/^    int                         scale;$/;"	m	struct:_GLFWwindowWayland	typeref:typename:int
+scale	include/render.h	/^	float scale;$/;"	m	struct:__anon5c99124e0408	typeref:typename:float
+scale	include/render.h	/^	float scale;$/;"	m	struct:__anon5c99124e0508	typeref:typename:float
 scaleToMonitor	glfw/src/internal.h	/^    GLFWbool      scaleToMonitor;$/;"	m	struct:_GLFWwndconfig	typeref:typename:GLFWbool
 scaleToMonitor	glfw/src/win32_platform.h	/^    GLFWbool            scaleToMonitor;$/;"	m	struct:_GLFWwindowWin32	typeref:typename:GLFWbool
 scaler	glfw/deps/nuklear.h	/^    struct nk_style_item scaler;$/;"	m	struct:nk_style_window	typeref:struct:nk_style_item
@@ -26747,7 +26760,7 @@ table.markdownTable td	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.
 table.markdownTable th	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.sm-dox a:active,.sm-dox a:hover,.sm-dox a.highlighted,.sm-dox/;"	s
 table_count	glfw/deps/nuklear.h	/^    unsigned int table_count;$/;"	m	struct:nk_window	typeref:typename:unsigned int
 tables	glfw/deps/nuklear.h	/^    struct nk_table *tables;$/;"	m	struct:nk_window	typeref:struct:nk_table *
-target	include/render.h	/^	vec3 target;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
+target	include/render.h	/^	vec3 target;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
 target_path	glfw/CMake/GenerateMappings.cmake	/^set(target_path "${CMAKE_ARGV4}")$/;"	v
 tbl	glfw/deps/nuklear.h	/^    struct nk_table tbl;$/;"	m	union:nk_page_data	typeref:struct:nk_table
 tearing	glfw/tests/CMakeLists.txt	/^add_executable(tearing WIN32 MACOSX_BUNDLE tearing.c ${GLAD_GL})$/;"	t
@@ -27075,7 +27088,7 @@ unitNumber	glfw/src/cocoa_platform.h	/^    uint32_t            unitNumber;$/;"	E
 unlockPointer	glfw/src/wl_window.c	/^static void unlockPointer(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 unmarkText	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 unnormalizedCoordinates	glfw/deps/glad/vulkan.h	/^    VkBool32                 unnormalizedCoordinates;$/;"	m	struct:VkSamplerCreateInfo	typeref:typename:VkBool32
-up	include/render.h	/^	vec3 up;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
+up	include/render.h	/^	vec3 up;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
 updateCursorImage	glfw/src/cocoa_window.m	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f
 updateCursorImage	glfw/src/win32_window.c	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 updateCursorImage	glfw/src/x11_window.c	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
