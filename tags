@@ -245,7 +245,6 @@ BatteryType	glfw/deps/mingw/xinput.h	/^    BYTE BatteryType;$/;"	m	struct:_XINPU
 Bezier	cglm/docs/source/bezier.rst	/^Bezier$/;"	H
 Big	glfw/deps/nuklear.h	/^template<typename T> struct nk_alignof{struct Big {T x; char c;}; enum {$/;"	s	struct:nk_alignof
 BindAPI	glfw/src/internal.h	/^        PFN_eglBindAPI              BindAPI;$/;"	m	struct:_GLFWlibrary::__anon8afddc4e0d08	typeref:typename:PFN_eglBindAPI
-Body	include/render.h	/^} Body;$/;"	t	typeref:struct:__anon5c99124e0108
 BounceBall	glfw/examples/boing.c	/^void BounceBall( double delta_t )$/;"	f	typeref:typename:void
 BreakCallback	glfw/tests/triangle-vulkan.c	/^BreakCallback(VkFlags msgFlags, VkDebugReportObjectTypeEXT objType,$/;"	f	typeref:typename:VKAPI_ATTR VkBool32 VKAPI_CALL
 Build cglm	cglm/docs/source/build.rst	/^Build cglm$/;"	H
@@ -399,6 +398,8 @@ CURSOR_FRAME_COUNT	glfw/tests/cursor.c	/^#define CURSOR_FRAME_COUNT /;"	d	file:
 CYAN	cglm/test/include/common.h	/^#define CYAN /;"	d
 CYAN	cglm/test/include/common.h	/^#define CYAN$/;"	d
 C_Cpp.default.configurationProvider	cglm/.vscode/settings.json	/^  "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",$/;"	s
+Camera	include/render.h	/^}	Camera;$/;"	t	typeref:struct:__anon5c99124e0608
+Capacity	include/util.h	/^} Capacity;$/;"	t	typeref:struct:__anon7081f46c0108
 ChangeProperty	glfw/src/x11_platform.h	/^        PFN_XChangeProperty ChangeProperty;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XChangeProperty
 ChangeWindowAttributes	glfw/src/x11_platform.h	/^        PFN_XChangeWindowAttributes ChangeWindowAttributes;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XChangeWindowAttributes
 ChangeWindowMessageFilterEx	glfw/src/win32_platform.h	/^#define ChangeWindowMessageFilterEx /;"	d
@@ -1184,6 +1185,7 @@ DestroySurface	glfw/src/internal.h	/^        PFN_eglDestroySurface       Destroy
 DestroyWindow	glfw/src/x11_platform.h	/^        PFN_XDestroyWindow DestroyWindow;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XDestroyWindow
 DestroyWindow	glfw/src/x11_platform.h	/^    PFNGLXDESTROYWINDOWPROC             DestroyWindow;$/;"	m	struct:_GLFWlibraryGLX	typeref:typename:PFNGLXDESTROYWINDOWPROC
 DirectInput8Create	glfw/src/win32_platform.h	/^#define DirectInput8Create /;"	d
+Direction	include/render.h	/^	vec3 Direction;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
 DisplayKeycodes	glfw/src/x11_platform.h	/^        PFN_XDisplayKeycodes DisplayKeycodes;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XDisplayKeycodes
 DllMain	glfw/src/win32_init.c	/^BOOL WINAPI DllMain(HINSTANCE instance, DWORD reason, LPVOID reserved)$/;"	f	typeref:typename:BOOL WINAPI
 Documentation (Sphinx):	cglm/docs/source/build.rst	/^Documentation (Sphinx):$/;"	c	title:Build cglm
@@ -5980,6 +5982,7 @@ LPSYSMOUSEA	glfw/deps/mingw/dinput.h	/^typedef struct SysMouseA *LPSYSMOUSEA;$/;
 LSRequiresCarbon	glfw/CMake/Info.plist.in	/^	<key>LSRequiresCarbon<\/key>$/;"	k
 LibraryLoadImage	glfw/src/x11_platform.h	/^        PFN_XcursorLibraryLoadImage LibraryLoadImage;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0708	typeref:typename:PFN_XcursorLibraryLoadImage
 License	cglm/README.md	/^## License$/;"	s	chapter:🎥 OpenGL Mathematics (glm) for `C`
+Light	include/render.h	/^}	Light;$/;"	t	typeref:struct:__anon5c99124e0508
 LookupString	glfw/src/x11_platform.h	/^        PFN_XLookupString LookupString;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XLookupString
 MAGENTA	cglm/test/include/common.h	/^#define MAGENTA /;"	d
 MAGENTA	cglm/test/include/common.h	/^#define MAGENTA$/;"	d
@@ -6017,7 +6020,9 @@ MakeCurrent	glfw/src/win32_platform.h	/^    PFN_wglMakeCurrent                  
 MakeCurrent	glfw/src/x11_platform.h	/^    PFNGLXMAKECURRENTPROC               MakeCurrent;$/;"	m	struct:_GLFWlibraryGLX	typeref:typename:PFNGLXMAKECURRENTPROC
 MapRaised	glfw/src/x11_platform.h	/^        PFN_XMapRaised MapRaised;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XMapRaised
 MapWindow	glfw/src/x11_platform.h	/^        PFN_XMapWindow MapWindow;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XMapWindow
+Material	include/render.h	/^} Material;$/;"	t	typeref:struct:__anon5c99124e0308
 Memory Allocation:	cglm/docs/source/troubleshooting.rst	/^Memory Allocation:$/;"	c	title:Troubleshooting
+Mesh	include/render.h	/^} Mesh;$/;"	t	typeref:struct:__anon5c99124e0408
 Meson (All platforms)	cglm/README.md	/^### Meson (All platforms)$/;"	S	section:🎥 OpenGL Mathematics (glm) for `C`""🔨 Build
 Meson (All platforms):	cglm/docs/source/build.rst	/^Meson (All platforms):$/;"	c	title:Build cglm
 Meson options with Defaults:	cglm/README.md	/^##### Meson options with Defaults:$/;"	T	subsection:🎥 OpenGL Mathematics (glm) for `C`""🔨 Build""Meson (All platforms)
@@ -8873,6 +8878,7 @@ STRATEGY_NAME_LOSE	glfw/tests/glfwinfo.c	/^#define STRATEGY_NAME_LOSE /;"	d	file
 STRATEGY_NAME_NONE	glfw/tests/glfwinfo.c	/^#define STRATEGY_NAME_NONE /;"	d	file:
 SYN_DROPPED	glfw/src/linux_joystick.c	/^#define SYN_DROPPED /;"	d	file:
 SaveContext	glfw/src/x11_platform.h	/^        PFN_XSaveContext SaveContext;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XSaveContext
+Scene	include/render.h	/^}	Scene;$/;"	t	typeref:struct:__anon5c99124e0708
 SelectEventDetails	glfw/src/x11_platform.h	/^        PFN_XkbSelectEventDetails SelectEventDetails;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0408	typeref:typename:PFN_XkbSelectEventDetails
 SelectEvents	glfw/src/x11_platform.h	/^        PFN_XISelectEvents SelectEvents;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0b08	typeref:typename:PFN_XISelectEvents
 SelectInput	glfw/src/x11_platform.h	/^        PFN_XRRSelectInput SelectInput;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0308	typeref:typename:PFN_XRRSelectInput
@@ -9404,6 +9410,7 @@ Table of contents (click to go):	cglm/docs/source/vec3.rst	/^Table of contents (
 Table of contents (click to go):	cglm/docs/source/vec4-ext.rst	/^Table of contents (click to go):$/;"	c	title:vec4 extra
 Table of contents (click to go):	cglm/docs/source/vec4.rst	/^Table of contents (click to go):$/;"	c	title:vec4
 Terminate	glfw/src/internal.h	/^        PFN_eglTerminate            Terminate;$/;"	m	struct:_GLFWlibrary::__anon8afddc4e0d08	typeref:typename:PFN_eglTerminate
+Texture	include/render.h	/^} Texture;$/;"	t	typeref:struct:__anon5c99124e0208
 Thread	glfw/tests/threads.c	/^} Thread;$/;"	t	typeref:struct:__anon9a0fd3a20108	file:
 Transforms Order	cglm/docs/source/affine.rst	/^Transforms Order$/;"	c	title:3D Affine Transforms
 Transforms Order	cglm/docs/source/affine2d.rst	/^Transforms Order$/;"	c	title:2D Affine Transforms
@@ -10958,6 +10965,7 @@ Vertex	glfw/examples/triangle-opengl.c	/^} Vertex;$/;"	t	typeref:struct:Vertex	f
 Vertex	glfw/examples/triangle-opengles.c	/^typedef struct Vertex$/;"	s	file:
 Vertex	glfw/examples/triangle-opengles.c	/^} Vertex;$/;"	t	typeref:struct:Vertex	file:
 Vertex	glfw/examples/wave.c	/^struct Vertex$/;"	s	file:
+Vertex	include/render.h	/^} Vertex;$/;"	t	typeref:struct:__anon5c99124e0108
 Vibration	glfw/deps/mingw/xinput.h	/^    XINPUT_VIBRATION Vibration;$/;"	m	struct:_XINPUT_CAPABILITIES	typeref:typename:XINPUT_VIBRATION
 VirtualKey	glfw/deps/mingw/xinput.h	/^    WORD VirtualKey;$/;"	m	struct:_XINPUT_KEYSTROKE	typeref:typename:WORD
 VisualIDFromVisual	glfw/src/x11_platform.h	/^        PFN_XVisualIDFromVisual VisualIDFromVisual;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XVisualIDFromVisual
@@ -11952,6 +11960,7 @@ WIN32_LEAN_AND_MEAN	glfw/deps/tinycthread.h	/^    #define WIN32_LEAN_AND_MEAN$/;
 WIN32_LEAN_AND_MEAN	glfw/src/win32_platform.h	/^ #define WIN32_LEAN_AND_MEAN$/;"	d
 WINELIB_NAME_AW	glfw/deps/mingw/_mingw_dxhelper.h	/^#   define WINELIB_NAME_AW /;"	d
 WINELIB_NAME_AW	glfw/deps/mingw/_mingw_dxhelper.h	/^#   define WINELIB_NAME_AW(/;"	d
+WINFLAGS	Makefile	/^WINFLAGS:=-L\/usr\/i686-w64-mingw32\/bin\/glfw3.dll$/;"	m
 WINGDIAPI	glfw/include/GLFW/glfw3.h	/^ #define WINGDIAPI /;"	d
 WINT_MAX	glfw/deps/vs2008/stdint.h	/^#define WINT_MAX /;"	d
 WINT_MIN	glfw/deps/vs2008/stdint.h	/^#define WINT_MIN /;"	d
@@ -12386,6 +12395,12 @@ __anon4aebcbf20103	glfw/examples/boing.c	/^typedef enum { DRAW_BALL, DRAW_BALL_S
 __anon4aebcbf20208	glfw/examples/boing.c	/^typedef struct {float x; float y; float z;} vertex_t;$/;"	s	file:
 __anon4de363f90108	glfw/src/x11_init.c	/^        {$/;"	s	function:createKeyTables	file:
 __anon5c99124e0108	include/render.h	/^typedef struct {$/;"	s
+__anon5c99124e0208	include/render.h	/^typedef struct {$/;"	s
+__anon5c99124e0308	include/render.h	/^typedef struct {$/;"	s
+__anon5c99124e0408	include/render.h	/^typedef struct {$/;"	s
+__anon5c99124e0508	include/render.h	/^typedef struct {$/;"	s
+__anon5c99124e0608	include/render.h	/^typedef struct {$/;"	s
+__anon5c99124e0708	include/render.h	/^typedef struct {$/;"	s
 __anon5cec09d90108	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
 __anon5cec09d90208	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
 __anon5cec09d90308	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
@@ -12408,6 +12423,7 @@ __anon5cec09d91308	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:mat
 __anon5cec09d91408	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:mat3s
 __anon5cec09d91508	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:mat4s
 __anon63e12f6c0108	glfw/tests/events.c	/^{$/;"	s	file:
+__anon7081f46c0108	include/util.h	/^typedef struct {$/;"	s
 __anon7f31a9be0108	glfw/examples/offscreen.c	/^{$/;"	s	file:
 __anon878edb660108	glfw/src/wl_window.c	/^    {$/;"	s	function:keyboardHandleModifiers	file:
 __anon8afddc4e0108	glfw/src/internal.h	/^    struct {$/;"	s	struct:_GLFWinitconfig
@@ -13186,6 +13202,7 @@ alphaToCoverageEnable	glfw/deps/glad/vulkan.h	/^    VkBool32                 alp
 alphaToOne	glfw/deps/glad/vulkan.h	/^    VkBool32                 alphaToOne;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 alphaToOneEnable	glfw/deps/glad/vulkan.h	/^    VkBool32                 alphaToOneEnable;$/;"	m	struct:VkPipelineMultisampleStateCreateInfo	typeref:typename:VkBool32
 altIndex	glfw/src/wl_platform.h	/^        xkb_mod_index_t         altIndex;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980508	typeref:typename:xkb_mod_index_t
+ambient	include/render.h	/^  vec3 ambient;$/;"	m	struct:__anon5c99124e0308	typeref:typename:vec3
 angle	glfw/examples/gears.c	/^static GLfloat angle = 0.f;$/;"	v	typeref:typename:GLfloat	file:
 angleType	glfw/src/internal.h	/^    int           angleType;$/;"	m	struct:_GLFWinitconfig	typeref:typename:int
 animate	glfw/examples/gears.c	/^static void animate(void)$/;"	f	typeref:typename:void	file:
@@ -13237,7 +13254,6 @@ attention	glfw/docs/extra.scss	/^dl.note,dl.pre,dl.post,dl.invariant,dl.warning,
 attention	glfw/docs/extra.scss	/^dl.warning,dl.attention {$/;"	c
 attribute	glfw/deps/nuklear.h	/^    enum nk_draw_vertex_layout_attribute attribute;$/;"	m	struct:nk_draw_vertex_layout_element	typeref:enum:nk_draw_vertex_layout_attribute
 attributedSubstringForProposedRange:actualRange:	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
-attributes	include/render.h	/^	uint64_t* attributes;$/;"	m	struct:__anon5c99124e0108	typeref:typename:uint64_t *
 author	cglm/docs/source/conf.py	/^author = u'Recep Aslantas'$/;"	v
 autoIconify	glfw/src/internal.h	/^    GLFWbool            autoIconify;$/;"	m	struct:_GLFWwindow	typeref:typename:GLFWbool
 autoIconify	glfw/src/internal.h	/^    GLFWbool      autoIconify;$/;"	m	struct:_GLFWwndconfig	typeref:typename:GLFWbool
@@ -13386,7 +13402,6 @@ buffer	glfw/deps/stb_image_write.h	/^   unsigned char buffer[64];$/;"	m	struct:_
 buffer	glfw/src/internal.h	/^        void*           buffer;$/;"	m	struct:_GLFWcontext::__anon8afddc4e0908	typeref:typename:void *
 buffer	glfw/src/wl_platform.h	/^        struct wl_buffer*                  buffer;$/;"	m	struct:_GLFWwindowWayland::__anona2c0ed980408	typeref:struct:wl_buffer *
 buffer	glfw/src/wl_platform.h	/^    struct wl_buffer*           buffer;$/;"	m	struct:_GLFWcursorWayland	typeref:struct:wl_buffer *
-buffer	include/render.h	/^	float* buffer;$/;"	m	struct:__anon5c99124e0108	typeref:typename:float *
 bufferBindCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 bufferBindCount;$/;"	m	struct:VkBindSparseInfo	typeref:typename:uint32_t
 bufferDeviceAddress	glfw/deps/glad/vulkan.h	/^    VkBool32                             bufferDeviceAddress;$/;"	m	struct:VkPhysicalDeviceBufferDeviceAddressFeatures	typeref:typename:VkBool32
 bufferDeviceAddress	glfw/deps/glad/vulkan.h	/^    VkBool32                           bufferDeviceAddress;$/;"	m	struct:VkPhysicalDeviceVulkan12Features	typeref:typename:VkBool32
@@ -13453,11 +13468,13 @@ callbacks	glfw/src/internal.h	/^    } callbacks;$/;"	m	struct:_GLFWwindow	typere
 calls	glfw/deps/nuklear.h	/^    nk_size calls;$/;"	m	struct:nk_buffer	typeref:typename:nk_size
 calls	glfw/deps/nuklear.h	/^    nk_size calls;$/;"	m	struct:nk_memory_status	typeref:typename:nk_size
 camera	cglm/docs/source/cam.rst	/^camera$/;"	H
+camera	include/render.h	/^	Camera camera;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Camera
 canBecomeKeyView	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 canBecomeKeyWindow	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWWindow
 canBecomeMainWindow	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWWindow
 cap	glfw/deps/nuklear.h	/^    nk_size cap;$/;"	m	struct:nk_pool	typeref:typename:nk_size
 capacity	glfw/deps/nuklear.h	/^    unsigned capacity;$/;"	m	struct:nk_pool	typeref:typename:unsigned
+capacity	include/util.h	/^	size_t capacity;$/;"	m	struct:__anon7081f46c0108	typeref:typename:size_t
 capsLockIndex	glfw/src/wl_platform.h	/^        xkb_mod_index_t         capsLockIndex;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980508	typeref:typename:xkb_mod_index_t
 captureCursor	glfw/src/win32_window.c	/^static void captureCursor(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 captureCursor	glfw/src/x11_window.c	/^static void captureCursor(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
@@ -13779,6 +13796,7 @@ colorWriteMask	glfw/deps/glad/vulkan.h	/^    VkColorComponentFlags    colorWrite
 color_space	glfw/tests/triangle-vulkan.c	/^    VkColorSpaceKHR color_space;$/;"	m	struct:demo	typeref:typename:VkColorSpaceKHR	file:
 colormap	glfw/src/x11_platform.h	/^    Colormap        colormap;$/;"	m	struct:_GLFWwindowX11	typeref:typename:Colormap
 colors	glfw/deps/nuklear.h	/^    struct nk_config_stack_color colors;$/;"	m	struct:nk_configuration_stacks	typeref:struct:nk_config_stack_color
+colour	include/render.h	/^	vec3 colour;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
 columns	glfw/deps/nuklear.h	/^    int columns;$/;"	m	struct:nk_row_layout	typeref:typename:int
 combinedImageSamplerDescriptorCount	glfw/deps/glad/vulkan.h	/^    uint32_t                           combinedImageSamplerDescriptorCount;$/;"	m	struct:VkSamplerYcbcrConversionImageFormatProperties	typeref:typename:uint32_t
 combo	glfw/deps/nuklear.h	/^    struct nk_style_combo combo;$/;"	m	struct:nk_style	typeref:struct:nk_style_combo
@@ -14216,6 +14234,7 @@ deviceUUID	glfw/deps/glad/vulkan.h	/^    uint8_t                       deviceUUI
 dics	glfw/deps/mingw/dinput.h	/^	DICOLORSET		dics;$/;"	m	struct:_DICONFIGUREDEVICESPARAMSA	typeref:typename:DICOLORSET
 dics	glfw/deps/mingw/dinput.h	/^	DICOLORSET		dics;$/;"	m	struct:_DICONFIGUREDEVICESPARAMSW	typeref:typename:DICOLORSET
 diff	glfw/deps/nuklear.h	/^    diff = sizeof(Big) - sizeof(T), value = nk_helper<Big, diff>::value};};$/;"	e	enum:nk_alignof::__anonb47b8ca70503
+diffuse	include/render.h	/^  vec3 diffuse;$/;"	m	struct:__anon5c99124e0308	typeref:typename:vec3
 dinput8	glfw/src/win32_platform.h	/^    } dinput8;$/;"	m	struct:_GLFWlibraryWin32	typeref:struct:_GLFWlibraryWin32::__anonfddb0c680508
 diph	glfw/deps/mingw/dinput.h	/^	DIPROPHEADER	diph;$/;"	m	struct:DIPROPCALPOV	typeref:typename:DIPROPHEADER
 diph	glfw/deps/mingw/dinput.h	/^	DIPROPHEADER	diph;$/;"	m	struct:DIPROPDWORD	typeref:typename:DIPROPHEADER
@@ -14574,6 +14593,7 @@ dwmapi	glfw/src/win32_platform.h	/^    } dwmapi;$/;"	m	struct:_GLFWlibraryWin32	
 dynamicRendering	glfw/deps/glad/vulkan.h	/^    VkBool32                                                                     dynamicRenderin/;"	m	struct:VkPhysicalDeviceDynamicRenderingFeatures	typeref:typename:VkBool32
 dynamicRendering	glfw/deps/glad/vulkan.h	/^    VkBool32                           dynamicRendering;$/;"	m	struct:VkPhysicalDeviceVulkan13Features	typeref:typename:VkBool32
 dynamicStateCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 dynamicStateCount;$/;"	m	struct:VkPipelineDynamicStateCreateInfo	typeref:typename:uint32_t
+ebo	include/render.h	/^	uint32_t vao, vbo, ebo;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t
 edit	glfw/deps/nuklear.h	/^    struct nk_edit_state edit;$/;"	m	struct:nk_window	typeref:struct:nk_edit_state
 edit	glfw/deps/nuklear.h	/^    struct nk_style_edit edit;$/;"	m	struct:nk_style	typeref:struct:nk_style_edit
 edit	glfw/deps/nuklear.h	/^    struct nk_style_edit edit;$/;"	m	struct:nk_style_property	typeref:struct:nk_style_edit
@@ -22558,6 +22578,8 @@ id	glfw/deps/nuklear.h	/^    int id;$/;"	m	struct:nk_rp_rect	typeref:typename:in
 id	glfw/deps/nuklear.h	/^typedef union {void *ptr; int id;} nk_handle;$/;"	m	union:__anonb47b8ca7020a	typeref:typename:int
 id	glfw/src/cocoa_platform.h	/^typedef void* id;$/;"	t
 id	glfw/tests/threads.c	/^    thrd_t id;$/;"	m	struct:__anon9a0fd3a20108	typeref:typename:thrd_t	file:
+id	include/render.h	/^	uint32_t id;$/;"	m	struct:__anon5c99124e0708	typeref:typename:uint32_t
+id	include/render.h	/^  uint32_t id;$/;"	m	struct:__anon5c99124e0208	typeref:typename:uint32_t
 idleInhibitManager	glfw/src/wl_platform.h	/^    struct zwp_idle_inhibit_manager_v1*     idleInhibitManager;$/;"	m	struct:_GLFWlibraryWayland	typeref:struct:zwp_idle_inhibit_manager_v1 *
 idleInhibitor	glfw/src/wl_platform.h	/^    struct zwp_idle_inhibitor_v1*          idleInhibitor;$/;"	m	struct:_GLFWwindowWayland	typeref:struct:zwp_idle_inhibitor_v1 *
 im	glfw/src/x11_platform.h	/^    XIM             im;$/;"	m	struct:_GLFWlibraryX11	typeref:typename:XIM
@@ -22638,7 +22660,7 @@ index	glfw/src/x11_platform.h	/^    int             index;$/;"	m	struct:_GLFWmon
 indexCount	glfw/deps/glad/vulkan.h	/^    uint32_t                         indexCount;$/;"	m	struct:VkDrawIndexedIndirectCommand	typeref:typename:uint32_t
 indexToLocFormat	glfw/deps/nuklear.h	/^    int indexToLocFormat; \/* format needed to map from glyph index to glyph *\/$/;"	m	struct:nk_tt_fontinfo	typeref:typename:int
 index_map	glfw/deps/nuklear.h	/^    int index_map; \/* a cmap mapping for our chosen character encoding *\/$/;"	m	struct:nk_tt_fontinfo	typeref:typename:int
-indices	include/render.h	/^	uint64_t* indices;$/;"	m	struct:__anon5c99124e0108	typeref:typename:uint64_t *
+indices	include/render.h	/^  uint32_t* indices;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t *
 info	glfw/deps/nuklear.h	/^    struct nk_baked_font info;$/;"	m	struct:nk_font	typeref:struct:nk_baked_font
 info	glfw/deps/nuklear.h	/^    struct nk_tt_fontinfo info;$/;"	m	struct:nk_font_bake_data	typeref:struct:nk_tt_fontinfo
 inheritedQueries	glfw/deps/glad/vulkan.h	/^    VkBool32                 inheritedQueries;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
@@ -23097,6 +23119,8 @@ libcglm.la	cglm/Makefile.am	/^lib_LTLIBRARIES = libcglm.la$/;"	T	directory:lib
 libcglm_la_LDFLAGS	cglm/Makefile.am	/^libcglm_la_LDFLAGS = -no-undefined -version-info 0:1:0$/;"	m
 libcglm_la_SOURCES	cglm/Makefile.am	/^libcglm_la_SOURCES=\\$/;"	m
 life	glfw/examples/particles.c	/^    float life;      \/\/ Life of particle (1.0 = newborn, < 0.0 = dead)$/;"	m	struct:__anonfdcf762a0408	typeref:typename:float	file:
+lightCapacity	include/render.h	/^	Capacity lightCapacity;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Capacity
+lights	include/render.h	/^	Light* lights;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Light *
 limits	glfw/deps/glad/vulkan.h	/^    VkPhysicalDeviceLimits   limits;$/;"	m	struct:VkPhysicalDeviceProperties	typeref:typename:VkPhysicalDeviceLimits
 line	glfw/docs/extra.scss	/^div.line {$/;"	c
 lineWidth	glfw/deps/glad/vulkan.h	/^    float                    lineWidth;$/;"	m	struct:VkPipelineRasterizationStateCreateInfo	typeref:typename:float
@@ -23337,6 +23361,7 @@ mat4x4_translate_in_place	glfw/deps/linmath.h	/^LINMATH_H_FUNC void mat4x4_trans
 mat4x4_transpose	glfw/deps/linmath.h	/^LINMATH_H_FUNC void mat4x4_transpose(mat4x4 M, mat4x4 const N)$/;"	f	typeref:typename:LINMATH_H_FUNC void
 mat4x4o_mul_quat	glfw/deps/linmath.h	/^LINMATH_H_FUNC void mat4x4o_mul_quat(mat4x4 R, mat4x4 const M, quat const q)$/;"	f	typeref:typename:LINMATH_H_FUNC void
 matchCallback	glfw/src/cocoa_joystick.m	/^static void matchCallback(void* context,$/;"	f	struct:_GLFWjoyelementNS
+material	include/render.h	/^  Material material;$/;"	m	struct:__anon5c99124e0408	typeref:typename:Material
 max	glfw/deps/nuklear.h	/^    float min, max, range;$/;"	m	struct:nk_chart_slot	typeref:typename:float
 maxAnisotropy	glfw/deps/glad/vulkan.h	/^    float                    maxAnisotropy;$/;"	m	struct:VkSamplerCreateInfo	typeref:typename:float
 maxArrayLayers	glfw/deps/glad/vulkan.h	/^    uint32_t                 maxArrayLayers;$/;"	m	struct:VkImageFormatProperties	typeref:typename:uint32_t
@@ -23545,7 +23570,9 @@ menu_padding	glfw/deps/nuklear.h	/^    struct nk_vec2 menu_padding;$/;"	m	struct
 menubar	glfw/src/internal.h	/^        GLFWbool  menubar;$/;"	m	struct:_GLFWinitconfig::__anon8afddc4e0108	typeref:typename:GLFWbool
 merge_mode	glfw/deps/nuklear.h	/^    unsigned char merge_mode;$/;"	m	struct:nk_font_config	typeref:typename:unsigned char
 mesh	glfw/examples/heightmap.c	/^static GLuint mesh;$/;"	v	typeref:typename:GLuint	file:
+meshCapacity	include/render.h	/^	Capacity meshCapacity;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Capacity
 mesh_vbo	glfw/examples/heightmap.c	/^static GLuint mesh_vbo[4];$/;"	v	typeref:typename:GLuint[4]	file:
+meshes	include/render.h	/^	Mesh* meshes;$/;"	m	struct:__anon5c99124e0708	typeref:typename:Mesh *
 message-box	glfw/docs/extra.scss	/^@mixin message-box($base-color){$/;"	m
 metadata7	glfw/docs/spaces.svg	/^     id="metadata7">$/;"	i
 min	glfw/deps/nuklear.h	/^    float min, max, range;$/;"	m	struct:nk_chart_slot	typeref:typename:float
@@ -24741,6 +24768,7 @@ normal	glfw/deps/nuklear.h	/^    struct nk_style_item normal;$/;"	m	struct:nk_st
 normal	glfw/deps/nuklear.h	/^    struct nk_style_item normal;$/;"	m	struct:nk_style_toggle	typeref:struct:nk_style_item
 normal	glfw/deps/nuklear.h	/^    struct nk_style_item normal;$/;"	m	struct:nk_style_window_header	typeref:struct:nk_style_item
 normal_active	glfw/deps/nuklear.h	/^    struct nk_style_item normal_active;$/;"	m	struct:nk_style_selectable	typeref:struct:nk_style_item
+normals	include/render.h	/^  vec3 normals;$/;"	m	struct:__anon5c99124e0108	typeref:typename:vec3
 note	glfw/docs/extra.scss	/^.note a,.pre a,.post a,.invariant a,.warning a,.attention a,.deprecated a,.bug a,.todo a,.test a/;"	c
 note	glfw/docs/extra.scss	/^div.headertitle,.note code,.pre code,.post code,.invariant code,.warning code,.attention code,.d/;"	c
 note	glfw/docs/extra.scss	/^dl.note,dl.pre,dl.post,dl.invariant {$/;"	c
@@ -24754,10 +24782,10 @@ nsgl	glfw/src/internal.h	/^    } nsgl;$/;"	m	struct:_GLFWctxconfig	typeref:struc
 ntdll	glfw/src/win32_platform.h	/^    } ntdll;$/;"	m	struct:_GLFWlibraryWin32	typeref:struct:_GLFWlibraryWin32::__anonfddb0c680a08
 null	glfw/deps/nuklear.h	/^    struct nk_draw_null_texture null; \/* handle to texture with a white pixel for shape drawing/;"	m	struct:nk_convert_config	typeref:struct:nk_draw_null_texture
 null	glfw/deps/nuklear_glfw_gl2.h	/^    struct nk_draw_null_texture null;$/;"	m	struct:nk_glfw_device	typeref:struct:nk_draw_null_texture
-numAttributes	include/render.h	/^	uint64_t numAttributes;$/;"	m	struct:__anon5c99124e0108	typeref:typename:uint64_t
 numGlyphs	glfw/deps/nuklear.h	/^    int numGlyphs;\/* number of glyphs, needed for range checking *\/$/;"	m	struct:nk_tt_fontinfo	typeref:typename:int
-numIndices	include/render.h	/^	uint64_t numIndices;$/;"	m	struct:__anon5c99124e0108	typeref:typename:uint64_t
+numIndices	include/render.h	/^	size_t numIndices;$/;"	m	struct:__anon5c99124e0408	typeref:typename:size_t
 numLockIndex	glfw/src/wl_platform.h	/^        xkb_mod_index_t         numLockIndex;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980508	typeref:typename:xkb_mod_index_t
+numVertices	include/render.h	/^	size_t numVertices;$/;"	m	struct:__anon5c99124e0408	typeref:typename:size_t
 num_chars	glfw/deps/nuklear.h	/^    int num_chars;$/;"	m	struct:nk_tt_pack_range	typeref:typename:int
 num_chars	glfw/deps/nuklear.h	/^   int num_chars;$/;"	m	struct:nk_text_edit_row	typeref:typename:int
 num_exts_i	src/glad.c	/^static int num_exts_i = 0;$/;"	v	typeref:typename:int	file:
@@ -24812,7 +24840,7 @@ oldSwapchain	glfw/deps/glad/vulkan.h	/^    VkSwapchainKHR     oldSwapchain;$/;"	
 opacity	glfw/src/null_platform.h	/^    float           opacity;$/;"	m	struct:_GLFWwindowNull	typeref:typename:float
 opaqueCaptureAddress	glfw/deps/glad/vulkan.h	/^    uint64_t                           opaqueCaptureAddress;$/;"	m	struct:VkBufferOpaqueCaptureAddressCreateInfo	typeref:typename:uint64_t
 opaqueCaptureAddress	glfw/deps/glad/vulkan.h	/^    uint64_t                        opaqueCaptureAddress;$/;"	m	struct:VkMemoryOpaqueCaptureAddressAllocateInfo	typeref:typename:uint64_t
-openFile	src/util/fileIO.c	/^char *openFile(const char *path, size_t *len) {$/;"	f	typeref:typename:char *
+openFile	src/util/fileIO.c	/^char *openFile(const char *path) {$/;"	f	typeref:typename:char *
 openJoystickDevice	glfw/src/linux_joystick.c	/^static GLFWbool openJoystickDevice(const char* path)$/;"	f	typeref:typename:GLFWbool	file:
 open_gl	src/glad.c	/^static int open_gl(void) {$/;"	f	typeref:typename:int	file:
 optarg	glfw/deps/getopt.c	/^char* optarg;$/;"	v	typeref:typename:char *
@@ -25494,6 +25522,9 @@ pos	glfw/deps/nuklear.h	/^    struct nk_vec2 pos;$/;"	m	struct:nk_mouse	typeref:
 pos	glfw/examples/triangle-opengl.c	/^    vec2 pos;$/;"	m	struct:Vertex	typeref:typename:vec2	file:
 pos	glfw/examples/triangle-opengles.c	/^    vec2 pos;$/;"	m	struct:Vertex	typeref:typename:vec2	file:
 pos	glfw/src/internal.h	/^        GLFWwindowposfun          pos;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowposfun
+pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
+pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
+pos	include/render.h	/^  vec3 pos;$/;"	m	struct:__anon5c99124e0108	typeref:typename:vec3
 position	glfw/deps/nuklear_glfw_gl2.h	/^    float position[2];$/;"	m	struct:nk_glfw_vertex	typeref:typename:float[2]
 post	glfw/docs/extra.scss	/^.note a,.pre a,.post a,.invariant a,.warning a,.attention a,.deprecated a,.bug a,.todo a,.test a/;"	c
 post	glfw/docs/extra.scss	/^div.headertitle,.note code,.pre code,.post code,.invariant code,.warning code,.attention code,.d/;"	c
@@ -25779,6 +25810,7 @@ rgptCalloutLine	glfw/deps/mingw/dinput.h	/^	POINT	rgptCalloutLine[5];$/;"	m	stru
 rgptCalloutLine	glfw/deps/mingw/dinput.h	/^	POINT	rgptCalloutLine[5];$/;"	m	struct:_DIDEVICEIMAGEINFOW	typeref:typename:POINT[5]
 right	glfw/deps/nuklear.h	/^    struct nk_color right;$/;"	m	struct:nk_command_rect_multi_color	typeref:struct:nk_color
 right	glfw/src/wl_platform.h	/^        _GLFWdecorationWayland             top, left, right, bottom;$/;"	m	struct:_GLFWwindowWayland::__anona2c0ed980408	typeref:typename:_GLFWdecorationWayland
+right	include/render.h	/^	vec3 right;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
 rightDecoration	glfw/src/wl_platform.h	/^    rightDecoration,$/;"	e	enum:_GLFWdecorationSideWayland
 rightMouseDown:	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 rightMouseDragged:	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
@@ -26092,6 +26124,8 @@ scaler	glfw/deps/nuklear.h	/^    struct nk_style_item scaler;$/;"	m	struct:nk_st
 scancodes	glfw/src/win32_platform.h	/^    short int           scancodes[GLFW_KEY_LAST + 1];$/;"	m	struct:_GLFWlibraryWin32	typeref:typename:short int[]
 scancodes	glfw/src/wl_platform.h	/^    short int                   scancodes[GLFW_KEY_LAST + 1];$/;"	m	struct:_GLFWlibraryWayland	typeref:typename:short int[]
 scancodes	glfw/src/x11_platform.h	/^    short int       scancodes[GLFW_KEY_LAST + 1];$/;"	m	struct:_GLFWlibraryX11	typeref:typename:short int[]
+sceneCapacity	src/decls.c	/^Capacity sceneCapacity;$/;"	v	typeref:typename:Capacity
+scenes	src/decls.c	/^Scene* scenes;$/;"	v	typeref:typename:Scene *
 scissorCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 scissorCount;$/;"	m	struct:VkPipelineViewportStateCreateInfo	typeref:typename:uint32_t
 screen	glfw/src/cocoa_platform.h	/^    id                  screen;$/;"	E	struct:_GLFWmonitorNS
 screen	glfw/src/x11_platform.h	/^    int             screen;$/;"	m	struct:_GLFWlibraryX11	typeref:typename:int
@@ -26182,8 +26216,10 @@ set_icon	glfw/tests/icon.c	/^static void set_icon(GLFWwindow* window, int icon_c
 set_swap_interval	glfw/tests/tearing.c	/^static void set_swap_interval(GLFWwindow* window, int interval)$/;"	f	typeref:typename:void	file:
 setup_cmd	glfw/tests/triangle-vulkan.c	/^    VkCommandBuffer setup_cmd; \/\/ Command Buffer for initialization commands$/;"	m	struct:demo	typeref:typename:VkCommandBuffer	file:
 setup_lights	glfw/examples/particles.c	/^static void setup_lights(void)$/;"	f	typeref:typename:void	file:
+shader	include/render.h	/^  uint32_t shader;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t
 shaderBufferInt64Atomics	glfw/deps/glad/vulkan.h	/^    VkBool32                              shaderBufferInt64Atomics;$/;"	m	struct:VkPhysicalDeviceShaderAtomicInt64Features	typeref:typename:VkBool32
 shaderBufferInt64Atomics	glfw/deps/glad/vulkan.h	/^    VkBool32                           shaderBufferInt64Atomics;$/;"	m	struct:VkPhysicalDeviceVulkan12Features	typeref:typename:VkBool32
+shaderCapacity	src/decls.c	/^Capacity shaderCapacity;$/;"	v	typeref:typename:Capacity
 shaderClipDistance	glfw/deps/glad/vulkan.h	/^    VkBool32                 shaderClipDistance;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 shaderCullDistance	glfw/deps/glad/vulkan.h	/^    VkBool32                 shaderCullDistance;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 shaderDemoteToHelperInvocation	glfw/deps/glad/vulkan.h	/^    VkBool32                           shaderDemoteToHelperInvocation;$/;"	m	struct:VkPhysicalDeviceVulkan13Features	typeref:typename:VkBool32
@@ -26281,6 +26317,7 @@ shaderUniformTexelBufferArrayNonUniformIndexing	glfw/deps/glad/vulkan.h	/^    Vk
 shaderUniformTexelBufferArrayNonUniformIndexing	glfw/deps/glad/vulkan.h	/^    VkBool32                 shaderUniformTexelBufferArrayNonUniformIndexing;$/;"	m	struct:VkPhysicalDeviceDescriptorIndexingFeatures	typeref:typename:VkBool32
 shaderZeroInitializeWorkgroupMemory	glfw/deps/glad/vulkan.h	/^    VkBool32                           shaderZeroInitializeWorkgroupMemory;$/;"	m	struct:VkPhysicalDeviceVulkan13Features	typeref:typename:VkBool32
 shaderZeroInitializeWorkgroupMemory	glfw/deps/glad/vulkan.h	/^    VkBool32         shaderZeroInitializeWorkgroupMemory;$/;"	m	struct:VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures	typeref:typename:VkBool32
+shaders	src/decls.c	/^uint32_t* shaders;$/;"	v	typeref:typename:uint32_t *
 shape_AA	glfw/deps/nuklear.h	/^    enum nk_anti_aliasing shape_AA; \/* shape anti-aliasing flag can be turned off if you are ti/;"	m	struct:nk_convert_config	typeref:enum:nk_anti_aliasing
 shape_AA	glfw/deps/nuklear.h	/^    enum nk_anti_aliasing shape_AA;$/;"	m	struct:nk_draw_list	typeref:enum:nk_anti_aliasing
 share	glfw/src/internal.h	/^    _GLFWwindow*  share;$/;"	m	struct:_GLFWctxconfig	typeref:typename:_GLFWwindow *
@@ -26289,6 +26326,7 @@ sharingMode	glfw/deps/glad/vulkan.h	/^    VkSharingMode            sharingMode;$
 sharingMode	glfw/deps/glad/vulkan.h	/^    VkSharingMode            sharingMode;$/;"	m	struct:VkImageCreateInfo	typeref:typename:VkSharingMode
 shcore	glfw/src/win32_platform.h	/^    } shcore;$/;"	m	struct:_GLFWlibraryWin32	typeref:struct:_GLFWlibraryWin32::__anonfddb0c680908
 shiftIndex	glfw/src/wl_platform.h	/^        xkb_mod_index_t         shiftIndex;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980508	typeref:typename:xkb_mod_index_t
+shininess	include/render.h	/^  float shininess;$/;"	m	struct:__anon5c99124e0308	typeref:typename:float
 shm	glfw/src/wl_platform.h	/^    struct wl_shm*              shm;$/;"	m	struct:_GLFWlibraryWayland	typeref:struct:wl_shm *
 shouldClose	glfw/src/internal.h	/^    GLFWbool            shouldClose;$/;"	m	struct:_GLFWwindow	typeref:typename:GLFWbool
 showCursor	glfw/src/cocoa_window.m	/^static void showCursor(_GLFWwindow* window)$/;"	f
@@ -26326,6 +26364,7 @@ size	glfw/deps/nuklear.h	/^struct nk_cursor {struct nk_image img; struct nk_vec2
 size	glfw/deps/nuklear.h	/^struct nk_memory {void *ptr;nk_size size;};$/;"	m	struct:nk_memory	typeref:typename:nk_size
 size	glfw/include/GLFW/glfw3.h	/^    unsigned int size;$/;"	m	struct:GLFWgammaramp	typeref:typename:unsigned int
 size	glfw/src/internal.h	/^        GLFWwindowsizefun         size;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowsizefun
+size	include/util.h	/^	size_t size;$/;"	m	struct:__anon7081f46c0108	typeref:typename:size_t
 slider	glfw/deps/nuklear.h	/^    struct nk_style_slider slider;$/;"	m	struct:nk_style	typeref:struct:nk_style_slider
 sliderCount	glfw/src/win32_joystick.c	/^    int                     sliderCount;$/;"	m	struct:_GLFWobjenumWin32	typeref:typename:int	file:
 slot	glfw/deps/nuklear.h	/^    int slot;$/;"	m	struct:nk_chart	typeref:typename:int
@@ -26379,6 +26418,7 @@ spc	glfw/deps/nuklear.h	/^    struct nk_tt_pack_context spc;$/;"	m	struct:nk_fon
 specVersion	glfw/deps/glad/vulkan.h	/^    uint32_t          specVersion;$/;"	m	struct:VkExtensionProperties	typeref:typename:uint32_t
 specVersion	glfw/deps/glad/vulkan.h	/^    uint32_t          specVersion;$/;"	m	struct:VkLayerProperties	typeref:typename:uint32_t
 specVersion	glfw/src/internal.h	/^    uint32_t        specVersion;$/;"	m	struct:VkExtensionProperties	typeref:typename:uint32_t
+specular	include/render.h	/^  vec3 specular;$/;"	m	struct:__anon5c99124e0308	typeref:typename:vec3
 splitInstanceBindRegionCount	glfw/deps/glad/vulkan.h	/^    uint32_t           splitInstanceBindRegionCount;$/;"	m	struct:VkBindImageMemoryDeviceGroupInfo	typeref:typename:uint32_t
 splitview	glfw/examples/CMakeLists.txt	/^add_executable(splitview WIN32 MACOSX_BUNDLE splitview.c ${ICON} ${GLAD_GL})$/;"	t
 srcAccessMask	glfw/deps/glad/vulkan.h	/^    VkAccessFlags            srcAccessMask;$/;"	m	struct:VkBufferMemoryBarrier	typeref:typename:VkAccessFlags
@@ -26707,6 +26747,7 @@ table.markdownTable td	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.
 table.markdownTable th	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.sm-dox a:active,.sm-dox a:hover,.sm-dox a.highlighted,.sm-dox/;"	s
 table_count	glfw/deps/nuklear.h	/^    unsigned int table_count;$/;"	m	struct:nk_window	typeref:typename:unsigned int
 tables	glfw/deps/nuklear.h	/^    struct nk_table *tables;$/;"	m	struct:nk_window	typeref:struct:nk_table *
+target	include/render.h	/^	vec3 target;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
 target_path	glfw/CMake/GenerateMappings.cmake	/^set(target_path "${CMAKE_ARGV4}")$/;"	v
 tbl	glfw/deps/nuklear.h	/^    struct nk_table tbl;$/;"	m	union:nk_page_data	typeref:struct:nk_table
 tearing	glfw/tests/CMakeLists.txt	/^add_executable(tearing WIN32 MACOSX_BUNDLE tearing.c ${GLAD_GL})$/;"	t
@@ -26773,6 +26814,7 @@ test_tests_SOURCES	cglm/Makefile.am	/^test_tests_SOURCES=\\$/;"	m
 tests	cglm/meson.build	/^test_exe = executable('tests',$/;"	B
 tests_common_h	cglm/test/include/common.h	/^#define tests_common_h$/;"	d
 tests_h	cglm/test/tests.h	/^#define tests_h$/;"	d
+texCoords	include/render.h	/^  vec3 texCoords;$/;"	m	struct:__anon5c99124e0108	typeref:typename:vec3
 tex_height	glfw/deps/nuklear.h	/^    int tex_height;$/;"	m	struct:nk_font_atlas	typeref:typename:int
 tex_height	glfw/tests/triangle-vulkan.c	/^    int32_t tex_width, tex_height;$/;"	m	struct:texture_object	typeref:typename:int32_t	file:
 tex_width	glfw/deps/nuklear.h	/^    int tex_width;$/;"	m	struct:nk_font_atlas	typeref:typename:int
@@ -26975,6 +27017,7 @@ type	glfw/deps/nuklear.h	/^    unsigned char type,padding;$/;"	m	struct:nk_tt_ve
 type	glfw/deps/nuklear.h	/^    unsigned int type;$/;"	m	struct:nk_memory_status	typeref:typename:unsigned int
 type	glfw/src/internal.h	/^    uint8_t         type;$/;"	m	struct:_GLFWmapelement	typeref:typename:uint8_t
 type	glfw/src/win32_joystick.h	/^    int                     type;$/;"	m	struct:_GLFWjoyobjectWin32	typeref:typename:int
+type	include/render.h	/^  char* type;$/;"	m	struct:__anon5c99124e0208	typeref:typename:char *
 types	glfw/src/wl_init.c	/^#define types /;"	d	file:
 u	cglm/include/cglm/types-struct.h	/^    float u;$/;"	m	struct:vec2s::__anon5cec09d90308	typeref:typename:float
 u	cglm/include/cglm/types-struct.h	/^    int u;$/;"	m	struct:ivec2s::__anon5cec09d90908	typeref:typename:int
@@ -27030,9 +27073,9 @@ uniformTexelBufferOffsetSingleTexelAlignment	glfw/deps/glad/vulkan.h	/^    VkBoo
 uninstall	glfw/CMakeLists.txt	/^        add_custom_target(uninstall$/;"	t
 unitNumber	glfw/src/cocoa_platform.h	/^    uint32_t            unitNumber;$/;"	E	struct:_GLFWmonitorNS
 unlockPointer	glfw/src/wl_window.c	/^static void unlockPointer(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
-unmapFile	src/util/fileIO.c	/^void unmapFile(const char *file, size_t len) { munmap((void *)file, len); }$/;"	f	typeref:typename:void
 unmarkText	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 unnormalizedCoordinates	glfw/deps/glad/vulkan.h	/^    VkBool32                 unnormalizedCoordinates;$/;"	m	struct:VkSamplerCreateInfo	typeref:typename:VkBool32
+up	include/render.h	/^	vec3 up;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
 updateCursorImage	glfw/src/cocoa_window.m	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f
 updateCursorImage	glfw/src/win32_window.c	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 updateCursorImage	glfw/src/x11_window.c	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
@@ -27118,11 +27161,13 @@ value	glfw/deps/nuklear.h	/^    union nk_property value;$/;"	m	struct:nk_propert
 value	glfw/deps/nuklear.h	/^template<typename T, int size_diff> struct nk_helper{enum {value = size_diff};};$/;"	e	enum:nk_helper::__anonb47b8ca70303
 value	glfw/deps/nuklear.h	/^template<typename T> struct nk_helper<T,0>{enum {value = nk_alignof<T>::value};};$/;"	e	enum:nk_helper::__anonb47b8ca70403
 values	glfw/deps/nuklear.h	/^    nk_uint values[NK_VALUE_PAGE_CAPACITY];$/;"	m	struct:nk_table	typeref:typename:nk_uint[]
+vao	include/render.h	/^	uint32_t vao, vbo, ebo;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t
 variableMultisampleRate	glfw/deps/glad/vulkan.h	/^    VkBool32                 variableMultisampleRate;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 variablePointers	glfw/deps/glad/vulkan.h	/^    VkBool32                           variablePointers;$/;"	m	struct:VkPhysicalDeviceVariablePointersFeatures	typeref:typename:VkBool32
 variablePointers	glfw/deps/glad/vulkan.h	/^    VkBool32                           variablePointers;$/;"	m	struct:VkPhysicalDeviceVulkan11Features	typeref:typename:VkBool32
 variablePointersStorageBuffer	glfw/deps/glad/vulkan.h	/^    VkBool32                           variablePointersStorageBuffer;$/;"	m	struct:VkPhysicalDeviceVariablePointersFeatures	typeref:typename:VkBool32
 variablePointersStorageBuffer	glfw/deps/glad/vulkan.h	/^    VkBool32                           variablePointersStorageBuffer;$/;"	m	struct:VkPhysicalDeviceVulkan11Features	typeref:typename:VkBool32
+vbo	include/render.h	/^	uint32_t vao, vbo, ebo;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t
 vec2	cglm/docs/source/vec2.rst	/^vec2$/;"	H
 vec2	cglm/include/cglm/types.h	/^typedef float                   vec2[2];$/;"	t	typeref:typename:float[2]
 vec2 extra	cglm/docs/source/vec2-ext.rst	/^vec2 extra$/;"	H
@@ -27182,6 +27227,8 @@ vertices	glfw/tests/msaa.c	/^static const vec2 vertices[4] =$/;"	v	typeref:typen
 vertices	glfw/tests/reopen.c	/^static const vec2 vertices[4] =$/;"	v	typeref:typename:const vec2[4]	file:
 vertices	glfw/tests/tearing.c	/^} vertices[4] =$/;"	v	typeref:typename:const struct __anond79569210108[4]
 vertices	glfw/tests/triangle-vulkan.c	/^    } vertices;$/;"	m	struct:demo	typeref:struct:demo::__anonaa1655ab0308	file:
+vertices	include/render.h	/^  Vertex* vertices;$/;"	m	struct:__anon5c99124e0408	typeref:typename:Vertex *
+vertices	src/main.c	/^float vertices[] = {-0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f};$/;"	v	typeref:typename:float[]
 vi	glfw/tests/triangle-vulkan.c	/^        VkPipelineVertexInputStateCreateInfo vi;$/;"	m	struct:demo::__anonaa1655ab0308	typeref:typename:VkPipelineVertexInputStateCreateInfo	file:
 vi_attrs	glfw/tests/triangle-vulkan.c	/^        VkVertexInputAttributeDescription vi_attrs[2];$/;"	m	struct:demo::__anonaa1655ab0308	typeref:typename:VkVertexInputAttributeDescription[2]	file:
 vi_bindings	glfw/tests/triangle-vulkan.c	/^        VkVertexInputBindingDescription vi_bindings[1];$/;"	m	struct:demo::__anonaa1655ab0308	typeref:typename:VkVertexInputBindingDescription[1]	file:

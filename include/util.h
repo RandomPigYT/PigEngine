@@ -2,11 +2,18 @@
 #define PIG_UTIL_H
 
 #include <stddef.h>
+#include <stdint.h>
 
-// Returns pointer with mapped file and store file size in len
-char *openFile(const char *path, size_t *len);
+typedef struct {
 
-// Unmaps file
-void unmapFile(const char *file, size_t len);
+	size_t size;
+	size_t capacity;
+
+} Capacity;
+
+
+
+char *openFile(const char *path);
+
 
 #endif  // PIG_UTIL_H

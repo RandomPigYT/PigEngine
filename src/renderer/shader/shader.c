@@ -8,12 +8,10 @@
 #include "../../../include/util.h"
 
 uint32_t initShader(const char *vertexPath, const char *fragmentPath) {
-  size_t vertexSrcSize, fragSrcSize;
-
   // Read in the code
 
-  char *vertexCode = openFile(vertexPath, &vertexSrcSize);
-  char *fragmentCode = openFile(fragmentPath, &fragSrcSize);
+  char *vertexCode = openFile(vertexPath);
+  char *fragmentCode = openFile(fragmentPath);
 
   if (vertexCode == NULL) {
     fprintf(stderr, "Failed to read vertex shader file");
@@ -47,7 +45,7 @@ uint32_t initShader(const char *vertexPath, const char *fragmentPath) {
     exit(EXIT_FAILURE);
   }
 
-  // Fragmen shader
+  // Fragment shader
 
   fragment = glCreateShader(GL_FRAGMENT_SHADER);
   glShaderSource(fragment, 1, (const char *const *)&fragmentCode, NULL);
@@ -86,8 +84,8 @@ uint32_t initShader(const char *vertexPath, const char *fragmentPath) {
   glDeleteShader(vertex);
   glDeleteShader(fragment);
 
-  unmapFile(vertexCode, vertexSrcSize);
-  unmapFile(fragmentCode, fragSrcSize);
+  free(vertexCode);
+  free(fragmentCode);
 
   return id;
 }
