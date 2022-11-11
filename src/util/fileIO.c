@@ -19,13 +19,11 @@ char *openFile(const char *path) {
     perror("couldn't get file size\n");
 
   char *file = malloc(sb.st_size + 1);
-	
-	read(fd, file, sb.st_size);
-	file[sb.st_size] = 0;	// NULL terminating
 
+  read(fd, file, sb.st_size);
+  file[sb.st_size] = 0;  // NULL terminating
 
   close(fd);
 
   return file;
 }
-

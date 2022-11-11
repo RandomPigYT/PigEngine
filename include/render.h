@@ -6,118 +6,33 @@
 #include <GLFW/glfw3.h>
 #include <cglm/cglm.h>
 #include <cglm/types.h>
-#include <stddef.h>
 #include <stdint.h>
 
 #include "glad/glad.h"
-#include "util.h"
 
-typedef struct {
+struct vertex {
+  vec3 position;
+  vec3 normal;
+  vec3 textureCoords;
+};
 
-  vec3 pos;
-  vec3 normals;
-  vec3 texCoords;
+struct texture {};
 
-} Vertex;
+struct mesh {
+  struct vertex* vertices;
+  struct texture* textures;
+  uint32_t indices;
 
-typedef struct {
+  uint32_t numVertices;
+  uint32_t numIndices;
+  uint32_t numTextures;
 
-  uint32_t id;
-  char* type;
+  uint32_t vao, vbo, ebo;
+};
 
-} Texture;
-
-typedef struct {
-
-  vec3 ambient;
-  vec3 diffuse;
-  vec3 specular;
-  float shininess;
-
-} Material;
-
-typedef struct {
-
-  Vertex* vertices;
-  uint32_t* indices;
-  // Texture* textures;
-	
-	size_t numVertices;
-	size_t numIndices;
-	// size_t numTextures;
-	
-	vec3 pos;
-	vec3 rotation;
-	float scale;
-
-  Material material;
-  uint32_t shader;
-
-	uint32_t vao, vbo, ebo;
-
-} Mesh;
-
-
-typedef struct {
-
-	Mesh* meshes;
-	Capacity meshCapacity;
-	
-	vec3 pos;
-	vec3 rotation;
-	vec3 centre;
-	float scale;
-
-}	Object;
-
-
-typedef struct {
-
-	vec3 pos;
-	vec3 colour;
-
-}	Light;
-
-typedef struct {
-
-	vec3 pos;
-	vec3 target;
-
-	vec3 Direction;
-	vec3 up;
-	vec3 right;
-
-
-}	Camera;
-
-typedef struct {
-
-	uint32_t id;
-
-	Object* objects;
-	Capacity objectCapacity;
-
-	Light* lights;
-	Capacity lightCapacity;
-
-	Camera camera;
-
-
-}	Scene;
-
-
-extern uint32_t* shaders;
-extern Capacity shaderCapacity;
-
-extern Scene* scenes;
-extern Capacity sceneCapacity;
-
-
-uint32_t createScene();
-void createMesh(Mesh mesh, Scene scene);
-void createLight(vec3 pos, vec3 colour, Scene scene);
-uint32_t renderScene(uint32_t id);
-
-
+struct model {
+  struct mesh* meshes;
+  uint32_t numMeshes;
+};
 
 #endif  // PIG_RENDER_H

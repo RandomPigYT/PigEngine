@@ -35,9 +35,8 @@ GLFWwindow *init(int w, int h, const char *title) {
   }
 
   glViewport(0, 0, w, h);
-	
-	
-	glfwSwapInterval(1);
+
+  glfwSwapInterval(1);
 
   return window;
 }

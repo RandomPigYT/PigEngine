@@ -383,6 +383,15 @@ CMAKE_SYSTEM_VERSION	glfw/CMake/x86_64-w64-mingw32-clang.cmake	/^SET(CMAKE_SYSTE
 CMAKE_SYSTEM_VERSION	glfw/CMake/x86_64-w64-mingw32.cmake	/^SET(CMAKE_SYSTEM_VERSION 1)$/;"	v
 CMake (All platforms)	cglm/README.md	/^### CMake (All platforms)$/;"	S	section:🎥 OpenGL Mathematics (glm) for `C`""🔨 Build
 CMake (All platforms):	cglm/docs/source/build.rst	/^CMake (All platforms):$/;"	c	title:Build cglm
+COMMAND_EMPTY	include/tinyobj_loader_c.h	/^  COMMAND_EMPTY,$/;"	e	enum:__anon479917050703
+COMMAND_F	include/tinyobj_loader_c.h	/^  COMMAND_F,$/;"	e	enum:__anon479917050703
+COMMAND_G	include/tinyobj_loader_c.h	/^  COMMAND_G,$/;"	e	enum:__anon479917050703
+COMMAND_MTLLIB	include/tinyobj_loader_c.h	/^  COMMAND_MTLLIB$/;"	e	enum:__anon479917050703
+COMMAND_O	include/tinyobj_loader_c.h	/^  COMMAND_O,$/;"	e	enum:__anon479917050703
+COMMAND_USEMTL	include/tinyobj_loader_c.h	/^  COMMAND_USEMTL,$/;"	e	enum:__anon479917050703
+COMMAND_V	include/tinyobj_loader_c.h	/^  COMMAND_V,$/;"	e	enum:__anon479917050703
+COMMAND_VN	include/tinyobj_loader_c.h	/^  COMMAND_VN,$/;"	e	enum:__anon479917050703
+COMMAND_VT	include/tinyobj_loader_c.h	/^  COMMAND_VT,$/;"	e	enum:__anon479917050703
 COMPOUND_STRING	glfw/src/x11_platform.h	/^    Atom            COMPOUND_STRING;$/;"	m	struct:_GLFWlibraryX11	typeref:typename:Atom
 COM_NO_WINDOWS_H	glfw/deps/mingw/dinput.h	/^#define COM_NO_WINDOWS_H$/;"	d
 CONSOLE_BINARIES	glfw/examples/CMakeLists.txt	/^set(CONSOLE_BINARIES offscreen)$/;"	v
@@ -398,8 +407,6 @@ CURSOR_FRAME_COUNT	glfw/tests/cursor.c	/^#define CURSOR_FRAME_COUNT /;"	d	file:
 CYAN	cglm/test/include/common.h	/^#define CYAN /;"	d
 CYAN	cglm/test/include/common.h	/^#define CYAN$/;"	d
 C_Cpp.default.configurationProvider	cglm/.vscode/settings.json	/^  "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",$/;"	s
-Camera	include/render.h	/^}	Camera;$/;"	t	typeref:struct:__anon5c99124e0708
-Capacity	include/util.h	/^} Capacity;$/;"	t	typeref:struct:__anon7081f46c0108
 ChangeProperty	glfw/src/x11_platform.h	/^        PFN_XChangeProperty ChangeProperty;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XChangeProperty
 ChangeWindowAttributes	glfw/src/x11_platform.h	/^        PFN_XChangeWindowAttributes ChangeWindowAttributes;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XChangeWindowAttributes
 ChangeWindowMessageFilterEx	glfw/src/win32_platform.h	/^#define ChangeWindowMessageFilterEx /;"	d
@@ -412,6 +419,8 @@ CloseDisplay	glfw/src/x11_platform.h	/^        PFN_XCloseDisplay CloseDisplay;$/
 CloseIM	glfw/src/x11_platform.h	/^        PFN_XCloseIM CloseIM;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XCloseIM
 Cmake options with Defaults:	cglm/README.md	/^##### Cmake options with Defaults:$/;"	T	subsection:🎥 OpenGL Mathematics (glm) for `C`""🔨 Build""CMake (All platforms)
 Code Style	cglm/CONTRIBUTING.md	/^# Code Style$/;"	c
+Command	include/tinyobj_loader_c.h	/^} Command;$/;"	t	typeref:struct:__anon479917050808
+CommandType	include/tinyobj_loader_c.h	/^} CommandType;$/;"	t	typeref:enum:__anon479917050703
 Compiling GLFW	glfw/README.md	/^## Compiling GLFW$/;"	s	chapter:GLFW
 Contact	glfw/README.md	/^## Contact$/;"	s	chapter:GLFW
 Contents	glfw/docs/CONTRIBUTING.md	/^## Contents$/;"	s	chapter:Contribution Guide
@@ -1185,7 +1194,6 @@ DestroySurface	glfw/src/internal.h	/^        PFN_eglDestroySurface       Destroy
 DestroyWindow	glfw/src/x11_platform.h	/^        PFN_XDestroyWindow DestroyWindow;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XDestroyWindow
 DestroyWindow	glfw/src/x11_platform.h	/^    PFNGLXDESTROYWINDOWPROC             DestroyWindow;$/;"	m	struct:_GLFWlibraryGLX	typeref:typename:PFNGLXDESTROYWINDOWPROC
 DirectInput8Create	glfw/src/win32_platform.h	/^#define DirectInput8Create /;"	d
-Direction	include/render.h	/^	vec3 Direction;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
 DisplayKeycodes	glfw/src/x11_platform.h	/^        PFN_XDisplayKeycodes DisplayKeycodes;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XDisplayKeycodes
 DllMain	glfw/src/win32_init.c	/^BOOL WINAPI DllMain(HINSTANCE instance, DWORD reason, LPVOID reserved)$/;"	f	typeref:typename:BOOL WINAPI
 Documentation (Sphinx):	cglm/docs/source/build.rst	/^Documentation (Sphinx):$/;"	c	title:Build cglm
@@ -5558,6 +5566,9 @@ GetXCBConnection	glfw/src/x11_platform.h	/^        PFN_XGetXCBConnection GetXCBC
 Getting Started	cglm/docs/source/getting_started.rst	/^Getting Started$/;"	H
 GrabPointer	glfw/src/x11_platform.h	/^        PFN_XGrabPointer GrabPointer;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XGrabPointer
 GuidEffect	glfw/deps/mingw/dinput.h	/^  GUID        GuidEffect;$/;"	m	struct:DIFILEEFFECT	typeref:typename:GUID
+HASH_TABLE_DEFAULT_SIZE	include/tinyobj_loader_c.h	/^#define HASH_TABLE_DEFAULT_SIZE /;"	d
+HASH_TABLE_ERROR	include/tinyobj_loader_c.h	/^#define HASH_TABLE_ERROR /;"	d
+HASH_TABLE_SUCCESS	include/tinyobj_loader_c.h	/^#define HASH_TABLE_SUCCESS /;"	d
 HAVE_WINAPIFAMILY	src/glad.c	/^#define HAVE_WINAPIFAMILY /;"	d	file:
 HELP	glfw/tests/glfwinfo.c	/^    enum { PLATFORM, CLIENT, CONTEXT, BEHAVIOR, DEBUG_CONTEXT, FORWARD, HELP,$/;"	e	enum:main::__anone34d1f730103	file:
 HidCode	glfw/deps/mingw/xinput.h	/^    BYTE HidCode;$/;"	m	struct:_XINPUT_KEYSTROKE	typeref:typename:BYTE
@@ -5780,6 +5791,9 @@ INT_LEAST64_MAX	glfw/deps/vs2008/stdint.h	/^#define INT_LEAST64_MAX /;"	d
 INT_LEAST64_MIN	glfw/deps/vs2008/stdint.h	/^#define INT_LEAST64_MIN /;"	d
 INT_LEAST8_MAX	glfw/deps/vs2008/stdint.h	/^#define INT_LEAST8_MAX /;"	d
 INT_LEAST8_MIN	glfw/deps/vs2008/stdint.h	/^#define INT_LEAST8_MIN /;"	d
+IS_DIGIT	include/tinyobj_loader_c.h	/^#define IS_DIGIT(/;"	d
+IS_NEW_LINE	include/tinyobj_loader_c.h	/^#define IS_NEW_LINE(/;"	d
+IS_SPACE	include/tinyobj_loader_c.h	/^#define IS_SPACE(/;"	d
 IS_UWP	src/glad.c	/^#define IS_UWP /;"	d	file:
 IconifyWindow	glfw/src/x11_platform.h	/^        PFN_XIconifyWindow IconifyWindow;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XIconifyWindow
 ImageCreate	glfw/src/x11_platform.h	/^        PFN_XcursorImageCreate ImageCreate;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0708	typeref:typename:PFN_XcursorImageCreate
@@ -5982,7 +5996,7 @@ LPSYSMOUSEA	glfw/deps/mingw/dinput.h	/^typedef struct SysMouseA *LPSYSMOUSEA;$/;
 LSRequiresCarbon	glfw/CMake/Info.plist.in	/^	<key>LSRequiresCarbon<\/key>$/;"	k
 LibraryLoadImage	glfw/src/x11_platform.h	/^        PFN_XcursorLibraryLoadImage LibraryLoadImage;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0708	typeref:typename:PFN_XcursorLibraryLoadImage
 License	cglm/README.md	/^## License$/;"	s	chapter:🎥 OpenGL Mathematics (glm) for `C`
-Light	include/render.h	/^}	Light;$/;"	t	typeref:struct:__anon5c99124e0608
+LineInfo	include/tinyobj_loader_c.h	/^} LineInfo;$/;"	t	typeref:struct:__anon479917050608
 LookupString	glfw/src/x11_platform.h	/^        PFN_XLookupString LookupString;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XLookupString
 MAGENTA	cglm/test/include/common.h	/^#define MAGENTA /;"	d
 MAGENTA	cglm/test/include/common.h	/^#define MAGENTA$/;"	d
@@ -6020,9 +6034,7 @@ MakeCurrent	glfw/src/win32_platform.h	/^    PFN_wglMakeCurrent                  
 MakeCurrent	glfw/src/x11_platform.h	/^    PFNGLXMAKECURRENTPROC               MakeCurrent;$/;"	m	struct:_GLFWlibraryGLX	typeref:typename:PFNGLXMAKECURRENTPROC
 MapRaised	glfw/src/x11_platform.h	/^        PFN_XMapRaised MapRaised;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XMapRaised
 MapWindow	glfw/src/x11_platform.h	/^        PFN_XMapWindow MapWindow;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XMapWindow
-Material	include/render.h	/^} Material;$/;"	t	typeref:struct:__anon5c99124e0308
 Memory Allocation:	cglm/docs/source/troubleshooting.rst	/^Memory Allocation:$/;"	c	title:Troubleshooting
-Mesh	include/render.h	/^} Mesh;$/;"	t	typeref:struct:__anon5c99124e0408
 Meson (All platforms)	cglm/README.md	/^### Meson (All platforms)$/;"	S	section:🎥 OpenGL Mathematics (glm) for `C`""🔨 Build
 Meson (All platforms):	cglm/docs/source/build.rst	/^Meson (All platforms):$/;"	c	title:Build cglm
 Meson options with Defaults:	cglm/README.md	/^##### Meson options with Defaults:$/;"	T	subsection:🎥 OpenGL Mathematics (glm) for `C`""🔨 Build""Meson (All platforms)
@@ -6627,7 +6639,6 @@ OSMesaGetColorBuffer	glfw/src/internal.h	/^#define OSMesaGetColorBuffer /;"	d
 OSMesaGetDepthBuffer	glfw/src/internal.h	/^#define OSMesaGetDepthBuffer /;"	d
 OSMesaGetProcAddress	glfw/src/internal.h	/^#define OSMesaGetProcAddress /;"	d
 OSMesaMakeCurrent	glfw/src/internal.h	/^#define OSMesaMakeCurrent /;"	d
-Object	include/render.h	/^}	Object;$/;"	t	typeref:struct:__anon5c99124e0508
 OpenIM	glfw/src/x11_platform.h	/^        PFN_XOpenIM OpenIM;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XOpenIM
 Option 1	cglm/README.md	/^#### Option 1$/;"	t	subsection:🎥 OpenGL Mathematics (glm) for `C`""How to use""Example: Computing MVP matrix
 Option 2	cglm/README.md	/^#### Option 2$/;"	t	subsection:🎥 OpenGL Mathematics (glm) for `C`""How to use""Example: Computing MVP matrix
@@ -8751,6 +8762,7 @@ PFN_xkb_state_update_mask	glfw/src/wl_platform.h	/^typedef enum xkb_state_compon
 PIG_CAMERA_H	include/camera.h	/^#define PIG_CAMERA_H$/;"	d
 PIG_ENGINE_H	include/PigEngine.h	/^#define PIG_ENGINE_H$/;"	d
 PIG_INPUT_H	include/input.h	/^#define PIG_INPUT_H$/;"	d
+PIG_MODEL_H	include/model.h	/^#define PIG_MODEL_H$/;"	d
 PIG_RENDER_H	include/render.h	/^#define PIG_RENDER_H$/;"	d
 PIG_SHADER_H	include/shader.h	/^#define PIG_SHADER_H$/;"	d
 PIG_UTIL_H	include/util.h	/^#define PIG_UTIL_H$/;"	d
@@ -8881,7 +8893,6 @@ STRATEGY_NAME_LOSE	glfw/tests/glfwinfo.c	/^#define STRATEGY_NAME_LOSE /;"	d	file
 STRATEGY_NAME_NONE	glfw/tests/glfwinfo.c	/^#define STRATEGY_NAME_NONE /;"	d	file:
 SYN_DROPPED	glfw/src/linux_joystick.c	/^#define SYN_DROPPED /;"	d	file:
 SaveContext	glfw/src/x11_platform.h	/^        PFN_XSaveContext SaveContext;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XSaveContext
-Scene	include/render.h	/^}	Scene;$/;"	t	typeref:struct:__anon5c99124e0808
 SelectEventDetails	glfw/src/x11_platform.h	/^        PFN_XkbSelectEventDetails SelectEventDetails;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0408	typeref:typename:PFN_XkbSelectEventDetails
 SelectEvents	glfw/src/x11_platform.h	/^        PFN_XISelectEvents SelectEvents;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0b08	typeref:typename:PFN_XISelectEvents
 SelectInput	glfw/src/x11_platform.h	/^        PFN_XRRSelectInput SelectInput;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0308	typeref:typename:PFN_XRRSelectInput
@@ -9367,11 +9378,26 @@ TEST_OK	cglm/test/include/common.h	/^#define TEST_OK /;"	d
 TEST_RUNNER_PARAMS	cglm/test/CMakeLists.txt	/^set(TEST_RUNNER_PARAMS "")$/;"	v
 TEST_SUCCESS	cglm/test/include/common.h	/^#define TEST_SUCCESS /;"	d
 TIME_UTC	glfw/deps/tinycthread.h	/^    #define TIME_UTC /;"	d
+TINOBJ_LOADER_C_H_	include/tinyobj_loader_c.h	/^#define TINOBJ_LOADER_C_H_$/;"	d
 TINYCTHREAD	glfw/examples/CMakeLists.txt	/^set(TINYCTHREAD "${GLFW_SOURCE_DIR}\/deps\/tinycthread.h"$/;"	v
 TINYCTHREAD	glfw/tests/CMakeLists.txt	/^set(TINYCTHREAD "${GLFW_SOURCE_DIR}\/deps\/tinycthread.h"$/;"	v
 TINYCTHREAD_VERSION	glfw/deps/tinycthread.h	/^#define TINYCTHREAD_VERSION /;"	d
 TINYCTHREAD_VERSION_MAJOR	glfw/deps/tinycthread.h	/^#define TINYCTHREAD_VERSION_MAJOR /;"	d
 TINYCTHREAD_VERSION_MINOR	glfw/deps/tinycthread.h	/^#define TINYCTHREAD_VERSION_MINOR /;"	d
+TINYOBJ_CALLOC	include/tinyobj_loader_c.h	/^#define TINYOBJ_CALLOC /;"	d
+TINYOBJ_ERROR_EMPTY	include/tinyobj_loader_c.h	/^#define TINYOBJ_ERROR_EMPTY /;"	d
+TINYOBJ_ERROR_FILE_OPERATION	include/tinyobj_loader_c.h	/^#define TINYOBJ_ERROR_FILE_OPERATION /;"	d
+TINYOBJ_ERROR_INVALID_PARAMETER	include/tinyobj_loader_c.h	/^#define TINYOBJ_ERROR_INVALID_PARAMETER /;"	d
+TINYOBJ_FLAG_TRIANGULATE	include/tinyobj_loader_c.h	/^#define TINYOBJ_FLAG_TRIANGULATE /;"	d
+TINYOBJ_FREE	include/tinyobj_loader_c.h	/^#define TINYOBJ_FREE /;"	d
+TINYOBJ_INVALID_INDEX	include/tinyobj_loader_c.h	/^#define TINYOBJ_INVALID_INDEX /;"	d
+TINYOBJ_LOADER_C_IMPLEMENTATION	src/load.c	/^#define TINYOBJ_LOADER_C_IMPLEMENTATION$/;"	d	file:
+TINYOBJ_MALLOC	include/tinyobj_loader_c.h	/^#define TINYOBJ_MALLOC /;"	d
+TINYOBJ_MAX_FACES_PER_F_LINE	include/tinyobj_loader_c.h	/^#define TINYOBJ_MAX_FACES_PER_F_LINE /;"	d
+TINYOBJ_MAX_FILEPATH	include/tinyobj_loader_c.h	/^#define TINYOBJ_MAX_FILEPATH /;"	d
+TINYOBJ_REALLOC	include/tinyobj_loader_c.h	/^#define TINYOBJ_REALLOC /;"	d
+TINYOBJ_REALLOC_SIZED	include/tinyobj_loader_c.h	/^#define TINYOBJ_REALLOC_SIZED(/;"	d
+TINYOBJ_SUCCESS	include/tinyobj_loader_c.h	/^#define TINYOBJ_SUCCESS /;"	d
 TISCopyCurrentKeyboardLayoutInputSource	glfw/src/cocoa_platform.h	/^#define TISCopyCurrentKeyboardLayoutInputSource _glfw.ns.tis.CopyCurrentKeyboardLayoutInputSourc/;"	M
 TISGetInputSourceProperty	glfw/src/cocoa_platform.h	/^#define TISGetInputSourceProperty _glfw.ns.tis.GetInputSourceProperty$/;"	M
 TORUS_MAJOR	glfw/examples/splitview.c	/^#define TORUS_MAJOR /;"	d	file:
@@ -9413,7 +9439,6 @@ Table of contents (click to go):	cglm/docs/source/vec3.rst	/^Table of contents (
 Table of contents (click to go):	cglm/docs/source/vec4-ext.rst	/^Table of contents (click to go):$/;"	c	title:vec4 extra
 Table of contents (click to go):	cglm/docs/source/vec4.rst	/^Table of contents (click to go):$/;"	c	title:vec4
 Terminate	glfw/src/internal.h	/^        PFN_eglTerminate            Terminate;$/;"	m	struct:_GLFWlibrary::__anon8afddc4e0d08	typeref:typename:PFN_eglTerminate
-Texture	include/render.h	/^} Texture;$/;"	t	typeref:struct:__anon5c99124e0208
 Thread	glfw/tests/threads.c	/^} Thread;$/;"	t	typeref:struct:__anon9a0fd3a20108	file:
 Transforms Order	cglm/docs/source/affine.rst	/^Transforms Order$/;"	c	title:3D Affine Transforms
 Transforms Order	cglm/docs/source/affine2d.rst	/^Transforms Order$/;"	c	title:2D Affine Transforms
@@ -10968,7 +10993,6 @@ Vertex	glfw/examples/triangle-opengl.c	/^} Vertex;$/;"	t	typeref:struct:Vertex	f
 Vertex	glfw/examples/triangle-opengles.c	/^typedef struct Vertex$/;"	s	file:
 Vertex	glfw/examples/triangle-opengles.c	/^} Vertex;$/;"	t	typeref:struct:Vertex	file:
 Vertex	glfw/examples/wave.c	/^struct Vertex$/;"	s	file:
-Vertex	include/render.h	/^} Vertex;$/;"	t	typeref:struct:__anon5c99124e0108
 Vibration	glfw/deps/mingw/xinput.h	/^    XINPUT_VIBRATION Vibration;$/;"	m	struct:_XINPUT_CAPABILITIES	typeref:typename:XINPUT_VIBRATION
 VirtualKey	glfw/deps/mingw/xinput.h	/^    WORD VirtualKey;$/;"	m	struct:_XINPUT_KEYSTROKE	typeref:typename:WORD
 VisualIDFromVisual	glfw/src/x11_platform.h	/^        PFN_XVisualIDFromVisual VisualIDFromVisual;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0108	typeref:typename:PFN_XVisualIDFromVisual
@@ -12394,17 +12418,17 @@ __anon1e865aaf0103	glfw/deps/glad/gl.h	/^typedef enum {$/;"	g
 __anon240187ce0108	glfw/examples/windows.c	/^        {$/;"	s	function:main	file:
 __anon4624b5da010a	glfw/deps/mingw/dinput.h	/^	__GNU_EXTENSION union {$/;"	u	struct:_DIACTIONA
 __anon4624b5da020a	glfw/deps/mingw/dinput.h	/^	__GNU_EXTENSION union {$/;"	u	struct:_DIACTIONW
+__anon479917050108	include/tinyobj_loader_c.h	/^typedef struct {$/;"	s
+__anon479917050208	include/tinyobj_loader_c.h	/^typedef struct {$/;"	s
+__anon479917050308	include/tinyobj_loader_c.h	/^typedef struct {$/;"	s
+__anon479917050408	include/tinyobj_loader_c.h	/^typedef struct {$/;"	s
+__anon479917050508	include/tinyobj_loader_c.h	/^typedef struct {$/;"	s
+__anon479917050608	include/tinyobj_loader_c.h	/^typedef struct {$/;"	s
+__anon479917050703	include/tinyobj_loader_c.h	/^typedef enum {$/;"	g
+__anon479917050808	include/tinyobj_loader_c.h	/^typedef struct {$/;"	s
 __anon4aebcbf20103	glfw/examples/boing.c	/^typedef enum { DRAW_BALL, DRAW_BALL_SHADOW } DRAW_BALL_ENUM;$/;"	g	file:
 __anon4aebcbf20208	glfw/examples/boing.c	/^typedef struct {float x; float y; float z;} vertex_t;$/;"	s	file:
 __anon4de363f90108	glfw/src/x11_init.c	/^        {$/;"	s	function:createKeyTables	file:
-__anon5c99124e0108	include/render.h	/^typedef struct {$/;"	s
-__anon5c99124e0208	include/render.h	/^typedef struct {$/;"	s
-__anon5c99124e0308	include/render.h	/^typedef struct {$/;"	s
-__anon5c99124e0408	include/render.h	/^typedef struct {$/;"	s
-__anon5c99124e0508	include/render.h	/^typedef struct {$/;"	s
-__anon5c99124e0608	include/render.h	/^typedef struct {$/;"	s
-__anon5c99124e0708	include/render.h	/^typedef struct {$/;"	s
-__anon5c99124e0808	include/render.h	/^typedef struct {$/;"	s
 __anon5cec09d90108	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
 __anon5cec09d90208	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
 __anon5cec09d90308	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:vec2s
@@ -12427,7 +12451,6 @@ __anon5cec09d91308	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:mat
 __anon5cec09d91408	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:mat3s
 __anon5cec09d91508	cglm/include/cglm/types-struct.h	/^  struct {$/;"	s	union:mat4s
 __anon63e12f6c0108	glfw/tests/events.c	/^{$/;"	s	file:
-__anon7081f46c0108	include/util.h	/^typedef struct {$/;"	s
 __anon7f31a9be0108	glfw/examples/offscreen.c	/^{$/;"	s	file:
 __anon878edb660108	glfw/src/wl_window.c	/^    {$/;"	s	function:keyboardHandleModifiers	file:
 __anon8afddc4e0108	glfw/src/internal.h	/^    struct {$/;"	s	struct:_GLFWinitconfig
@@ -13205,8 +13228,10 @@ alphaBlendOp	glfw/deps/glad/vulkan.h	/^    VkBlendOp                alphaBlendOp
 alphaToCoverageEnable	glfw/deps/glad/vulkan.h	/^    VkBool32                 alphaToCoverageEnable;$/;"	m	struct:VkPipelineMultisampleStateCreateInfo	typeref:typename:VkBool32
 alphaToOne	glfw/deps/glad/vulkan.h	/^    VkBool32                 alphaToOne;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 alphaToOneEnable	glfw/deps/glad/vulkan.h	/^    VkBool32                 alphaToOneEnable;$/;"	m	struct:VkPipelineMultisampleStateCreateInfo	typeref:typename:VkBool32
+alpha_texname	include/tinyobj_loader_c.h	/^  char *alpha_texname;              \/* map_d *\/$/;"	m	struct:__anon479917050108	typeref:typename:char *
 altIndex	glfw/src/wl_platform.h	/^        xkb_mod_index_t         altIndex;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980508	typeref:typename:xkb_mod_index_t
-ambient	include/render.h	/^  vec3 ambient;$/;"	m	struct:__anon5c99124e0308	typeref:typename:vec3
+ambient	include/tinyobj_loader_c.h	/^  float ambient[3];$/;"	m	struct:__anon479917050108	typeref:typename:float[3]
+ambient_texname	include/tinyobj_loader_c.h	/^  char *ambient_texname;            \/* map_Ka *\/$/;"	m	struct:__anon479917050108	typeref:typename:char *
 angle	glfw/examples/gears.c	/^static GLfloat angle = 0.f;$/;"	v	typeref:typename:GLfloat	file:
 angleType	glfw/src/internal.h	/^    int           angleType;$/;"	m	struct:_GLFWinitconfig	typeref:typename:int
 animate	glfw/examples/gears.c	/^static void animate(void)$/;"	f	typeref:typename:void	file:
@@ -13325,6 +13350,7 @@ basePipelineHandle	glfw/deps/glad/vulkan.h	/^    VkPipeline        basePipelineH
 basePipelineIndex	glfw/deps/glad/vulkan.h	/^    int32_t                  basePipelineIndex;$/;"	m	struct:VkComputePipelineCreateInfo	typeref:typename:int32_t
 basePipelineIndex	glfw/deps/glad/vulkan.h	/^    int32_t                  basePipelineIndex;$/;"	m	struct:VkGraphicsPipelineCreateInfo	typeref:typename:int32_t
 baseline_y_delta	glfw/deps/nuklear.h	/^   float baseline_y_delta;$/;"	m	struct:nk_text_edit_row	typeref:typename:float
+basename_len	include/tinyobj_loader_c.h	/^static size_t basename_len(const char *filename, size_t filename_length) {$/;"	f	typeref:typename:size_t
 begin	glfw/deps/nuklear.h	/^    int begin, end, count;$/;"	m	struct:nk_list_view	typeref:typename:int
 begin	glfw/deps/nuklear.h	/^    nk_size begin, end, last;$/;"	m	struct:nk_command_buffer	typeref:typename:nk_size
 begin	glfw/deps/nuklear.h	/^    nk_size begin;$/;"	m	struct:nk_popup_buffer	typeref:typename:nk_size
@@ -13433,6 +13459,7 @@ build	glfw/deps/nuklear.h	/^    struct nk_font_bake_data *build;$/;"	m	struct:nk
 build_args	cglm/meson.build	/^    build_args = '-DCGLM_EXPORTS'$/;"	V
 build_args	cglm/meson.build	/^build_args = []$/;"	V
 build_tests	cglm/meson_options.txt	/^option('build_tests', type : 'boolean', value : false, description : 'Build tests')$/;"	b
+bump_texname	include/tinyobj_loader_c.h	/^  char *bump_texname;               \/* map_bump, bump *\/$/;"	m	struct:__anon479917050108	typeref:typename:char *
 bundle	glfw/src/cocoa_platform.h	/^        CFBundleRef     bundle;$/;"	E
 button	glfw/deps/nuklear.h	/^    struct nk_style_button button;$/;"	m	struct:nk_style	typeref:struct:nk_style_button
 button	glfw/deps/nuklear.h	/^    struct nk_style_button button;$/;"	m	struct:nk_style_combo	typeref:struct:nk_style_button
@@ -13472,13 +13499,14 @@ callbacks	glfw/src/internal.h	/^    } callbacks;$/;"	m	struct:_GLFWwindow	typere
 calls	glfw/deps/nuklear.h	/^    nk_size calls;$/;"	m	struct:nk_buffer	typeref:typename:nk_size
 calls	glfw/deps/nuklear.h	/^    nk_size calls;$/;"	m	struct:nk_memory_status	typeref:typename:nk_size
 camera	cglm/docs/source/cam.rst	/^camera$/;"	H
-camera	include/render.h	/^	Camera camera;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Camera
 canBecomeKeyView	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 canBecomeKeyWindow	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWWindow
 canBecomeMainWindow	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWWindow
 cap	glfw/deps/nuklear.h	/^    nk_size cap;$/;"	m	struct:nk_pool	typeref:typename:nk_size
 capacity	glfw/deps/nuklear.h	/^    unsigned capacity;$/;"	m	struct:nk_pool	typeref:typename:unsigned
-capacity	include/util.h	/^	size_t capacity;$/;"	m	struct:__anon7081f46c0108	typeref:typename:size_t
+capacity	include/tinyobj_loader_c.h	/^  size_t capacity;$/;"	m	struct:__anon479917050508	typeref:typename:size_t
+capacity	include/util.h	/^  size_t capacity;$/;"	m	struct:capacity	typeref:typename:size_t
+capacity	include/util.h	/^struct capacity {$/;"	s
 capsLockIndex	glfw/src/wl_platform.h	/^        xkb_mod_index_t         capsLockIndex;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980508	typeref:typename:xkb_mod_index_t
 captureCursor	glfw/src/win32_window.c	/^static void captureCursor(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 captureCursor	glfw/src/x11_window.c	/^static void captureCursor(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
@@ -13491,7 +13519,6 @@ cbTypeSpecificParams	glfw/deps/mingw/dinput.h	/^	DWORD			cbTypeSpecificParams;$/
 cc	cglm/meson.build	/^cc = meson.get_compiler('c')$/;"	V
 cc	glfw/docs/spaces.svg	/^   sodipodi:docname="spaces.svg">$/;"	n	uri:http://creativecommons.org/ns#
 centerCursor	glfw/src/internal.h	/^    GLFWbool      centerCursor;$/;"	m	struct:_GLFWwndconfig	typeref:typename:GLFWbool
-centre	include/render.h	/^	vec3 centre;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
 cglm	cglm/CMakeLists.txt	/^project(cglm$/;"	p
 cglm	cglm/Makefile.am	/^cglmdir=$(includedir)\/cglm$/;"	d
 cglm	cglm/configure.ac	/^AC_INIT([cglm], [0.8.7], [info@recp.me])$/;"	p
@@ -13801,7 +13828,6 @@ colorWriteMask	glfw/deps/glad/vulkan.h	/^    VkColorComponentFlags    colorWrite
 color_space	glfw/tests/triangle-vulkan.c	/^    VkColorSpaceKHR color_space;$/;"	m	struct:demo	typeref:typename:VkColorSpaceKHR	file:
 colormap	glfw/src/x11_platform.h	/^    Colormap        colormap;$/;"	m	struct:_GLFWwindowX11	typeref:typename:Colormap
 colors	glfw/deps/nuklear.h	/^    struct nk_config_stack_color colors;$/;"	m	struct:nk_configuration_stacks	typeref:struct:nk_config_stack_color
-colour	include/render.h	/^	vec3 colour;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
 columns	glfw/deps/nuklear.h	/^    int columns;$/;"	m	struct:nk_row_layout	typeref:typename:int
 combinedImageSamplerDescriptorCount	glfw/deps/glad/vulkan.h	/^    uint32_t                           combinedImageSamplerDescriptorCount;$/;"	m	struct:VkSamplerYcbcrConversionImageFormatProperties	typeref:typename:uint32_t
 combo	glfw/deps/nuklear.h	/^    struct nk_style_combo combo;$/;"	m	struct:nk_style	typeref:struct:nk_style_combo
@@ -13923,6 +13949,7 @@ createTmpfileCloexec	glfw/src/wl_window.c	/^static int createTmpfileCloexec(char
 createWindow	glfw/src/internal.h	/^    GLFWbool (*createWindow)(_GLFWwindow*,const _GLFWwndconfig*,const _GLFWctxconfig*,const _GLF/;"	m	struct:_GLFWplatform	typeref:typename:GLFWbool (*)(_GLFWwindow *,const _GLFWwndconfig *,const _GLFWctxconfig *,const _GLFWfbconfig *)
 createWindowSurface	glfw/src/internal.h	/^    VkResult (*createWindowSurface)(VkInstance,_GLFWwindow*,const VkAllocationCallbacks*,VkSurfa/;"	m	struct:_GLFWplatform	typeref:typename:VkResult (*)(VkInstance,_GLFWwindow *,const VkAllocationCallbacks *,VkSurfaceKHR *)
 create_cursor_frame	glfw/tests/cursor.c	/^static GLFWcursor* create_cursor_frame(float t)$/;"	f	typeref:typename:GLFWcursor *	file:
+create_hash_table	include/tinyobj_loader_c.h	/^static void create_hash_table(size_t start_capacity, hash_table_t *hash_table) {$/;"	f	typeref:typename:void
 create_tracking_cursor	glfw/tests/cursor.c	/^static GLFWcursor* create_tracking_cursor(void)$/;"	f	typeref:typename:GLFWcursor *	file:
 create_window	glfw/tests/iconify.c	/^static GLFWwindow* create_window(GLFWmonitor* monitor)$/;"	f	typeref:typename:GLFWwindow *	file:
 crtc	glfw/src/x11_platform.h	/^    RRCrtc          crtc;$/;"	m	struct:_GLFWmonitorX11	typeref:typename:RRCrtc
@@ -14206,6 +14233,7 @@ destroyFallbackDecoration	glfw/src/wl_window.c	/^static void destroyFallbackDeco
 destroyFallbackDecorations	glfw/src/wl_window.c	/^static void destroyFallbackDecorations(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 destroyShellObjects	glfw/src/wl_window.c	/^static void destroyShellObjects(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 destroyWindow	glfw/src/internal.h	/^    void (*destroyWindow)(_GLFWwindow*);$/;"	m	struct:_GLFWplatform	typeref:typename:void (*)(_GLFWwindow *)
+destroy_hash_table	include/tinyobj_loader_c.h	/^static void destroy_hash_table(hash_table_t *hash_table) {$/;"	f	typeref:typename:void
 detectEWMH	glfw/src/x11_init.c	/^static void detectEWMH(void)$/;"	f	typeref:typename:void	file:
 detectable	glfw/src/x11_platform.h	/^        GLFWbool     detectable;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0408	typeref:typename:GLFWbool
 device	glfw/src/cocoa_joystick.h	/^    IOHIDDeviceRef      device;$/;"	m	struct:_GLFWjoystickNS	typeref:typename:IOHIDDeviceRef
@@ -14239,7 +14267,8 @@ deviceUUID	glfw/deps/glad/vulkan.h	/^    uint8_t                       deviceUUI
 dics	glfw/deps/mingw/dinput.h	/^	DICOLORSET		dics;$/;"	m	struct:_DICONFIGUREDEVICESPARAMSA	typeref:typename:DICOLORSET
 dics	glfw/deps/mingw/dinput.h	/^	DICOLORSET		dics;$/;"	m	struct:_DICONFIGUREDEVICESPARAMSW	typeref:typename:DICOLORSET
 diff	glfw/deps/nuklear.h	/^    diff = sizeof(Big) - sizeof(T), value = nk_helper<Big, diff>::value};};$/;"	e	enum:nk_alignof::__anonb47b8ca70503
-diffuse	include/render.h	/^  vec3 diffuse;$/;"	m	struct:__anon5c99124e0308	typeref:typename:vec3
+diffuse	include/tinyobj_loader_c.h	/^  float diffuse[3];$/;"	m	struct:__anon479917050108	typeref:typename:float[3]
+diffuse_texname	include/tinyobj_loader_c.h	/^  char *diffuse_texname;            \/* map_Kd *\/$/;"	m	struct:__anon479917050108	typeref:typename:char *
 dinput8	glfw/src/win32_platform.h	/^    } dinput8;$/;"	m	struct:_GLFWlibraryWin32	typeref:struct:_GLFWlibraryWin32::__anonfddb0c680508
 diph	glfw/deps/mingw/dinput.h	/^	DIPROPHEADER	diph;$/;"	m	struct:DIPROPCALPOV	typeref:typename:DIPROPHEADER
 diph	glfw/deps/mingw/dinput.h	/^	DIPROPHEADER	diph;$/;"	m	struct:DIPROPDWORD	typeref:typename:DIPROPHEADER
@@ -14261,6 +14290,7 @@ disableRawMouseMotion	glfw/src/x11_window.c	/^static void disableRawMouseMotion(
 disabledCursorWindow	glfw/src/win32_platform.h	/^    _GLFWwindow*        disabledCursorWindow;$/;"	m	struct:_GLFWlibraryWin32	typeref:typename:_GLFWwindow *
 disabledCursorWindow	glfw/src/x11_platform.h	/^    _GLFWwindow*    disabledCursorWindow;$/;"	m	struct:_GLFWlibraryX11	typeref:typename:_GLFWwindow *
 discreteQueuePriorities	glfw/deps/glad/vulkan.h	/^    uint32_t                 discreteQueuePriorities;$/;"	m	struct:VkPhysicalDeviceLimits	typeref:typename:uint32_t
+displacement_texname	include/tinyobj_loader_c.h	/^  char *displacement_texname;       \/* disp *\/$/;"	m	struct:__anon479917050108	typeref:typename:char *
 display	glfw/examples/boing.c	/^void display(void)$/;"	f	typeref:typename:void
 display	glfw/src/internal.h	/^        EGLDisplay      display;$/;"	m	struct:_GLFWlibrary::__anon8afddc4e0d08	typeref:typename:EGLDisplay
 display	glfw/src/wl_platform.h	/^    struct wl_display*              display;$/;"	m	struct:VkWaylandSurfaceCreateInfoKHR	typeref:struct:wl_display *
@@ -14278,6 +14308,7 @@ display_prepare_read	glfw/src/wl_platform.h	/^        PFN_wl_display_prepare_rea
 display_read_events	glfw/src/wl_platform.h	/^        PFN_wl_display_read_events                  display_read_events;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980608	typeref:typename:PFN_wl_display_read_events
 display_roundtrip	glfw/src/wl_platform.h	/^        PFN_wl_display_roundtrip                    display_roundtrip;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980608	typeref:typename:PFN_wl_display_roundtrip
 display_width	glfw/deps/nuklear_glfw_gl2.h	/^    int display_width, display_height;$/;"	m	struct:nk_glfw	typeref:typename:int
+dissolve	include/tinyobj_loader_c.h	/^  float dissolve; \/* 1 == opaque; 0 == fully transparent *\/$/;"	m	struct:__anon479917050108	typeref:typename:float
 div.ah	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.sm-dox a:active,.sm-dox a:hover,.sm-dox a.highlighted,.sm-dox/;"	c
 div.contents	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.sm-dox a:active,.sm-dox a:hover,.sm-dox a.highlighted,.sm-dox/;"	c
 div.directory	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.sm-dox a:active,.sm-dox a:hover,.sm-dox a.highlighted,.sm-dox/;"	c
@@ -14598,7 +14629,8 @@ dwmapi	glfw/src/win32_platform.h	/^    } dwmapi;$/;"	m	struct:_GLFWlibraryWin32	
 dynamicRendering	glfw/deps/glad/vulkan.h	/^    VkBool32                                                                     dynamicRenderin/;"	m	struct:VkPhysicalDeviceDynamicRenderingFeatures	typeref:typename:VkBool32
 dynamicRendering	glfw/deps/glad/vulkan.h	/^    VkBool32                           dynamicRendering;$/;"	m	struct:VkPhysicalDeviceVulkan13Features	typeref:typename:VkBool32
 dynamicStateCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 dynamicStateCount;$/;"	m	struct:VkPipelineDynamicStateCreateInfo	typeref:typename:uint32_t
-ebo	include/render.h	/^	uint32_t vao, vbo, ebo;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t
+dynamic_fgets	include/tinyobj_loader_c.h	/^char *dynamic_fgets(char **buf, size_t *size, FILE *file) {$/;"	f	typeref:typename:char *
+ebo	include/render.h	/^  uint32_t vao, vbo, ebo;$/;"	m	struct:mesh	typeref:typename:uint32_t
 edit	glfw/deps/nuklear.h	/^    struct nk_edit_state edit;$/;"	m	struct:nk_window	typeref:struct:nk_edit_state
 edit	glfw/deps/nuklear.h	/^    struct nk_style_edit edit;$/;"	m	struct:nk_style	typeref:struct:nk_style_edit
 edit	glfw/deps/nuklear.h	/^    struct nk_style_edit edit;$/;"	m	struct:nk_style_property	typeref:struct:nk_style_edit
@@ -14630,6 +14662,7 @@ element	glfw/src/input.c	/^        _GLFWmapelement* element;$/;"	m	struct:parseM
 element_count	glfw/deps/nuklear.h	/^    unsigned int element_count;$/;"	m	struct:nk_draw_list	typeref:typename:unsigned int
 elements	glfw/deps/nuklear.h	/^    struct nk_buffer *elements;$/;"	m	struct:nk_draw_list	typeref:struct:nk_buffer *
 em	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.sm-dox a:active,.sm-dox a:hover,.sm-dox a.highlighted,.sm-dox/;"	s
+emission	include/tinyobj_loader_c.h	/^  float emission[3];$/;"	m	struct:__anon479917050108	typeref:typename:float[3]
 empty	glfw/tests/CMakeLists.txt	/^add_executable(empty WIN32 MACOSX_BUNDLE empty.c ${TINYCTHREAD} ${GLAD_GL})$/;"	t
 emptyEventPipe	glfw/src/x11_platform.h	/^    int             emptyEventPipe[2];$/;"	m	struct:_GLFWlibraryX11	typeref:typename:int[2]
 enableCursor	glfw/src/win32_window.c	/^static void enableCursor(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
@@ -14654,6 +14687,7 @@ end	glfw/deps/nuklear.h	/^    struct nk_vec2i end;$/;"	m	struct:nk_command_line	
 end	glfw/deps/nuklear.h	/^    struct nk_window *end;$/;"	m	struct:nk_context	typeref:struct:nk_window *
 endFadeReservation	glfw/src/cocoa_monitor.m	/^static void endFadeReservation(CGDisplayFadeReservationToken token)$/;"	f
 engineVersion	glfw/deps/glad/vulkan.h	/^    uint32_t          engineVersion;$/;"	m	struct:VkApplicationInfo	typeref:typename:uint32_t
+entries	include/tinyobj_loader_c.h	/^  hash_table_entry_t *entries;$/;"	m	struct:__anon479917050508	typeref:typename:hash_table_entry_t *
 entry	cglm/test/include/common.h	/^  fntest entry;$/;"	m	struct:test_entry_t	typeref:typename:fntest
 epub_author	cglm/docs/source/conf.py	/^epub_author = author$/;"	v
 epub_copyright	cglm/docs/source/conf.py	/^epub_copyright = copyright$/;"	v
@@ -14743,8 +14777,13 @@ exts_i	src/glad.c	/^static char **exts_i = NULL;$/;"	v	typeref:typename:char **	
 ey	glfw/deps/nuklear.h	/^    float ey;$/;"	m	struct:nk_tt__active_edge	typeref:typename:float
 f	glfw/deps/nuklear.h	/^    float f;$/;"	m	union:nk_property	typeref:typename:float
 f	glfw/deps/nuklear.h	/^    union {nk_uint i; float f;} conv = {0};$/;"	m	union:nk_inv_sqrt::__anonb47b8ca7070a	typeref:typename:float
+f	include/tinyobj_loader_c.h	/^  tinyobj_vertex_index_t f[TINYOBJ_MAX_FACES_PER_F_LINE];$/;"	m	struct:__anon479917050808	typeref:typename:tinyobj_vertex_index_t[]
 fEnable	glfw/src/win32_platform.h	/^    BOOL fEnable;$/;"	m	struct:__anonfddb0c680208	typeref:typename:BOOL
 fTransitionOnMaximized	glfw/src/win32_platform.h	/^    BOOL fTransitionOnMaximized;$/;"	m	struct:__anonfddb0c680208	typeref:typename:BOOL
+f_num_verts	include/tinyobj_loader_c.h	/^  int f_num_verts[TINYOBJ_MAX_FACES_PER_F_LINE];$/;"	m	struct:__anon479917050808	typeref:typename:int[]
+face_num_verts	include/tinyobj_loader_c.h	/^  int *face_num_verts;$/;"	m	struct:__anon479917050408	typeref:typename:int *
+face_offset	include/tinyobj_loader_c.h	/^  unsigned int face_offset;$/;"	m	struct:__anon479917050208	typeref:typename:unsigned int
+faces	include/tinyobj_loader_c.h	/^  tinyobj_vertex_index_t *faces;$/;"	m	struct:__anon479917050408	typeref:typename:tinyobj_vertex_index_t *
 failOp	glfw/deps/glad/vulkan.h	/^    VkStencilOp              failOp;$/;"	m	struct:VkStencilOpState	typeref:typename:VkStencilOp
 fallback	glfw/deps/nuklear.h	/^    const struct nk_font_glyph *fallback;$/;"	m	struct:nk_font	typeref:typename:const struct nk_font_glyph *
 fallbackRefreshRate	glfw/src/cocoa_platform.h	/^    double              fallbackRefreshRate;$/;"	E	struct:_GLFWmonitorNS
@@ -14758,8 +14797,10 @@ fdx	glfw/deps/nuklear.h	/^    float fx,fdx,fdy;$/;"	m	struct:nk_tt__active_edge	
 fdy	glfw/deps/nuklear.h	/^    float fx,fdx,fdy;$/;"	m	struct:nk_tt__active_edge	typeref:typename:float
 features	glfw/deps/glad/vulkan.h	/^    VkPhysicalDeviceFeatures           features;$/;"	m	struct:VkPhysicalDeviceFeatures2	typeref:typename:VkPhysicalDeviceFeatures
 fence	glfw/deps/glad/vulkan.h	/^    VkFence   fence;$/;"	m	struct:VkAcquireNextImageInfoKHR	typeref:typename:VkFence
+file_reader_callback	include/tinyobj_loader_c.h	/^typedef void (*file_reader_callback)(void *ctx, const char *filename,$/;"	t	typeref:typename:void (*)(void * ctx,const char * filename,int is_mtl,const char * obj_filename,char ** buf,size_t * len)
 fillModeNonSolid	glfw/deps/glad/vulkan.h	/^    VkBool32                 fillModeNonSolid;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 filled	glfw/deps/nuklear.h	/^    float filled;$/;"	m	struct:nk_row_layout	typeref:typename:float
+filled	include/tinyobj_loader_c.h	/^  int filled;$/;"	m	struct:hash_table_entry_t	typeref:typename:int
 filter	glfw/deps/glad/vulkan.h	/^    VkFilter                                 filter;$/;"	m	struct:VkBlitImageInfo2	typeref:typename:VkFilter
 filter	glfw/deps/nuklear.h	/^    nk_plugin_filter filter;$/;"	m	struct:nk_text_edit	typeref:typename:nk_plugin_filter
 filterMinmaxImageComponentMapping	glfw/deps/glad/vulkan.h	/^    VkBool32                           filterMinmaxImageComponentMapping;$/;"	m	struct:VkPhysicalDeviceVulkan12Properties	typeref:typename:VkBool32
@@ -14784,6 +14825,7 @@ first_free	glfw/deps/nuklear.h	/^    void   *first_free;$/;"	m	struct:nk_tt__hhe
 first_unicode_codepoint_in_range	glfw/deps/nuklear.h	/^    int first_unicode_codepoint_in_range;$/;"	m	struct:nk_tt_pack_range	typeref:typename:int
 fitToMonitor	glfw/src/null_window.c	/^static void fitToMonitor(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 fitToMonitor	glfw/src/win32_window.c	/^static void fitToMonitor(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
+fixIndex	include/tinyobj_loader_c.h	/^static int fixIndex(int idx, size_t n) {$/;"	f	typeref:typename:int
 fixed_background	glfw/deps/nuklear.h	/^    struct nk_style_item fixed_background;$/;"	m	struct:nk_style_window	typeref:struct:nk_style_item
 flag	glfw/deps/getopt.h	/^  int* flag;$/;"	m	struct:option	typeref:typename:int *
 flags	glfw/deps/glad/vulkan.h	/^    VkAttachmentDescriptionFlags   flags;$/;"	m	struct:VkAttachmentDescription	typeref:typename:VkAttachmentDescriptionFlags
@@ -14989,6 +15031,7 @@ gear2	glfw/examples/gears.c	/^static GLint gear1, gear2, gear3;$/;"	v	typeref:ty
 gear3	glfw/examples/gears.c	/^static GLint gear1, gear2, gear3;$/;"	v	typeref:typename:GLint	file:
 gears	glfw/examples/CMakeLists.txt	/^add_executable(gears WIN32 MACOSX_BUNDLE gears.c ${ICON} ${GLAD_GL})$/;"	t
 generate_heightmap__circle	glfw/examples/heightmap.c	/^static void generate_heightmap__circle(float* center_x, float* center_y,$/;"	f	typeref:typename:void	file:
+generate_mtl_filename	include/tinyobj_loader_c.h	/^static char *generate_mtl_filename(const char *obj_filename,$/;"	f	typeref:typename:char *
 geometryShader	glfw/deps/glad/vulkan.h	/^    VkBool32                 geometryShader;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 getAtomIfSupported	glfw/src/x11_init.c	/^static Atom getAtomIfSupported(Atom* supportedAtoms,$/;"	f	typeref:typename:Atom	file:
 getClipboardString	glfw/src/internal.h	/^    const char* (*getClipboardString)(void);$/;"	m	struct:_GLFWplatform	typeref:typename:const char * (*)(void)
@@ -15001,6 +15044,7 @@ getEGLNativeWindow	glfw/src/internal.h	/^    EGLNativeWindowType (*getEGLNativeW
 getEGLPlatform	glfw/src/internal.h	/^    EGLenum (*getEGLPlatform)(EGLint**);$/;"	m	struct:_GLFWplatform	typeref:typename:EGLenum (*)(EGLint **)
 getElementValue	glfw/src/cocoa_joystick.m	/^static long getElementValue(_GLFWjoystick* js, _GLFWjoyelementNS* element)$/;"	f	struct:_GLFWjoyelementNS
 getFallbackRefreshRate	glfw/src/cocoa_monitor.m	/^static double getFallbackRefreshRate(CGDirectDisplayID displayID)$/;"	f
+getFileData	src/load.c	/^void getFileData(void* ctx, const char* file, const int is_mtl,$/;"	f	typeref:typename:void
 getFramebufferSize	glfw/src/internal.h	/^    void (*getFramebufferSize)(_GLFWwindow*,int*,int*);$/;"	m	struct:_GLFWplatform	typeref:typename:void (*)(_GLFWwindow *,int *,int *)
 getGLXFBConfigAttrib	glfw/src/glx_context.c	/^static int getGLXFBConfigAttrib(GLXFBConfig fbconfig, int attrib)$/;"	f	typeref:typename:int	file:
 getGammaRamp	glfw/src/internal.h	/^    GLFWbool (*getGammaRamp)(_GLFWmonitor*,GLFWgammaramp*);$/;"	m	struct:_GLFWplatform	typeref:typename:GLFWbool (*)(_GLFWmonitor *,GLFWgammaramp *)
@@ -15040,6 +15084,7 @@ get_button_name	glfw/tests/events.c	/^static const char* get_button_name(int but
 get_device_type_name	glfw/tests/glfwinfo.c	/^static const char* get_device_type_name(VkPhysicalDeviceType type)$/;"	f	typeref:typename:const char *	file:
 get_exts	src/glad.c	/^static int get_exts(void) {$/;"	f	typeref:typename:int	file:
 get_key_name	glfw/tests/events.c	/^static const char* get_key_name(int key)$/;"	f	typeref:typename:const char *	file:
+get_line_infos	include/tinyobj_loader_c.h	/^static int get_line_infos(const char *buf, size_t buf_len,$/;"	f	typeref:typename:int
 get_mods_name	glfw/tests/events.c	/^static const char* get_mods_name(int mods)$/;"	f	typeref:typename:const char *	file:
 get_platform_name	glfw/tests/glfwinfo.c	/^static const char* get_platform_name(int platform)$/;"	f	typeref:typename:const char *	file:
 get_proc	src/glad.c	/^static void *get_proc(const char *namez) {$/;"	f	typeref:typename:void *	file:
@@ -22349,6 +22394,8 @@ greenBits	glfw/src/internal.h	/^    int         greenBits;$/;"	m	struct:_GLFWfbc
 group	glfw/src/x11_platform.h	/^        unsigned int group;$/;"	m	struct:_GLFWlibraryX11::__anoned7389cf0408	typeref:typename:unsigned int
 group_border	glfw/deps/nuklear.h	/^    float group_border;$/;"	m	struct:nk_style_window	typeref:typename:float
 group_border_color	glfw/deps/nuklear.h	/^    struct nk_color group_border_color;$/;"	m	struct:nk_style_window	typeref:struct:nk_color
+group_name	include/tinyobj_loader_c.h	/^  const char *group_name;$/;"	m	struct:__anon479917050808	typeref:typename:const char *
+group_name_len	include/tinyobj_loader_c.h	/^  unsigned int group_name_len;$/;"	m	struct:__anon479917050808	typeref:typename:unsigned int
 group_padding	glfw/deps/nuklear.h	/^    struct nk_vec2 group_padding;$/;"	m	struct:nk_style_window	typeref:struct:nk_vec2
 groupheader	glfw/docs/extra.scss	/^h1,h2,h2.groupheader,h3,div.toc h3,h4,h5,h6,strong,em {$/;"	c
 grow_factor	glfw/deps/nuklear.h	/^    float grow_factor;$/;"	m	struct:nk_buffer	typeref:typename:float
@@ -22454,6 +22501,19 @@ has_arg	glfw/deps/getopt.h	/^  int has_arg;$/;"	m	struct:option	typeref:typename
 has_ext	src/glad.c	/^static int has_ext(const char *ext) {$/;"	f	typeref:typename:int	file:
 has_preferred_x	glfw/deps/nuklear.h	/^    unsigned char has_preferred_x;$/;"	m	struct:nk_text_edit	typeref:typename:unsigned char
 has_scrolling	glfw/deps/nuklear.h	/^    unsigned int has_scrolling;$/;"	m	struct:nk_panel	typeref:typename:unsigned int
+hash	include/tinyobj_loader_c.h	/^  unsigned long hash;$/;"	m	struct:hash_table_entry_t	typeref:typename:unsigned long
+hash_djb2	include/tinyobj_loader_c.h	/^static unsigned long hash_djb2(const unsigned char *str) {$/;"	f	typeref:typename:unsigned long
+hash_table_entry_t	include/tinyobj_loader_c.h	/^typedef struct hash_table_entry_t {$/;"	s
+hash_table_entry_t	include/tinyobj_loader_c.h	/^} hash_table_entry_t;$/;"	t	typeref:struct:hash_table_entry_t
+hash_table_exists	include/tinyobj_loader_c.h	/^static int hash_table_exists(const char *name, hash_table_t *hash_table) {$/;"	f	typeref:typename:int
+hash_table_find	include/tinyobj_loader_c.h	/^static hash_table_entry_t *hash_table_find(unsigned long hash,$/;"	f	typeref:typename:hash_table_entry_t *
+hash_table_get	include/tinyobj_loader_c.h	/^static long hash_table_get(const char *name, hash_table_t *hash_table) {$/;"	f	typeref:typename:long
+hash_table_insert	include/tinyobj_loader_c.h	/^static int hash_table_insert(unsigned long hash, long value,$/;"	f	typeref:typename:int
+hash_table_insert_value	include/tinyobj_loader_c.h	/^static int hash_table_insert_value(unsigned long hash, long value,$/;"	f	typeref:typename:int
+hash_table_maybe_grow	include/tinyobj_loader_c.h	/^static void hash_table_maybe_grow(size_t new_n, hash_table_t *hash_table) {$/;"	f	typeref:typename:void
+hash_table_set	include/tinyobj_loader_c.h	/^static void hash_table_set(const char *name, size_t val,$/;"	f	typeref:typename:void
+hash_table_t	include/tinyobj_loader_c.h	/^} hash_table_t;$/;"	t	typeref:struct:__anon479917050508
+hashes	include/tinyobj_loader_c.h	/^  unsigned long *hashes;$/;"	m	struct:__anon479917050508	typeref:typename:unsigned long *
 hatButtons	glfw/src/internal.h	/^    GLFWbool      hatButtons;$/;"	m	struct:_GLFWinitconfig	typeref:typename:GLFWbool
 hatCount	glfw/src/internal.h	/^    int             hatCount;$/;"	m	struct:_GLFWjoystick	typeref:typename:int
 hat_widget	glfw/tests/joysticks.c	/^static void hat_widget(struct nk_context* nk, unsigned char state)$/;"	f	typeref:typename:void	file:
@@ -22583,10 +22643,9 @@ id	glfw/deps/nuklear.h	/^    int id;$/;"	m	struct:nk_rp_rect	typeref:typename:in
 id	glfw/deps/nuklear.h	/^typedef union {void *ptr; int id;} nk_handle;$/;"	m	union:__anonb47b8ca7020a	typeref:typename:int
 id	glfw/src/cocoa_platform.h	/^typedef void* id;$/;"	t
 id	glfw/tests/threads.c	/^    thrd_t id;$/;"	m	struct:__anon9a0fd3a20108	typeref:typename:thrd_t	file:
-id	include/render.h	/^	uint32_t id;$/;"	m	struct:__anon5c99124e0808	typeref:typename:uint32_t
-id	include/render.h	/^  uint32_t id;$/;"	m	struct:__anon5c99124e0208	typeref:typename:uint32_t
 idleInhibitManager	glfw/src/wl_platform.h	/^    struct zwp_idle_inhibit_manager_v1*     idleInhibitManager;$/;"	m	struct:_GLFWlibraryWayland	typeref:struct:zwp_idle_inhibit_manager_v1 *
 idleInhibitor	glfw/src/wl_platform.h	/^    struct zwp_idle_inhibitor_v1*          idleInhibitor;$/;"	m	struct:_GLFWwindowWayland	typeref:struct:zwp_idle_inhibitor_v1 *
+illum	include/tinyobj_loader_c.h	/^  int illum;$/;"	m	struct:__anon479917050108	typeref:typename:int
 im	glfw/src/x11_platform.h	/^    XIM             im;$/;"	m	struct:_GLFWlibraryX11	typeref:typename:XIM
 imag	cglm/include/cglm/types-struct.h	/^    vec3s imag;$/;"	m	struct:versors::__anon5cec09d91208	typeref:typename:vec3s
 image	glfw/deps/glad/vulkan.h	/^    VkImage                                                                image;$/;"	m	struct:VkImageMemoryRequirementsInfo2	typeref:typename:VkImage
@@ -22665,7 +22724,7 @@ index	glfw/src/x11_platform.h	/^    int             index;$/;"	m	struct:_GLFWmon
 indexCount	glfw/deps/glad/vulkan.h	/^    uint32_t                         indexCount;$/;"	m	struct:VkDrawIndexedIndirectCommand	typeref:typename:uint32_t
 indexToLocFormat	glfw/deps/nuklear.h	/^    int indexToLocFormat; \/* format needed to map from glyph index to glyph *\/$/;"	m	struct:nk_tt_fontinfo	typeref:typename:int
 index_map	glfw/deps/nuklear.h	/^    int index_map; \/* a cmap mapping for our chosen character encoding *\/$/;"	m	struct:nk_tt_fontinfo	typeref:typename:int
-indices	include/render.h	/^  uint32_t* indices;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t *
+indices	include/render.h	/^  uint32_t indices;$/;"	m	struct:mesh	typeref:typename:uint32_t
 info	glfw/deps/nuklear.h	/^    struct nk_baked_font info;$/;"	m	struct:nk_font	typeref:struct:nk_baked_font
 info	glfw/deps/nuklear.h	/^    struct nk_tt_fontinfo info;$/;"	m	struct:nk_font_bake_data	typeref:struct:nk_tt_fontinfo
 inheritedQueries	glfw/deps/glad/vulkan.h	/^    VkBool32                 inheritedQueries;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
@@ -22677,6 +22736,7 @@ init	src/renderer/init.c	/^GLFWwindow *init(int w, int h, const char *title) {$/
 initExtensions	glfw/src/x11_init.c	/^static GLFWbool initExtensions(void)$/;"	f	typeref:typename:GLFWbool	file:
 initJoysticks	glfw/src/input.c	/^static GLFWbool initJoysticks(void)$/;"	f	typeref:typename:GLFWbool	file:
 initJoysticks	glfw/src/internal.h	/^    GLFWbool (*initJoysticks)(void);$/;"	m	struct:_GLFWplatform	typeref:typename:GLFWbool (*)(void)
+initMaterial	include/tinyobj_loader_c.h	/^static void initMaterial(tinyobj_material_t *material) {$/;"	f	typeref:typename:void
 initShader	src/renderer/shader/shader.c	/^uint32_t initShader(const char *vertexPath, const char *fragmentPath) {$/;"	f	typeref:typename:uint32_t
 initWithGlfwWindow:	glfw/src/cocoa_window.m	/^- (instancetype)initWithGlfwWindow:(_GLFWwindow *)initWindow;$/;"	m	interface:GLFWContentView
 initWithGlfwWindow:	glfw/src/cocoa_window.m	/^- (instancetype)initWithGlfwWindow:(_GLFWwindow *)initWindow;$/;"	m	interface:GLFWWindowDelegate
@@ -22817,6 +22877,7 @@ invariant	glfw/docs/extra.scss	/^dl.note,dl.pre,dl.post,dl.invariant {$/;"	c
 invariant	glfw/docs/extra.scss	/^dl.note,dl.pre,dl.post,dl.invariant,dl.warning,dl.attention,dl.deprecated,dl.bug,dl.todo,dl.test/;"	c
 invert	glfw/deps/nuklear.h	/^    int invert;$/;"	m	struct:nk_tt__edge	typeref:typename:int
 io (input / output e.g. print)	cglm/docs/source/io.rst	/^io (input \/ output e.g. print)$/;"	H
+ior	include/tinyobj_loader_c.h	/^  float ior;      \/* index of refraction *\/$/;"	m	struct:__anon479917050108	typeref:typename:float
 isBitSet	glfw/src/linux_joystick.c	/^#define isBitSet(/;"	d	file:
 isFrameExtentsEvent	glfw/src/x11_window.c	/^static Bool isFrameExtentsEvent(Display* display, XEvent* event, XPointer pointer)$/;"	f	typeref:typename:Bool	file:
 isOpaque	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
@@ -22824,6 +22885,7 @@ isSelPropNewValueNotify	glfw/src/x11_window.c	/^static Bool isSelPropNewValueNot
 isSelectionEvent	glfw/src/x11_window.c	/^static Bool isSelectionEvent(Display* display, XEvent* event, XPointer pointer)$/;"	f	typeref:typename:Bool	file:
 isValidElementForJoystick	glfw/src/input.c	/^static GLFWbool isValidElementForJoystick(const _GLFWmapelement* e,$/;"	f	typeref:typename:GLFWbool	file:
 is_double_click_down	glfw/deps/nuklear_glfw_gl2.h	/^    int is_double_click_down;$/;"	m	struct:nk_glfw	typeref:typename:int
+is_line_ending	include/tinyobj_loader_c.h	/^static int is_line_ending(const char *p, size_t i, size_t end_i) {$/;"	f	typeref:typename:int
 item	glfw/deps/nuklear.h	/^    struct nk_rect item;$/;"	m	struct:nk_row_layout	typeref:struct:nk_rect
 item_height	glfw/deps/nuklear.h	/^    float item_height;$/;"	m	struct:nk_row_layout	typeref:typename:float
 item_offset	glfw/deps/nuklear.h	/^    float item_offset;$/;"	m	struct:nk_row_layout	typeref:typename:float
@@ -23109,9 +23171,13 @@ left	glfw/deps/nuklear.h	/^    struct nk_color left;$/;"	m	struct:nk_command_rec
 left	glfw/src/wl_platform.h	/^        _GLFWdecorationWayland             top, left, right, bottom;$/;"	m	struct:_GLFWwindowWayland::__anona2c0ed980408	typeref:typename:_GLFWdecorationWayland
 leftDecoration	glfw/src/wl_platform.h	/^    leftDecoration,$/;"	e	enum:_GLFWdecorationSideWayland
 len	glfw/deps/nuklear.h	/^    int len; \/* in codepoints\/runes\/glyphs *\/$/;"	m	struct:nk_str	typeref:typename:int
+len	include/tinyobj_loader_c.h	/^  size_t len;$/;"	m	struct:__anon479917050608	typeref:typename:size_t
 length	glfw/deps/nuklear.h	/^    int length;$/;"	m	struct:nk_command_text	typeref:typename:int
 length	glfw/deps/nuklear.h	/^    int length;$/;"	m	struct:nk_property_state	typeref:typename:int
 length	glfw/deps/nuklear.h	/^   int first_char, length; \/* first char of row, and length *\/$/;"	m	struct:nk_text_find	typeref:typename:int
+length	include/tinyobj_loader_c.h	/^  unsigned int length;$/;"	m	struct:__anon479917050208	typeref:typename:unsigned int
+length_until_line_feed	include/tinyobj_loader_c.h	/^static size_t length_until_line_feed(const char *token, size_t n) {$/;"	f	typeref:typename:size_t
+length_until_newline	include/tinyobj_loader_c.h	/^static size_t length_until_newline(const char *token, size_t n) {$/;"	f	typeref:typename:size_t
 level	glfw/deps/glad/vulkan.h	/^    VkCommandBufferLevel     level;$/;"	m	struct:VkCommandBufferAllocateInfo	typeref:typename:VkCommandBufferLevel
 level2	glfw/docs/extra.scss	/^    li.level2, li.level3 {$/;"	c
 level3	glfw/docs/extra.scss	/^    li.level2, li.level3 {$/;"	c
@@ -23124,8 +23190,6 @@ libcglm.la	cglm/Makefile.am	/^lib_LTLIBRARIES = libcglm.la$/;"	T	directory:lib
 libcglm_la_LDFLAGS	cglm/Makefile.am	/^libcglm_la_LDFLAGS = -no-undefined -version-info 0:1:0$/;"	m
 libcglm_la_SOURCES	cglm/Makefile.am	/^libcglm_la_SOURCES=\\$/;"	m
 life	glfw/examples/particles.c	/^    float life;      \/\/ Life of particle (1.0 = newborn, < 0.0 = dead)$/;"	m	struct:__anonfdcf762a0408	typeref:typename:float	file:
-lightCapacity	include/render.h	/^	Capacity lightCapacity;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Capacity
-lights	include/render.h	/^	Light* lights;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Light *
 limits	glfw/deps/glad/vulkan.h	/^    VkPhysicalDeviceLimits   limits;$/;"	m	struct:VkPhysicalDeviceProperties	typeref:typename:VkPhysicalDeviceLimits
 line	glfw/docs/extra.scss	/^div.line {$/;"	c
 lineWidth	glfw/deps/glad/vulkan.h	/^    float                    lineWidth;$/;"	m	struct:VkPipelineRasterizationStateCreateInfo	typeref:typename:float
@@ -23151,6 +23215,7 @@ list_vulkan_device_layers	glfw/tests/glfwinfo.c	/^static void list_vulkan_device
 list_vulkan_instance_layers	glfw/tests/glfwinfo.c	/^static void list_vulkan_instance_layers(void)$/;"	f	typeref:typename:void	file:
 loadCursorTheme	glfw/src/wl_init.c	/^static GLFWbool loadCursorTheme(void)$/;"	f	typeref:typename:GLFWbool	file:
 loadLibraries	glfw/src/win32_init.c	/^static GLFWbool loadLibraries(void)$/;"	f	typeref:typename:GLFWbool	file:
+loadModel	src/load.c	/^int loadModel(const char* path, size_t* len) {$/;"	f	typeref:typename:int
 loadOp	glfw/deps/glad/vulkan.h	/^    VkAttachmentLoadOp                                                           loadOp;$/;"	m	struct:VkRenderingAttachmentInfo	typeref:typename:VkAttachmentLoadOp
 loadOp	glfw/deps/glad/vulkan.h	/^    VkAttachmentLoadOp                             loadOp;$/;"	m	struct:VkAttachmentDescription2	typeref:typename:VkAttachmentLoadOp
 loadOp	glfw/deps/glad/vulkan.h	/^    VkAttachmentLoadOp       loadOp;$/;"	m	struct:VkAttachmentDescription	typeref:typename:VkAttachmentLoadOp
@@ -23366,7 +23431,9 @@ mat4x4_translate_in_place	glfw/deps/linmath.h	/^LINMATH_H_FUNC void mat4x4_trans
 mat4x4_transpose	glfw/deps/linmath.h	/^LINMATH_H_FUNC void mat4x4_transpose(mat4x4 M, mat4x4 const N)$/;"	f	typeref:typename:LINMATH_H_FUNC void
 mat4x4o_mul_quat	glfw/deps/linmath.h	/^LINMATH_H_FUNC void mat4x4o_mul_quat(mat4x4 R, mat4x4 const M, quat const q)$/;"	f	typeref:typename:LINMATH_H_FUNC void
 matchCallback	glfw/src/cocoa_joystick.m	/^static void matchCallback(void* context,$/;"	f	struct:_GLFWjoyelementNS
-material	include/render.h	/^  Material material;$/;"	m	struct:__anon5c99124e0408	typeref:typename:Material
+material_ids	include/tinyobj_loader_c.h	/^  int *material_ids;$/;"	m	struct:__anon479917050408	typeref:typename:int *
+material_name	include/tinyobj_loader_c.h	/^  const char *material_name;$/;"	m	struct:__anon479917050808	typeref:typename:const char *
+material_name_len	include/tinyobj_loader_c.h	/^  unsigned int material_name_len;$/;"	m	struct:__anon479917050808	typeref:typename:unsigned int
 max	glfw/deps/nuklear.h	/^    float min, max, range;$/;"	m	struct:nk_chart_slot	typeref:typename:float
 maxAnisotropy	glfw/deps/glad/vulkan.h	/^    float                    maxAnisotropy;$/;"	m	struct:VkSamplerCreateInfo	typeref:typename:float
 maxArrayLayers	glfw/deps/glad/vulkan.h	/^    uint32_t                 maxArrayLayers;$/;"	m	struct:VkImageFormatProperties	typeref:typename:uint32_t
@@ -23575,9 +23642,9 @@ menu_padding	glfw/deps/nuklear.h	/^    struct nk_vec2 menu_padding;$/;"	m	struct
 menubar	glfw/src/internal.h	/^        GLFWbool  menubar;$/;"	m	struct:_GLFWinitconfig::__anon8afddc4e0108	typeref:typename:GLFWbool
 merge_mode	glfw/deps/nuklear.h	/^    unsigned char merge_mode;$/;"	m	struct:nk_font_config	typeref:typename:unsigned char
 mesh	glfw/examples/heightmap.c	/^static GLuint mesh;$/;"	v	typeref:typename:GLuint	file:
-meshCapacity	include/render.h	/^	Capacity meshCapacity;$/;"	m	struct:__anon5c99124e0508	typeref:typename:Capacity
+mesh	include/render.h	/^struct mesh {$/;"	s
 mesh_vbo	glfw/examples/heightmap.c	/^static GLuint mesh_vbo[4];$/;"	v	typeref:typename:GLuint[4]	file:
-meshes	include/render.h	/^	Mesh* meshes;$/;"	m	struct:__anon5c99124e0508	typeref:typename:Mesh *
+meshes	include/render.h	/^  struct mesh* meshes;$/;"	m	struct:model	typeref:struct:mesh *
 message-box	glfw/docs/extra.scss	/^@mixin message-box($base-color){$/;"	m
 metadata7	glfw/docs/spaces.svg	/^     id="metadata7">$/;"	i
 min	glfw/deps/nuklear.h	/^    float min, max, range;$/;"	m	struct:nk_chart_slot	typeref:typename:float
@@ -23634,6 +23701,7 @@ modeChanged	glfw/src/win32_platform.h	/^    GLFWbool            modeChanged;$/;"
 modeCount	glfw/src/internal.h	/^    int             modeCount;$/;"	m	struct:_GLFWmonitor	typeref:typename:int
 modeIsGood	glfw/src/cocoa_monitor.m	/^static GLFWbool modeIsGood(CGDisplayModeRef mode)$/;"	f
 modeIsGood	glfw/src/x11_monitor.c	/^static GLFWbool modeIsGood(const XRRModeInfo* mi)$/;"	f	typeref:typename:GLFWbool	file:
+model	include/render.h	/^struct model {$/;"	s
 modelview_matrix	glfw/examples/heightmap.c	/^static GLfloat modelview_matrix[16] = {$/;"	v	typeref:typename:GLfloat[16]	file:
 modes	glfw/deps/glad/vulkan.h	/^    VkDeviceGroupPresentModeFlagsKHR                           modes;$/;"	m	struct:VkDeviceGroupSwapchainCreateInfoKHR	typeref:typename:VkDeviceGroupPresentModeFlagsKHR
 modes	glfw/deps/glad/vulkan.h	/^    VkDeviceGroupPresentModeFlagsKHR   modes;$/;"	m	struct:VkDeviceGroupPresentCapabilitiesKHR	typeref:typename:VkDeviceGroupPresentModeFlagsKHR
@@ -23671,6 +23739,8 @@ mouse_button_callback	glfw/tests/events.c	/^static void mouse_button_callback(GL
 msaa	glfw/tests/CMakeLists.txt	/^add_executable(msaa msaa.c ${GETOPT} ${GLAD_GL})$/;"	t
 msg	cglm/test/include/common.h	/^  const char *msg;$/;"	m	struct:test_status_t	typeref:typename:const char *
 msg_callback	glfw/tests/triangle-vulkan.c	/^    VkDebugReportCallbackEXT msg_callback;$/;"	m	struct:demo	typeref:typename:VkDebugReportCallbackEXT	file:
+mtllib_name	include/tinyobj_loader_c.h	/^  const char *mtllib_name;$/;"	m	struct:__anon479917050808	typeref:typename:const char *
+mtllib_name_len	include/tinyobj_loader_c.h	/^  unsigned int mtllib_name_len;$/;"	m	struct:__anon479917050808	typeref:typename:unsigned int
 mtx_destroy	glfw/deps/tinycthread.c	/^void mtx_destroy(mtx_t *mtx)$/;"	f	typeref:typename:void
 mtx_init	glfw/deps/tinycthread.c	/^int mtx_init(mtx_t *mtx, int type)$/;"	f	typeref:typename:int
 mtx_lock	glfw/deps/tinycthread.c	/^int mtx_lock(mtx_t *mtx)$/;"	f	typeref:typename:int
@@ -23691,8 +23761,13 @@ multiviewGeometryShader	glfw/deps/glad/vulkan.h	/^    VkBool32                  
 multiviewGeometryShader	glfw/deps/glad/vulkan.h	/^    VkBool32                           multiviewGeometryShader;$/;"	m	struct:VkPhysicalDeviceVulkan11Features	typeref:typename:VkBool32
 multiviewTessellationShader	glfw/deps/glad/vulkan.h	/^    VkBool32                           multiviewTessellationShader;$/;"	m	struct:VkPhysicalDeviceMultiviewFeatures	typeref:typename:VkBool32
 multiviewTessellationShader	glfw/deps/glad/vulkan.h	/^    VkBool32                           multiviewTessellationShader;$/;"	m	struct:VkPhysicalDeviceVulkan11Features	typeref:typename:VkBool32
+my_atoi	include/tinyobj_loader_c.h	/^static int my_atoi(const char *c) {$/;"	f	typeref:typename:int
+my_strdup	include/tinyobj_loader_c.h	/^static char *my_strdup(const char *s, size_t max_length) {$/;"	f	typeref:typename:char *
+my_strndup	include/tinyobj_loader_c.h	/^static char *my_strndup(const char *s, size_t len) {$/;"	f	typeref:typename:char *
+my_strnlen	include/tinyobj_loader_c.h	/^static size_t my_strnlen(const char *s, size_t n) {$/;"	f	typeref:typename:size_t
 n	cglm/include/cglm/io.h	/^#define/;"	d
 n	glfw/deps/nuklear.h	/^    struct nk_font_config *n;$/;"	m	struct:nk_font_config	typeref:struct:nk_font_config *
+n	include/tinyobj_loader_c.h	/^  size_t n;$/;"	m	struct:__anon479917050508	typeref:typename:size_t
 name	cglm/test/include/common.h	/^  char  *name;$/;"	m	struct:test_entry_t	typeref:typename:char *
 name	glfw/deps/getopt.h	/^  const char* name;$/;"	m	struct:option	typeref:typename:const char *
 name	glfw/deps/glad/vulkan.h	/^    char                    name [ VK_MAX_EXTENSION_NAME_SIZE ];$/;"	m	struct:VkPhysicalDeviceToolProperties	typeref:typename:char[]
@@ -23707,6 +23782,8 @@ name	glfw/src/internal.h	/^    char            name[128];$/;"	m	struct:_GLFWmoni
 name	glfw/src/wl_platform.h	/^    char* name;$/;"	m	struct:wl_cursor	typeref:typename:char *
 name	glfw/src/wl_platform.h	/^    uint32_t                    name;$/;"	m	struct:_GLFWmonitorWayland	typeref:typename:uint32_t
 name	glfw/src/x11_init.c	/^            char* name;$/;"	m	struct:createKeyTables::__anon4de363f90108	typeref:typename:char *	file:
+name	include/tinyobj_loader_c.h	/^  char *name; \/* group name or object name. *\/$/;"	m	struct:__anon479917050208	typeref:typename:char *
+name	include/tinyobj_loader_c.h	/^  char *name;$/;"	m	struct:__anon479917050108	typeref:typename:char *
 name_string	glfw/deps/nuklear.h	/^    char name_string[NK_WINDOW_MAX_NAME];$/;"	m	struct:nk_window	typeref:typename:char[]
 native	glfw/src/cocoa_joystick.m	/^    IOHIDElementRef native;$/;"	E	struct:_GLFWjoyelementNS
 nav-path	glfw/docs/extra.scss	/^#nav-path,.directory .levels,span.lineno {$/;"	i
@@ -23728,6 +23805,7 @@ next	glfw/deps/nuklear.h	/^    struct nk_window *next;$/;"	m	struct:nk_window	ty
 next	glfw/src/internal.h	/^    _GLFWcursor*    next;$/;"	m	struct:_GLFWcursor	typeref:typename:_GLFWcursor *
 next	glfw/src/internal.h	/^    _GLFWerror*     next;$/;"	m	struct:_GLFWerror	typeref:typename:_GLFWerror *
 next	glfw/src/internal.h	/^    struct _GLFWwindow* next;$/;"	m	struct:_GLFWwindow	typeref:struct:_GLFWwindow *
+next	include/tinyobj_loader_c.h	/^  struct hash_table_entry_t *next;$/;"	m	struct:hash_table_entry_t	typeref:struct:hash_table_entry_t *
 nk__barrier	glfw/deps/nuklear.h	/^NK_GLOBAL unsigned char *nk__barrier;$/;"	v	typeref:typename:NK_GLOBAL unsigned char *
 nk__barrier2	glfw/deps/nuklear.h	/^NK_GLOBAL unsigned char *nk__barrier2;$/;"	v	typeref:typename:NK_GLOBAL unsigned char *
 nk__barrier3	glfw/deps/nuklear.h	/^NK_GLOBAL unsigned char *nk__barrier3;$/;"	v	typeref:typename:NK_GLOBAL unsigned char *
@@ -24772,8 +24850,9 @@ normal	glfw/deps/nuklear.h	/^    struct nk_style_item normal;$/;"	m	struct:nk_st
 normal	glfw/deps/nuklear.h	/^    struct nk_style_item normal;$/;"	m	struct:nk_style_slider	typeref:struct:nk_style_item
 normal	glfw/deps/nuklear.h	/^    struct nk_style_item normal;$/;"	m	struct:nk_style_toggle	typeref:struct:nk_style_item
 normal	glfw/deps/nuklear.h	/^    struct nk_style_item normal;$/;"	m	struct:nk_style_window_header	typeref:struct:nk_style_item
+normal	include/render.h	/^  vec3 normal;$/;"	m	struct:vertex	typeref:typename:vec3
 normal_active	glfw/deps/nuklear.h	/^    struct nk_style_item normal_active;$/;"	m	struct:nk_style_selectable	typeref:struct:nk_style_item
-normals	include/render.h	/^  vec3 normals;$/;"	m	struct:__anon5c99124e0108	typeref:typename:vec3
+normals	include/tinyobj_loader_c.h	/^  float *normals;$/;"	m	struct:__anon479917050408	typeref:typename:float *
 note	glfw/docs/extra.scss	/^.note a,.pre a,.post a,.invariant a,.warning a,.attention a,.deprecated a,.bug a,.todo a,.test a/;"	c
 note	glfw/docs/extra.scss	/^div.headertitle,.note code,.pre code,.post code,.invariant code,.warning code,.attention code,.d/;"	c
 note	glfw/docs/extra.scss	/^dl.note,dl.pre,dl.post,dl.invariant {$/;"	c
@@ -24788,25 +24867,37 @@ ntdll	glfw/src/win32_platform.h	/^    } ntdll;$/;"	m	struct:_GLFWlibraryWin32	ty
 null	glfw/deps/nuklear.h	/^    struct nk_draw_null_texture null; \/* handle to texture with a white pixel for shape drawing/;"	m	struct:nk_convert_config	typeref:struct:nk_draw_null_texture
 null	glfw/deps/nuklear_glfw_gl2.h	/^    struct nk_draw_null_texture null;$/;"	m	struct:nk_glfw_device	typeref:struct:nk_draw_null_texture
 numGlyphs	glfw/deps/nuklear.h	/^    int numGlyphs;\/* number of glyphs, needed for range checking *\/$/;"	m	struct:nk_tt_fontinfo	typeref:typename:int
-numIndices	include/render.h	/^	size_t numIndices;$/;"	m	struct:__anon5c99124e0408	typeref:typename:size_t
+numIndices	include/render.h	/^  uint32_t numIndices;$/;"	m	struct:mesh	typeref:typename:uint32_t
 numLockIndex	glfw/src/wl_platform.h	/^        xkb_mod_index_t         numLockIndex;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980508	typeref:typename:xkb_mod_index_t
-numVertices	include/render.h	/^	size_t numVertices;$/;"	m	struct:__anon5c99124e0408	typeref:typename:size_t
+numMeshes	include/render.h	/^  uint32_t numMeshes;$/;"	m	struct:model	typeref:typename:uint32_t
+numTextures	include/render.h	/^  uint32_t numTextures;$/;"	m	struct:mesh	typeref:typename:uint32_t
+numVertices	include/render.h	/^  uint32_t numVertices;$/;"	m	struct:mesh	typeref:typename:uint32_t
 num_chars	glfw/deps/nuklear.h	/^    int num_chars;$/;"	m	struct:nk_tt_pack_range	typeref:typename:int
 num_chars	glfw/deps/nuklear.h	/^   int num_chars;$/;"	m	struct:nk_text_edit_row	typeref:typename:int
 num_exts_i	src/glad.c	/^static int num_exts_i = 0;$/;"	v	typeref:typename:int	file:
+num_f	include/tinyobj_loader_c.h	/^  size_t num_f;$/;"	m	struct:__anon479917050808	typeref:typename:size_t
+num_f_num_verts	include/tinyobj_loader_c.h	/^  size_t num_f_num_verts;$/;"	m	struct:__anon479917050808	typeref:typename:size_t
+num_face_num_verts	include/tinyobj_loader_c.h	/^  unsigned int num_face_num_verts;$/;"	m	struct:__anon479917050408	typeref:typename:unsigned int
+num_faces	include/tinyobj_loader_c.h	/^  unsigned int num_faces;$/;"	m	struct:__anon479917050408	typeref:typename:unsigned int
 num_nodes	glfw/deps/nuklear.h	/^    int num_nodes;$/;"	m	struct:nk_rp_context	typeref:typename:int
+num_normals	include/tinyobj_loader_c.h	/^  unsigned int num_normals;$/;"	m	struct:__anon479917050408	typeref:typename:unsigned int
 num_remaining_in_head_chunk	glfw/deps/nuklear.h	/^    int    num_remaining_in_head_chunk;$/;"	m	struct:nk_tt__hheap	typeref:typename:int
+num_texcoords	include/tinyobj_loader_c.h	/^  unsigned int num_texcoords;$/;"	m	struct:__anon479917050408	typeref:typename:unsigned int
+num_vertices	include/tinyobj_loader_c.h	/^  unsigned int num_vertices;$/;"	m	struct:__anon479917050408	typeref:typename:unsigned int
 number	glfw/tests/events.c	/^    int number;$/;"	m	struct:__anon63e12f6c0108	typeref:typename:int	file:
 numer	glfw/src/internal.h	/^    int                 numer, denom;$/;"	m	struct:_GLFWwindow	typeref:typename:int
+nx	include/tinyobj_loader_c.h	/^  float nx, ny, nz;$/;"	m	struct:__anon479917050808	typeref:typename:float
+ny	include/tinyobj_loader_c.h	/^  float nx, ny, nz;$/;"	m	struct:__anon479917050808	typeref:typename:float
+nz	include/tinyobj_loader_c.h	/^  float nx, ny, nz;$/;"	m	struct:__anon479917050808	typeref:typename:float
 object	glfw/src/cocoa_platform.h	/^    id                object;$/;"	E	struct:_GLFWcontextNSGL
 object	glfw/src/cocoa_platform.h	/^    id              object;$/;"	E	struct:_GLFWwindowNS
 object	glfw/src/cocoa_platform.h	/^    id              object;$/;"	t
-objectCapacity	include/render.h	/^	Capacity objectCapacity;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Capacity
 objectCount	glfw/src/win32_joystick.c	/^    int                     objectCount;$/;"	m	struct:_GLFWobjenumWin32	typeref:typename:int	file:
 objectCount	glfw/src/win32_joystick.h	/^    int                     objectCount;$/;"	m	struct:_GLFWjoystickWin32	typeref:typename:int
+object_name	include/tinyobj_loader_c.h	/^  const char *object_name;$/;"	m	struct:__anon479917050808	typeref:typename:const char *
+object_name_len	include/tinyobj_loader_c.h	/^  unsigned int object_name_len;$/;"	m	struct:__anon479917050808	typeref:typename:unsigned int
 objects	glfw/src/win32_joystick.c	/^    _GLFWjoyobjectWin32*    objects;$/;"	m	struct:_GLFWobjenumWin32	typeref:typename:_GLFWjoyobjectWin32 *	file:
 objects	glfw/src/win32_joystick.h	/^    _GLFWjoyobjectWin32*    objects;$/;"	m	struct:_GLFWjoystickWin32	typeref:typename:_GLFWjoyobjectWin32 *
-objects	include/render.h	/^	Object* objects;$/;"	m	struct:__anon5c99124e0808	typeref:typename:Object *
 occluded	glfw/src/cocoa_platform.h	/^    GLFWbool        occluded;$/;"	E	struct:_GLFWwindowNS
 occlusionQueryEnable	glfw/deps/glad/vulkan.h	/^    VkBool32                 occlusionQueryEnable;$/;"	m	struct:VkCommandBufferInheritanceInfo	typeref:typename:VkBool32
 occlusionQueryPrecise	glfw/deps/glad/vulkan.h	/^    VkBool32                 occlusionQueryPrecise;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
@@ -25245,6 +25336,12 @@ p_done	glfw/examples/particles.c	/^    cnd_t     p_done;    \/\/ Condition: part
 p_frame	glfw/examples/particles.c	/^    int       p_frame;   \/\/ Particle physics frame number$/;"	m	struct:__anonfdcf762a0308	typeref:typename:int	file:
 pack_info	glfw/deps/nuklear.h	/^    void *pack_info;$/;"	m	struct:nk_tt_pack_context	typeref:typename:void *
 packed_chars	glfw/deps/nuklear.h	/^    struct nk_tt_packedchar *packed_chars;$/;"	m	struct:nk_font_baker	typeref:struct:nk_tt_packedchar *
+pad0	include/tinyobj_loader_c.h	/^  int pad0;$/;"	m	struct:__anon479917050108	typeref:typename:int
+pad0	include/tinyobj_loader_c.h	/^  int pad0;$/;"	m	struct:__anon479917050408	typeref:typename:int
+pad0	include/tinyobj_loader_c.h	/^  int pad0;$/;"	m	struct:__anon479917050808	typeref:typename:int
+pad0	include/tinyobj_loader_c.h	/^  int pad0;$/;"	m	struct:hash_table_entry_t	typeref:typename:int
+pad1	include/tinyobj_loader_c.h	/^  int pad1;$/;"	m	struct:__anon479917050808	typeref:typename:int
+pad2	include/tinyobj_loader_c.h	/^  int pad2;$/;"	m	struct:__anon479917050808	typeref:typename:int
 padding	glfw/deps/nuklear.h	/^    int   padding;$/;"	m	struct:nk_tt_pack_context	typeref:typename:int
 padding	glfw/deps/nuklear.h	/^    struct nk_vec2 padding;$/;"	m	struct:nk_style_button	typeref:struct:nk_vec2
 padding	glfw/deps/nuklear.h	/^    struct nk_vec2 padding;$/;"	m	struct:nk_style_chart	typeref:struct:nk_vec2
@@ -25271,7 +25368,13 @@ parent	glfw/deps/nuklear.h	/^    nk_size parent;$/;"	m	struct:nk_popup_buffer	ty
 parent	glfw/deps/nuklear.h	/^    struct nk_panel *parent;$/;"	m	struct:nk_panel	typeref:struct:nk_panel *
 parent	glfw/deps/nuklear.h	/^    struct nk_window *parent;$/;"	m	struct:nk_window	typeref:struct:nk_window *
 parent	glfw/src/x11_platform.h	/^    Window          parent;$/;"	m	struct:_GLFWwindowX11	typeref:typename:Window
+parseFloat	include/tinyobj_loader_c.h	/^static float parseFloat(const char **token) {$/;"	f	typeref:typename:float
+parseFloat2	include/tinyobj_loader_c.h	/^static void parseFloat2(float *x, float *y, const char **token) {$/;"	f	typeref:typename:void
+parseFloat3	include/tinyobj_loader_c.h	/^static void parseFloat3(float *x, float *y, float *z, const char **token) {$/;"	f	typeref:typename:void
+parseInt	include/tinyobj_loader_c.h	/^static int parseInt(const char **token) {$/;"	f	typeref:typename:int
+parseLine	include/tinyobj_loader_c.h	/^static int parseLine(Command *command, const char *p, size_t p_len,$/;"	f	typeref:typename:int
 parseMapping	glfw/src/input.c	/^static GLFWbool parseMapping(_GLFWmapping* mapping, const char* string)$/;"	f	typeref:typename:GLFWbool	file:
+parseRawTriple	include/tinyobj_loader_c.h	/^static tinyobj_vertex_index_t parseRawTriple(const char **token) {$/;"	f	typeref:typename:tinyobj_vertex_index_t
 particle_engine	glfw/examples/particles.c	/^static void particle_engine(double t, float dt)$/;"	f	typeref:typename:void	file:
 particle_tex_id	glfw/examples/particles.c	/^GLuint particle_tex_id, floor_tex_id;$/;"	v	typeref:typename:GLuint
 particle_texture	glfw/examples/particles.c	/^const unsigned char particle_texture[ P_TEX_WIDTH * P_TEX_HEIGHT ] = {$/;"	v	typeref:typename:const unsigned char[]
@@ -25529,12 +25632,9 @@ pos	glfw/deps/nuklear.h	/^    struct nk_vec2 pos;$/;"	m	struct:nk_mouse	typeref:
 pos	glfw/examples/triangle-opengl.c	/^    vec2 pos;$/;"	m	struct:Vertex	typeref:typename:vec2	file:
 pos	glfw/examples/triangle-opengles.c	/^    vec2 pos;$/;"	m	struct:Vertex	typeref:typename:vec2	file:
 pos	glfw/src/internal.h	/^        GLFWwindowposfun          pos;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowposfun
-pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0408	typeref:typename:vec3
-pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
-pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0608	typeref:typename:vec3
-pos	include/render.h	/^	vec3 pos;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
-pos	include/render.h	/^  vec3 pos;$/;"	m	struct:__anon5c99124e0108	typeref:typename:vec3
+pos	include/tinyobj_loader_c.h	/^  size_t pos;$/;"	m	struct:__anon479917050608	typeref:typename:size_t
 position	glfw/deps/nuklear_glfw_gl2.h	/^    float position[2];$/;"	m	struct:nk_glfw_vertex	typeref:typename:float[2]
+position	include/render.h	/^  vec3 position;$/;"	m	struct:vertex	typeref:typename:vec3
 post	glfw/docs/extra.scss	/^.note a,.pre a,.post a,.invariant a,.warning a,.attention a,.deprecated a,.bug a,.todo a,.test a/;"	c
 post	glfw/docs/extra.scss	/^div.headertitle,.note code,.pre code,.post code,.invariant code,.warning code,.attention code,.d/;"	c
 post	glfw/docs/extra.scss	/^dl.note,dl.pre,dl.post,dl.invariant {$/;"	c
@@ -25819,7 +25919,6 @@ rgptCalloutLine	glfw/deps/mingw/dinput.h	/^	POINT	rgptCalloutLine[5];$/;"	m	stru
 rgptCalloutLine	glfw/deps/mingw/dinput.h	/^	POINT	rgptCalloutLine[5];$/;"	m	struct:_DIDEVICEIMAGEINFOW	typeref:typename:POINT[5]
 right	glfw/deps/nuklear.h	/^    struct nk_color right;$/;"	m	struct:nk_command_rect_multi_color	typeref:struct:nk_color
 right	glfw/src/wl_platform.h	/^        _GLFWdecorationWayland             top, left, right, bottom;$/;"	m	struct:_GLFWwindowWayland::__anona2c0ed980408	typeref:typename:_GLFWdecorationWayland
-right	include/render.h	/^	vec3 right;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
 rightDecoration	glfw/src/wl_platform.h	/^    rightDecoration,$/;"	e	enum:_GLFWdecorationSideWayland
 rightMouseDown:	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 rightMouseDragged:	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
@@ -25835,8 +25934,6 @@ root	glfw/src/x11_platform.h	/^    Window          root;$/;"	m	struct:_GLFWlibra
 rot_x	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
 rot_y	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
 rot_z	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
-rotation	include/render.h	/^	vec3 rotation;$/;"	m	struct:__anon5c99124e0408	typeref:typename:vec3
-rotation	include/render.h	/^	vec3 rotation;$/;"	m	struct:__anon5c99124e0508	typeref:typename:vec3
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_button	typeref:typename:float
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_chart	typeref:typename:float
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_combo	typeref:typename:float
@@ -26129,16 +26226,12 @@ scale	glfw/deps/nuklear.h	/^    float scale;$/;"	m	struct:nk_font	typeref:typena
 scale	glfw/src/internal.h	/^        GLFWwindowcontentscalefun scale;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowcontentscalefun
 scale	glfw/src/wl_platform.h	/^    int                         scale;$/;"	m	struct:_GLFWmonitorWayland	typeref:typename:int
 scale	glfw/src/wl_platform.h	/^    int                         scale;$/;"	m	struct:_GLFWwindowWayland	typeref:typename:int
-scale	include/render.h	/^	float scale;$/;"	m	struct:__anon5c99124e0408	typeref:typename:float
-scale	include/render.h	/^	float scale;$/;"	m	struct:__anon5c99124e0508	typeref:typename:float
 scaleToMonitor	glfw/src/internal.h	/^    GLFWbool      scaleToMonitor;$/;"	m	struct:_GLFWwndconfig	typeref:typename:GLFWbool
 scaleToMonitor	glfw/src/win32_platform.h	/^    GLFWbool            scaleToMonitor;$/;"	m	struct:_GLFWwindowWin32	typeref:typename:GLFWbool
 scaler	glfw/deps/nuklear.h	/^    struct nk_style_item scaler;$/;"	m	struct:nk_style_window	typeref:struct:nk_style_item
 scancodes	glfw/src/win32_platform.h	/^    short int           scancodes[GLFW_KEY_LAST + 1];$/;"	m	struct:_GLFWlibraryWin32	typeref:typename:short int[]
 scancodes	glfw/src/wl_platform.h	/^    short int                   scancodes[GLFW_KEY_LAST + 1];$/;"	m	struct:_GLFWlibraryWayland	typeref:typename:short int[]
 scancodes	glfw/src/x11_platform.h	/^    short int       scancodes[GLFW_KEY_LAST + 1];$/;"	m	struct:_GLFWlibraryX11	typeref:typename:short int[]
-sceneCapacity	src/decls.c	/^Capacity sceneCapacity;$/;"	v	typeref:typename:Capacity
-scenes	src/decls.c	/^Scene* scenes;$/;"	v	typeref:typename:Scene *
 scissorCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 scissorCount;$/;"	m	struct:VkPipelineViewportStateCreateInfo	typeref:typename:uint32_t
 screen	glfw/src/cocoa_platform.h	/^    id                  screen;$/;"	E	struct:_GLFWmonitorNS
 screen	glfw/src/x11_platform.h	/^    int             screen;$/;"	m	struct:_GLFWlibraryX11	typeref:typename:int
@@ -26229,10 +26322,8 @@ set_icon	glfw/tests/icon.c	/^static void set_icon(GLFWwindow* window, int icon_c
 set_swap_interval	glfw/tests/tearing.c	/^static void set_swap_interval(GLFWwindow* window, int interval)$/;"	f	typeref:typename:void	file:
 setup_cmd	glfw/tests/triangle-vulkan.c	/^    VkCommandBuffer setup_cmd; \/\/ Command Buffer for initialization commands$/;"	m	struct:demo	typeref:typename:VkCommandBuffer	file:
 setup_lights	glfw/examples/particles.c	/^static void setup_lights(void)$/;"	f	typeref:typename:void	file:
-shader	include/render.h	/^  uint32_t shader;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t
 shaderBufferInt64Atomics	glfw/deps/glad/vulkan.h	/^    VkBool32                              shaderBufferInt64Atomics;$/;"	m	struct:VkPhysicalDeviceShaderAtomicInt64Features	typeref:typename:VkBool32
 shaderBufferInt64Atomics	glfw/deps/glad/vulkan.h	/^    VkBool32                           shaderBufferInt64Atomics;$/;"	m	struct:VkPhysicalDeviceVulkan12Features	typeref:typename:VkBool32
-shaderCapacity	src/decls.c	/^Capacity shaderCapacity;$/;"	v	typeref:typename:Capacity
 shaderClipDistance	glfw/deps/glad/vulkan.h	/^    VkBool32                 shaderClipDistance;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 shaderCullDistance	glfw/deps/glad/vulkan.h	/^    VkBool32                 shaderCullDistance;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 shaderDemoteToHelperInvocation	glfw/deps/glad/vulkan.h	/^    VkBool32                           shaderDemoteToHelperInvocation;$/;"	m	struct:VkPhysicalDeviceVulkan13Features	typeref:typename:VkBool32
@@ -26339,7 +26430,7 @@ sharingMode	glfw/deps/glad/vulkan.h	/^    VkSharingMode            sharingMode;$
 sharingMode	glfw/deps/glad/vulkan.h	/^    VkSharingMode            sharingMode;$/;"	m	struct:VkImageCreateInfo	typeref:typename:VkSharingMode
 shcore	glfw/src/win32_platform.h	/^    } shcore;$/;"	m	struct:_GLFWlibraryWin32	typeref:struct:_GLFWlibraryWin32::__anonfddb0c680908
 shiftIndex	glfw/src/wl_platform.h	/^        xkb_mod_index_t         shiftIndex;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980508	typeref:typename:xkb_mod_index_t
-shininess	include/render.h	/^  float shininess;$/;"	m	struct:__anon5c99124e0308	typeref:typename:float
+shininess	include/tinyobj_loader_c.h	/^  float shininess;$/;"	m	struct:__anon479917050108	typeref:typename:float
 shm	glfw/src/wl_platform.h	/^    struct wl_shm*              shm;$/;"	m	struct:_GLFWlibraryWayland	typeref:struct:wl_shm *
 shouldClose	glfw/src/internal.h	/^    GLFWbool            shouldClose;$/;"	m	struct:_GLFWwindow	typeref:typename:GLFWbool
 showCursor	glfw/src/cocoa_window.m	/^static void showCursor(_GLFWwindow* window)$/;"	f
@@ -26377,7 +26468,9 @@ size	glfw/deps/nuklear.h	/^struct nk_cursor {struct nk_image img; struct nk_vec2
 size	glfw/deps/nuklear.h	/^struct nk_memory {void *ptr;nk_size size;};$/;"	m	struct:nk_memory	typeref:typename:nk_size
 size	glfw/include/GLFW/glfw3.h	/^    unsigned int size;$/;"	m	struct:GLFWgammaramp	typeref:typename:unsigned int
 size	glfw/src/internal.h	/^        GLFWwindowsizefun         size;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowsizefun
-size	include/util.h	/^	size_t size;$/;"	m	struct:__anon7081f46c0108	typeref:typename:size_t
+size	include/util.h	/^  size_t size;$/;"	m	struct:capacity	typeref:typename:size_t
+skip_space	include/tinyobj_loader_c.h	/^static void skip_space(const char **token) {$/;"	f	typeref:typename:void
+skip_space_and_cr	include/tinyobj_loader_c.h	/^static void skip_space_and_cr(const char **token) {$/;"	f	typeref:typename:void
 slider	glfw/deps/nuklear.h	/^    struct nk_style_slider slider;$/;"	m	struct:nk_style	typeref:struct:nk_style_slider
 sliderCount	glfw/src/win32_joystick.c	/^    int                     sliderCount;$/;"	m	struct:_GLFWobjenumWin32	typeref:typename:int	file:
 slot	glfw/deps/nuklear.h	/^    int slot;$/;"	m	struct:nk_chart	typeref:typename:int
@@ -26431,7 +26524,9 @@ spc	glfw/deps/nuklear.h	/^    struct nk_tt_pack_context spc;$/;"	m	struct:nk_fon
 specVersion	glfw/deps/glad/vulkan.h	/^    uint32_t          specVersion;$/;"	m	struct:VkExtensionProperties	typeref:typename:uint32_t
 specVersion	glfw/deps/glad/vulkan.h	/^    uint32_t          specVersion;$/;"	m	struct:VkLayerProperties	typeref:typename:uint32_t
 specVersion	glfw/src/internal.h	/^    uint32_t        specVersion;$/;"	m	struct:VkExtensionProperties	typeref:typename:uint32_t
-specular	include/render.h	/^  vec3 specular;$/;"	m	struct:__anon5c99124e0308	typeref:typename:vec3
+specular	include/tinyobj_loader_c.h	/^  float specular[3];$/;"	m	struct:__anon479917050108	typeref:typename:float[3]
+specular_highlight_texname	include/tinyobj_loader_c.h	/^  char *specular_highlight_texname; \/* map_Ns *\/$/;"	m	struct:__anon479917050108	typeref:typename:char *
+specular_texname	include/tinyobj_loader_c.h	/^  char *specular_texname;           \/* map_Ks *\/$/;"	m	struct:__anon479917050108	typeref:typename:char *
 splitInstanceBindRegionCount	glfw/deps/glad/vulkan.h	/^    uint32_t           splitInstanceBindRegionCount;$/;"	m	struct:VkBindImageMemoryDeviceGroupInfo	typeref:typename:uint32_t
 splitview	glfw/examples/CMakeLists.txt	/^add_executable(splitview WIN32 MACOSX_BUNDLE splitview.c ${ICON} ${GLAD_GL})$/;"	t
 srcAccessMask	glfw/deps/glad/vulkan.h	/^    VkAccessFlags            srcAccessMask;$/;"	m	struct:VkBufferMemoryBarrier	typeref:typename:VkAccessFlags
@@ -26760,7 +26855,6 @@ table.markdownTable td	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.
 table.markdownTable th	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm-dox a:focus,.sm-dox a:active,.sm-dox a:hover,.sm-dox a.highlighted,.sm-dox/;"	s
 table_count	glfw/deps/nuklear.h	/^    unsigned int table_count;$/;"	m	struct:nk_window	typeref:typename:unsigned int
 tables	glfw/deps/nuklear.h	/^    struct nk_table *tables;$/;"	m	struct:nk_window	typeref:struct:nk_table *
-target	include/render.h	/^	vec3 target;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
 target_path	glfw/CMake/GenerateMappings.cmake	/^set(target_path "${CMAKE_ARGV4}")$/;"	v
 tbl	glfw/deps/nuklear.h	/^    struct nk_table tbl;$/;"	m	union:nk_page_data	typeref:struct:nk_table
 tearing	glfw/tests/CMakeLists.txt	/^add_executable(tearing WIN32 MACOSX_BUNDLE tearing.c ${GLAD_GL})$/;"	t
@@ -26827,11 +26921,11 @@ test_tests_SOURCES	cglm/Makefile.am	/^test_tests_SOURCES=\\$/;"	m
 tests	cglm/meson.build	/^test_exe = executable('tests',$/;"	B
 tests_common_h	cglm/test/include/common.h	/^#define tests_common_h$/;"	d
 tests_h	cglm/test/tests.h	/^#define tests_h$/;"	d
-texCoords	include/render.h	/^  vec3 texCoords;$/;"	m	struct:__anon5c99124e0108	typeref:typename:vec3
 tex_height	glfw/deps/nuklear.h	/^    int tex_height;$/;"	m	struct:nk_font_atlas	typeref:typename:int
 tex_height	glfw/tests/triangle-vulkan.c	/^    int32_t tex_width, tex_height;$/;"	m	struct:texture_object	typeref:typename:int32_t	file:
 tex_width	glfw/deps/nuklear.h	/^    int tex_width;$/;"	m	struct:nk_font_atlas	typeref:typename:int
 tex_width	glfw/tests/triangle-vulkan.c	/^    int32_t tex_width, tex_height;$/;"	m	struct:texture_object	typeref:typename:int32_t	file:
+texcoords	include/tinyobj_loader_c.h	/^  float *texcoords;$/;"	m	struct:__anon479917050408	typeref:typename:float *
 texinfo_documents	cglm/docs/source/conf.py	/^texinfo_documents = [$/;"	v
 text	glfw/deps/nuklear.h	/^    char text[NK_INPUT_MAX];$/;"	m	struct:nk_keyboard	typeref:typename:char[]
 text	glfw/deps/nuklear.h	/^    struct nk_color text;$/;"	m	struct:nk_style_tab	typeref:struct:nk_color
@@ -26880,13 +26974,16 @@ texture	glfw/deps/nuklear.h	/^    nk_handle texture; \/* texture handle to a tex
 texture	glfw/deps/nuklear.h	/^    nk_handle texture;$/;"	m	struct:nk_draw_command	typeref:typename:nk_handle
 texture	glfw/deps/nuklear.h	/^    nk_handle texture;$/;"	m	struct:nk_font	typeref:typename:nk_handle
 texture	glfw/deps/nuklear.h	/^    nk_handle texture;$/;"	m	struct:nk_user_font	typeref:typename:nk_handle
+texture	include/render.h	/^struct texture {};$/;"	s
 textureCompressionASTC_HDR	glfw/deps/glad/vulkan.h	/^    VkBool32                           textureCompressionASTC_HDR;$/;"	m	struct:VkPhysicalDeviceVulkan13Features	typeref:typename:VkBool32
 textureCompressionASTC_HDR	glfw/deps/glad/vulkan.h	/^    VkBool32                 textureCompressionASTC_HDR;$/;"	m	struct:VkPhysicalDeviceTextureCompressionASTCHDRFeatures	typeref:typename:VkBool32
 textureCompressionASTC_LDR	glfw/deps/glad/vulkan.h	/^    VkBool32                 textureCompressionASTC_LDR;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 textureCompressionBC	glfw/deps/glad/vulkan.h	/^    VkBool32                 textureCompressionBC;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 textureCompressionETC2	glfw/deps/glad/vulkan.h	/^    VkBool32                 textureCompressionETC2;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
+textureCoords	include/render.h	/^  vec3 textureCoords;$/;"	m	struct:vertex	typeref:typename:vec3
 texture_object	glfw/tests/triangle-vulkan.c	/^struct texture_object {$/;"	s	file:
 textures	glfw/tests/triangle-vulkan.c	/^    struct texture_object textures[DEMO_TEXTURE_COUNT];$/;"	m	struct:demo	typeref:struct:texture_object[]	file:
+textures	include/render.h	/^  struct texture* textures;$/;"	m	struct:mesh	typeref:struct:texture *
 theme_destroy	glfw/src/wl_platform.h	/^        PFN_wl_cursor_theme_destroy theme_destroy;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980708	typeref:typename:PFN_wl_cursor_theme_destroy
 theme_get_cursor	glfw/src/wl_platform.h	/^        PFN_wl_cursor_theme_get_cursor theme_get_cursor;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980708	typeref:typename:PFN_wl_cursor_theme_get_cursor
 theme_load	glfw/src/wl_platform.h	/^        PFN_wl_cursor_theme_load theme_load;$/;"	m	struct:_GLFWlibraryWayland::__anona2c0ed980708	typeref:typename:PFN_wl_cursor_theme_load
@@ -26923,6 +27020,18 @@ timespec	glfw/deps/tinycthread.h	/^#define timespec /;"	d
 timestampComputeAndGraphics	glfw/deps/glad/vulkan.h	/^    VkBool32             timestampComputeAndGraphics;$/;"	m	struct:VkPhysicalDeviceLimits	typeref:typename:VkBool32
 timestampPeriod	glfw/deps/glad/vulkan.h	/^    float                timestampPeriod;$/;"	m	struct:VkPhysicalDeviceLimits	typeref:typename:float
 timestampValidBits	glfw/deps/glad/vulkan.h	/^    uint32_t                 timestampValidBits;$/;"	m	struct:VkQueueFamilyProperties	typeref:typename:uint32_t
+tinyobj_attrib_free	include/tinyobj_loader_c.h	/^void tinyobj_attrib_free(tinyobj_attrib_t *attrib) {$/;"	f	typeref:typename:void
+tinyobj_attrib_init	include/tinyobj_loader_c.h	/^void tinyobj_attrib_init(tinyobj_attrib_t *attrib) {$/;"	f	typeref:typename:void
+tinyobj_attrib_t	include/tinyobj_loader_c.h	/^} tinyobj_attrib_t;$/;"	t	typeref:struct:__anon479917050408
+tinyobj_material_add	include/tinyobj_loader_c.h	/^static tinyobj_material_t *tinyobj_material_add(tinyobj_material_t *prev,$/;"	f	typeref:typename:tinyobj_material_t *
+tinyobj_material_t	include/tinyobj_loader_c.h	/^} tinyobj_material_t;$/;"	t	typeref:struct:__anon479917050108
+tinyobj_materials_free	include/tinyobj_loader_c.h	/^void tinyobj_materials_free(tinyobj_material_t *materials,$/;"	f	typeref:typename:void
+tinyobj_parse_and_index_mtl_file	include/tinyobj_loader_c.h	/^static int tinyobj_parse_and_index_mtl_file($/;"	f	typeref:typename:int
+tinyobj_parse_mtl_file	include/tinyobj_loader_c.h	/^int tinyobj_parse_mtl_file(tinyobj_material_t **materials_out,$/;"	f	typeref:typename:int
+tinyobj_parse_obj	include/tinyobj_loader_c.h	/^int tinyobj_parse_obj(tinyobj_attrib_t *attrib, tinyobj_shape_t **shapes,$/;"	f	typeref:typename:int
+tinyobj_shape_t	include/tinyobj_loader_c.h	/^} tinyobj_shape_t;$/;"	t	typeref:struct:__anon479917050208
+tinyobj_shapes_free	include/tinyobj_loader_c.h	/^void tinyobj_shapes_free(tinyobj_shape_t *shapes, size_t num_shapes) {$/;"	f	typeref:typename:void
+tinyobj_vertex_index_t	include/tinyobj_loader_c.h	/^} tinyobj_vertex_index_t;$/;"	t	typeref:struct:__anon479917050308
 title	glfw/docs/extra.scss	/^div.title {$/;"	c
 title	glfw/src/internal.h	/^    const char*   title;$/;"	m	struct:_GLFWwndconfig	typeref:typename:const char *
 title	glfw/src/null_platform.h	/^    char*           title;$/;"	m	struct:_GLFWwindowNull	typeref:typename:char *
@@ -26975,6 +27084,7 @@ translateKey	glfw/src/x11_window.c	/^static int translateKey(int scancode)$/;"	f
 translateKeySyms	glfw/src/x11_init.c	/^static int translateKeySyms(const KeySym* keysyms, int width)$/;"	f	typeref:typename:int	file:
 translateKeyToModifierFlag	glfw/src/cocoa_window.m	/^static NSUInteger translateKeyToModifierFlag(int key)$/;"	f
 translateState	glfw/src/x11_window.c	/^static int translateState(int state)$/;"	f	typeref:typename:int	file:
+transmittance	include/tinyobj_loader_c.h	/^  float transmittance[3];$/;"	m	struct:__anon479917050108	typeref:typename:float[3]
 transparent	glfw/src/internal.h	/^    GLFWbool    transparent;$/;"	m	struct:_GLFWfbconfig	typeref:typename:GLFWbool
 transparent	glfw/src/null_platform.h	/^    GLFWbool        transparent;$/;"	m	struct:_GLFWwindowNull	typeref:typename:GLFWbool
 transparent	glfw/src/win32_platform.h	/^    GLFWbool            transparent;$/;"	m	struct:_GLFWwindowWin32	typeref:typename:GLFWbool
@@ -26984,6 +27094,7 @@ tree_depth	glfw/deps/nuklear.h	/^    int tree_depth;$/;"	m	struct:nk_row_layout	
 triangle-opengl	glfw/examples/CMakeLists.txt	/^add_executable(triangle-opengl WIN32 MACOSX_BUNDLE triangle-opengl.c ${ICON} ${GLAD_GL})$/;"	t
 triangle-opengles	glfw/examples/CMakeLists.txt	/^add_executable(triangle-opengles WIN32 MACOSX_BUNDLE triangle-opengles.c ${ICON} ${GLAD_GLES2})$/;"	t
 triangle-vulkan	glfw/tests/CMakeLists.txt	/^add_executable(triangle-vulkan WIN32 triangle-vulkan.c ${GLAD_VULKAN})$/;"	t
+tryParseDouble	include/tinyobj_loader_c.h	/^static int tryParseDouble(const char *s, const char *s_end, double *result) {$/;"	f	typeref:typename:int
 tspan3805	glfw/docs/spaces.svg	/^         style="font-size:12px;line-height:1.25;font-family:sans-serif"> <\/tspan><\/text>$/;"	i
 tss_create	glfw/deps/tinycthread.c	/^int tss_create(tss_t *key, tss_dtor_t dtor)$/;"	f	typeref:typename:int
 tss_delete	glfw/deps/tinycthread.c	/^void tss_delete(tss_t key)$/;"	f	typeref:typename:void
@@ -27015,6 +27126,8 @@ ttf_data_owned_by_atlas	glfw/deps/nuklear.h	/^    unsigned char ttf_data_owned_b
 ttf_size	glfw/deps/nuklear.h	/^    nk_size ttf_size;$/;"	m	struct:nk_font_config	typeref:typename:nk_size
 tv_nsec	glfw/deps/tinycthread.h	/^  long   tv_nsec;$/;"	m	struct:_ttherad_timespec	typeref:typename:long
 tv_sec	glfw/deps/tinycthread.h	/^  time_t tv_sec;$/;"	m	struct:_ttherad_timespec	typeref:typename:time_t
+tx	include/tinyobj_loader_c.h	/^  float tx, ty;$/;"	m	struct:__anon479917050808	typeref:typename:float
+ty	include/tinyobj_loader_c.h	/^  float tx, ty;$/;"	m	struct:__anon479917050808	typeref:typename:float
 type	glfw/deps/glad/vulkan.h	/^    VkDescriptorType         type;$/;"	m	struct:VkDescriptorPoolSize	typeref:typename:VkDescriptorType
 type	glfw/deps/glad/vulkan.h	/^    VkImageType                        type;$/;"	m	struct:VkPhysicalDeviceImageFormatInfo2	typeref:typename:VkImageType
 type	glfw/deps/glad/vulkan.h	/^    VkImageType                        type;$/;"	m	struct:VkPhysicalDeviceSparseImageFormatInfo2	typeref:typename:VkImageType
@@ -27030,7 +27143,7 @@ type	glfw/deps/nuklear.h	/^    unsigned char type,padding;$/;"	m	struct:nk_tt_ve
 type	glfw/deps/nuklear.h	/^    unsigned int type;$/;"	m	struct:nk_memory_status	typeref:typename:unsigned int
 type	glfw/src/internal.h	/^    uint8_t         type;$/;"	m	struct:_GLFWmapelement	typeref:typename:uint8_t
 type	glfw/src/win32_joystick.h	/^    int                     type;$/;"	m	struct:_GLFWjoyobjectWin32	typeref:typename:int
-type	include/render.h	/^  char* type;$/;"	m	struct:__anon5c99124e0208	typeref:typename:char *
+type	include/tinyobj_loader_c.h	/^  CommandType type;$/;"	m	struct:__anon479917050808	typeref:typename:CommandType
 types	glfw/src/wl_init.c	/^#define types /;"	d	file:
 u	cglm/include/cglm/types-struct.h	/^    float u;$/;"	m	struct:vec2s::__anon5cec09d90308	typeref:typename:float
 u	cglm/include/cglm/types-struct.h	/^    int u;$/;"	m	struct:ivec2s::__anon5cec09d90908	typeref:typename:int
@@ -27088,7 +27201,7 @@ unitNumber	glfw/src/cocoa_platform.h	/^    uint32_t            unitNumber;$/;"	E
 unlockPointer	glfw/src/wl_window.c	/^static void unlockPointer(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 unmarkText	glfw/src/cocoa_window.m	/^{$/;"	m	implementation:GLFWContentView
 unnormalizedCoordinates	glfw/deps/glad/vulkan.h	/^    VkBool32                 unnormalizedCoordinates;$/;"	m	struct:VkSamplerCreateInfo	typeref:typename:VkBool32
-up	include/render.h	/^	vec3 up;$/;"	m	struct:__anon5c99124e0708	typeref:typename:vec3
+until_space	include/tinyobj_loader_c.h	/^static int until_space(const char *token) {$/;"	f	typeref:typename:int
 updateCursorImage	glfw/src/cocoa_window.m	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f
 updateCursorImage	glfw/src/win32_window.c	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
 updateCursorImage	glfw/src/x11_window.c	/^static void updateCursorImage(_GLFWwindow* window)$/;"	f	typeref:typename:void	file:
@@ -27159,6 +27272,7 @@ v	cglm/include/cglm/types-struct.h	/^    float v;$/;"	m	struct:vec2s::__anon5cec
 v	cglm/include/cglm/types-struct.h	/^    int v;$/;"	m	struct:ivec2s::__anon5cec09d90908	typeref:typename:int
 v0	glfw/deps/nuklear.h	/^    float u0, v0, u1, v1;$/;"	m	struct:nk_font_glyph	typeref:typename:float
 v1	glfw/deps/nuklear.h	/^    float u0, v0, u1, v1;$/;"	m	struct:nk_font_glyph	typeref:typename:float
+v_idx	include/tinyobj_loader_c.h	/^  int v_idx, vt_idx, vn_idx;$/;"	m	struct:__anon479917050308	typeref:typename:int
 v_oversample	glfw/deps/nuklear.h	/^    unsigned char h_oversample, v_oversample;$/;"	m	struct:nk_tt_pack_range	typeref:typename:unsigned char
 v_oversample	glfw/deps/nuklear.h	/^    unsigned int   h_oversample, v_oversample;$/;"	m	struct:nk_tt_pack_context	typeref:typename:unsigned int
 val	glfw/deps/getopt.h	/^  int val;$/;"	m	struct:option	typeref:typename:int
@@ -27173,14 +27287,15 @@ value	glfw/deps/nuklear.h	/^    diff = sizeof(Big) - sizeof(T), value = nk_helpe
 value	glfw/deps/nuklear.h	/^    union nk_property value;$/;"	m	struct:nk_property_variant	typeref:union:nk_property
 value	glfw/deps/nuklear.h	/^template<typename T, int size_diff> struct nk_helper{enum {value = size_diff};};$/;"	e	enum:nk_helper::__anonb47b8ca70303
 value	glfw/deps/nuklear.h	/^template<typename T> struct nk_helper<T,0>{enum {value = nk_alignof<T>::value};};$/;"	e	enum:nk_helper::__anonb47b8ca70403
+value	include/tinyobj_loader_c.h	/^  long value;$/;"	m	struct:hash_table_entry_t	typeref:typename:long
 values	glfw/deps/nuklear.h	/^    nk_uint values[NK_VALUE_PAGE_CAPACITY];$/;"	m	struct:nk_table	typeref:typename:nk_uint[]
-vao	include/render.h	/^	uint32_t vao, vbo, ebo;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t
+vao	include/render.h	/^  uint32_t vao, vbo, ebo;$/;"	m	struct:mesh	typeref:typename:uint32_t
 variableMultisampleRate	glfw/deps/glad/vulkan.h	/^    VkBool32                 variableMultisampleRate;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 variablePointers	glfw/deps/glad/vulkan.h	/^    VkBool32                           variablePointers;$/;"	m	struct:VkPhysicalDeviceVariablePointersFeatures	typeref:typename:VkBool32
 variablePointers	glfw/deps/glad/vulkan.h	/^    VkBool32                           variablePointers;$/;"	m	struct:VkPhysicalDeviceVulkan11Features	typeref:typename:VkBool32
 variablePointersStorageBuffer	glfw/deps/glad/vulkan.h	/^    VkBool32                           variablePointersStorageBuffer;$/;"	m	struct:VkPhysicalDeviceVariablePointersFeatures	typeref:typename:VkBool32
 variablePointersStorageBuffer	glfw/deps/glad/vulkan.h	/^    VkBool32                           variablePointersStorageBuffer;$/;"	m	struct:VkPhysicalDeviceVulkan11Features	typeref:typename:VkBool32
-vbo	include/render.h	/^	uint32_t vao, vbo, ebo;$/;"	m	struct:__anon5c99124e0408	typeref:typename:uint32_t
+vbo	include/render.h	/^  uint32_t vao, vbo, ebo;$/;"	m	struct:mesh	typeref:typename:uint32_t
 vec2	cglm/docs/source/vec2.rst	/^vec2$/;"	H
 vec2	cglm/include/cglm/types.h	/^typedef float                   vec2[2];$/;"	t	typeref:typename:float[2]
 vec2 extra	cglm/docs/source/vec2-ext.rst	/^vec2 extra$/;"	H
@@ -27212,6 +27327,7 @@ versors	cglm/include/cglm/types-struct.h	/^} versors;$/;"	t	typeref:union:versor
 vertShaderCode	glfw/tests/triangle-vulkan.c	/^static const uint32_t vertShaderCode[] = {$/;"	v	typeref:typename:const uint32_t[]	file:
 vert_shader_module	glfw/tests/triangle-vulkan.c	/^    VkShaderModule vert_shader_module;$/;"	m	struct:demo	typeref:typename:VkShaderModule	file:
 vertex	glfw/examples/wave.c	/^struct Vertex vertex[VERTEXNUM];$/;"	v	typeref:struct:Vertex[]
+vertex	include/render.h	/^struct vertex {$/;"	s
 vertexAttributeDescriptionCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 vertexAttributeDescriptionCount;$/;"	m	struct:VkPipelineVertexInputStateCreateInfo	typeref:typename:uint32_t
 vertexBindingDescriptionCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 vertexBindingDescriptionCount;$/;"	m	struct:VkPipelineVertexInputStateCreateInfo	typeref:typename:uint32_t
 vertexCount	glfw/deps/glad/vulkan.h	/^    uint32_t                         vertexCount;$/;"	m	struct:VkDrawIndirectCommand	typeref:typename:uint32_t
@@ -27240,7 +27356,8 @@ vertices	glfw/tests/msaa.c	/^static const vec2 vertices[4] =$/;"	v	typeref:typen
 vertices	glfw/tests/reopen.c	/^static const vec2 vertices[4] =$/;"	v	typeref:typename:const vec2[4]	file:
 vertices	glfw/tests/tearing.c	/^} vertices[4] =$/;"	v	typeref:typename:const struct __anond79569210108[4]
 vertices	glfw/tests/triangle-vulkan.c	/^    } vertices;$/;"	m	struct:demo	typeref:struct:demo::__anonaa1655ab0308	file:
-vertices	include/render.h	/^  Vertex* vertices;$/;"	m	struct:__anon5c99124e0408	typeref:typename:Vertex *
+vertices	include/render.h	/^  struct vertex* vertices;$/;"	m	struct:mesh	typeref:struct:vertex *
+vertices	include/tinyobj_loader_c.h	/^  float *vertices;$/;"	m	struct:__anon479917050408	typeref:typename:float *
 vertices	src/main.c	/^float vertices[] = {-0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f};$/;"	v	typeref:typename:float[]
 vi	glfw/tests/triangle-vulkan.c	/^        VkPipelineVertexInputStateCreateInfo vi;$/;"	m	struct:demo::__anonaa1655ab0308	typeref:typename:VkPipelineVertexInputStateCreateInfo	file:
 vi_attrs	glfw/tests/triangle-vulkan.c	/^        VkVertexInputAttributeDescription vi_attrs[2];$/;"	m	struct:demo::__anonaa1655ab0308	typeref:typename:VkVertexInputAttributeDescription[2]	file:
@@ -27510,8 +27627,10 @@ vkUpdateDescriptorSetWithTemplate	glfw/deps/glad/vulkan.h	/^#define vkUpdateDesc
 vkUpdateDescriptorSets	glfw/deps/glad/vulkan.h	/^#define vkUpdateDescriptorSets /;"	d
 vkWaitForFences	glfw/deps/glad/vulkan.h	/^#define vkWaitForFences /;"	d
 vkWaitSemaphores	glfw/deps/glad/vulkan.h	/^#define vkWaitSemaphores /;"	d
+vn_idx	include/tinyobj_loader_c.h	/^  int v_idx, vt_idx, vn_idx;$/;"	m	struct:__anon479917050308	typeref:typename:int
 void	glfw/src/cocoa_platform.h	/^typedef TISInputSourceRef (*PFN_TISCopyCurrentKeyboardLayoutInputSource)(void);$/;"	t
 void	glfw/src/cocoa_platform.h	/^typedef UInt8 (*PFN_LMGetKbdType)(void);$/;"	t
+vt_idx	include/tinyobj_loader_c.h	/^  int v_idx, vt_idx, vn_idx;$/;"	m	struct:__anon479917050308	typeref:typename:int
 vulkanLoader	glfw/src/internal.h	/^    PFN_vkGetInstanceProcAddr vulkanLoader;$/;"	m	struct:_GLFWinitconfig	typeref:typename:PFN_vkGetInstanceProcAddr
 vulkanMemoryModel	glfw/deps/glad/vulkan.h	/^    VkBool32                           vulkanMemoryModel;$/;"	m	struct:VkPhysicalDeviceVulkan12Features	typeref:typename:VkBool32
 vulkanMemoryModel	glfw/deps/glad/vulkan.h	/^    VkBool32                           vulkanMemoryModel;$/;"	m	struct:VkPhysicalDeviceVulkanMemoryModelFeatures	typeref:typename:VkBool32
@@ -27521,9 +27640,12 @@ vulkanMemoryModelDeviceScope	glfw/deps/glad/vulkan.h	/^    VkBool32             
 vulkanMemoryModelDeviceScope	glfw/deps/glad/vulkan.h	/^    VkBool32                           vulkanMemoryModelDeviceScope;$/;"	m	struct:VkPhysicalDeviceVulkanMemoryModelFeatures	typeref:typename:VkBool32
 vx	glfw/examples/particles.c	/^    float vx,vy,vz;  \/\/ Velocity vector$/;"	m	struct:__anonfdcf762a0408	typeref:typename:float	file:
 vx	glfw/examples/wave.c	/^double vx[GRIDW][GRIDH], vy[GRIDW][GRIDH];$/;"	v	typeref:typename:double[][]
+vx	include/tinyobj_loader_c.h	/^  float vx, vy, vz;$/;"	m	struct:__anon479917050808	typeref:typename:float
 vy	glfw/examples/particles.c	/^    float vx,vy,vz;  \/\/ Velocity vector$/;"	m	struct:__anonfdcf762a0408	typeref:typename:float	file:
 vy	glfw/examples/wave.c	/^double vx[GRIDW][GRIDH], vy[GRIDW][GRIDH];$/;"	v	typeref:typename:double[][]
+vy	include/tinyobj_loader_c.h	/^  float vx, vy, vz;$/;"	m	struct:__anon479917050808	typeref:typename:float
 vz	glfw/examples/particles.c	/^    float vx,vy,vz;  \/\/ Velocity vector$/;"	m	struct:__anonfdcf762a0408	typeref:typename:float	file:
+vz	include/tinyobj_loader_c.h	/^  float vx, vy, vz;$/;"	m	struct:__anon479917050808	typeref:typename:float
 w	cglm/include/cglm/types-struct.h	/^    float w;$/;"	m	struct:vec4s::__anon5cec09d90f08	typeref:typename:float
 w	cglm/include/cglm/types-struct.h	/^    float w;$/;"	m	struct:versors::__anon5cec09d91108	typeref:typename:float
 w	cglm/include/cglm/types-struct.h	/^    int w;$/;"	m	struct:ivec4s::__anon5cec09d90d08	typeref:typename:int

@@ -1,9 +1,11 @@
+#include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
 #include "../include/PigEngine.h"
+#include "../include/model.h"
 #include "../include/shader.h"
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
@@ -36,9 +38,11 @@ int main(void) {
 
   useShader(program);
 
+  size_t l = 0;
+
+  loadModel("./cornell_box.obj", &l);
 
   while (!glfwWindowShouldClose(window)) {
-
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
