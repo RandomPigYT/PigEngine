@@ -12,5 +12,6 @@
 extern vec2 mousePos;
 
 void cursorPosCallback(GLFWwindow* window, double xpos, double ypos);
-void keyCallback(GLFWwindow *window, int key, int scancode, int action, int mods);
+void keyCallback(GLFWwindow* window, int key, int scancode, int action,
+                 int mods);
 #endif  // PIG_INPUT_H

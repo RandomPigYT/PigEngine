@@ -12,7 +12,6 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
   glViewport(0, 0, width, height);
 }
 
-
 float vertices[] = {-0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f, 0.0f, 0.5f, 0.0f};
 
 int main(void) {
@@ -42,7 +41,6 @@ int main(void) {
   size_t l = 0;
 
   loadModel("car.obj", &l);
-
 
   while (!glfwWindowShouldClose(window)) {
     glfwPollEvents();
