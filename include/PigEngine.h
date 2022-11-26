@@ -2,6 +2,7 @@
 #define PIG_ENGINE_H
 
 #define GLFW_INCLUDE_NONE
+#define GL_GLEXT_PROTOTYPES
 
 #include <GLFW/glfw3.h>
 #include <cglm/cglm.h>

@@ -1,7 +1,7 @@
 CC:=gcc
 LD:=ld
 
-CFLAGS:=-Wall -Wextra -g -std=gnu17 -O2 
+CFLAGS:=-Wall -Wextra -g -std=gnu17 -O2
 LDFLAGS:=-L/usr/local/lib -lglfw -pthread -lGL -lrt -lXrandr -lXxf86vm -lXi -lXinerama -lX11
 
 WINFLAGS:=-L/usr/i686-w64-mingw32/bin/glfw3.dll
@@ -41,13 +41,15 @@ clean:
 run: $(TARGET)
 	@./$(TARGET)
 
+VAL_OUT:=valgrind-out.txt
+
 valgrind:
 	@valgrind --leak-check=full \
          --show-leak-kinds=all \
          --track-origins=yes \
          --verbose \
-         --log-file=valgrind-out.txt \
-         ./$(TARGET)
+         --log-file=$(VAL_OUT)\
+         ./$(TARGET) car.obj
 
 format:
 	@clang-format $(SRCS) $(INCLUDES) --style=Google -i
