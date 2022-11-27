@@ -21,7 +21,7 @@ struct texture_s {};
 struct mesh_s {
   struct vertex_s* vertices;
   struct texture_s* textures;
-  uint32_t indices;
+  uint32_t* indices;
 
   uint32_t numVertices;
   uint32_t numIndices;

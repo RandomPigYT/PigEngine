@@ -8,6 +8,7 @@
 #include "../include/model.h"
 #include "../include/shader.h"
 
+
 void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
   glViewport(0, 0, width, height);
 }

@@ -15038,7 +15038,7 @@ gear1	glfw/examples/gears.c	/^static GLint gear1, gear2, gear3;$/;"	v	typeref:ty
 gear2	glfw/examples/gears.c	/^static GLint gear1, gear2, gear3;$/;"	v	typeref:typename:GLint	file:
 gear3	glfw/examples/gears.c	/^static GLint gear1, gear2, gear3;$/;"	v	typeref:typename:GLint	file:
 gears	glfw/examples/CMakeLists.txt	/^add_executable(gears WIN32 MACOSX_BUNDLE gears.c ${ICON} ${GLAD_GL})$/;"	t
-generateMesh	src/model/load.c	/^struct mesh_s generateMesh(fastObjMesh* modelData, fastObjGroup* group){$/;"	f	typeref:struct:mesh_s
+generateMesh	src/model/load.c	/^struct mesh_s generateMesh(fastObjMesh* modelData, fastObjGroup* group) {$/;"	f	typeref:struct:mesh_s
 generate_heightmap__circle	glfw/examples/heightmap.c	/^static void generate_heightmap__circle(float* center_x, float* center_y,$/;"	f	typeref:typename:void	file:
 geometryShader	glfw/deps/glad/vulkan.h	/^    VkBool32                 geometryShader;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 getAtomIfSupported	glfw/src/x11_init.c	/^static Atom getAtomIfSupported(Atom* supportedAtoms,$/;"	f	typeref:typename:Atom	file:
@@ -22723,7 +22723,7 @@ index_count	include/fast_obj.h	/^  unsigned int index_count;$/;"	m	struct:__anon
 index_map	glfw/deps/nuklear.h	/^    int index_map; \/* a cmap mapping for our chosen character encoding *\/$/;"	m	struct:nk_tt_fontinfo	typeref:typename:int
 index_offset	include/fast_obj.h	/^  unsigned int index_offset;$/;"	m	struct:__anon438a95f60408	typeref:typename:unsigned int
 indices	include/fast_obj.h	/^  fastObjIndex* indices;$/;"	m	struct:__anon438a95f60508	typeref:typename:fastObjIndex *
-indices	include/render.h	/^  uint32_t indices;$/;"	m	struct:mesh_s	typeref:typename:uint32_t
+indices	include/render.h	/^  uint32_t* indices;$/;"	m	struct:mesh_s	typeref:typename:uint32_t *
 info	glfw/deps/nuklear.h	/^    struct nk_baked_font info;$/;"	m	struct:nk_font	typeref:struct:nk_baked_font
 info	glfw/deps/nuklear.h	/^    struct nk_tt_fontinfo info;$/;"	m	struct:nk_font_bake_data	typeref:struct:nk_tt_fontinfo
 inheritedQueries	glfw/deps/glad/vulkan.h	/^    VkBool32                 inheritedQueries;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
@@ -22735,7 +22735,7 @@ init	src/renderer/init.c	/^GLFWwindow *init(int w, int h, const char *title) {$/
 initExtensions	glfw/src/x11_init.c	/^static GLFWbool initExtensions(void)$/;"	f	typeref:typename:GLFWbool	file:
 initJoysticks	glfw/src/input.c	/^static GLFWbool initJoysticks(void)$/;"	f	typeref:typename:GLFWbool	file:
 initJoysticks	glfw/src/internal.h	/^    GLFWbool (*initJoysticks)(void);$/;"	m	struct:_GLFWplatform	typeref:typename:GLFWbool (*)(void)
-initModel	src/model/load.c	/^void initModel(struct model_s* model, fastObjMesh* modelData){$/;"	f	typeref:typename:void
+initModel	src/model/load.c	/^void initModel(struct model_s* model, fastObjMesh* modelData) {$/;"	f	typeref:typename:void
 initShader	src/renderer/shader/shader.c	/^uint32_t initShader(const char *vertexPath, const char *fragmentPath) {$/;"	f	typeref:typename:uint32_t
 initWithGlfwWindow:	glfw/src/cocoa_window.m	/^- (instancetype)initWithGlfwWindow:(_GLFWwindow *)initWindow;$/;"	m	interface:GLFWContentView
 initWithGlfwWindow:	glfw/src/cocoa_window.m	/^- (instancetype)initWithGlfwWindow:(_GLFWwindow *)initWindow;$/;"	m	interface:GLFWWindowDelegate
@@ -25637,8 +25637,8 @@ pos	glfw/deps/nuklear.h	/^    struct nk_vec2 pos;$/;"	m	struct:nk_mouse	typeref:
 pos	glfw/examples/triangle-opengl.c	/^    vec2 pos;$/;"	m	struct:Vertex	typeref:typename:vec2	file:
 pos	glfw/examples/triangle-opengles.c	/^    vec2 pos;$/;"	m	struct:Vertex	typeref:typename:vec2	file:
 pos	glfw/src/internal.h	/^        GLFWwindowposfun          pos;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowposfun
-pos	include/render.h	/^	vec3 pos;$/;"	m	struct:mesh_s	typeref:typename:vec3
-pos	include/render.h	/^	vec3 pos;$/;"	m	struct:model_s	typeref:typename:vec3
+pos	include/render.h	/^  vec3 pos;$/;"	m	struct:mesh_s	typeref:typename:vec3
+pos	include/render.h	/^  vec3 pos;$/;"	m	struct:model_s	typeref:typename:vec3
 position	glfw/deps/nuklear_glfw_gl2.h	/^    float position[2];$/;"	m	struct:nk_glfw_vertex	typeref:typename:float[2]
 position	include/render.h	/^  vec3 position;$/;"	m	struct:vertex_s	typeref:typename:vec3
 position_count	include/fast_obj.h	/^  unsigned int position_count;$/;"	m	struct:__anon438a95f60508	typeref:typename:unsigned int
@@ -25947,8 +25947,8 @@ root	glfw/src/x11_platform.h	/^    Window          root;$/;"	m	struct:_GLFWlibra
 rot_x	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
 rot_y	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
 rot_z	glfw/examples/splitview.c	/^static int rot_x = 0, rot_y = 0, rot_z = 0;$/;"	v	typeref:typename:int	file:
-rotation	include/render.h	/^	vec3 rotation;$/;"	m	struct:mesh_s	typeref:typename:vec3
-rotation	include/render.h	/^	vec3 rotation;$/;"	m	struct:model_s	typeref:typename:vec3
+rotation	include/render.h	/^  vec3 rotation;$/;"	m	struct:mesh_s	typeref:typename:vec3
+rotation	include/render.h	/^  vec3 rotation;$/;"	m	struct:model_s	typeref:typename:vec3
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_button	typeref:typename:float
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_chart	typeref:typename:float
 rounding	glfw/deps/nuklear.h	/^    float rounding;$/;"	m	struct:nk_style_combo	typeref:typename:float
@@ -26241,8 +26241,8 @@ scale	glfw/deps/nuklear.h	/^    float scale;$/;"	m	struct:nk_font	typeref:typena
 scale	glfw/src/internal.h	/^        GLFWwindowcontentscalefun scale;$/;"	m	struct:_GLFWwindow::__anon8afddc4e0a08	typeref:typename:GLFWwindowcontentscalefun
 scale	glfw/src/wl_platform.h	/^    int                         scale;$/;"	m	struct:_GLFWmonitorWayland	typeref:typename:int
 scale	glfw/src/wl_platform.h	/^    int                         scale;$/;"	m	struct:_GLFWwindowWayland	typeref:typename:int
-scale	include/render.h	/^	vec3 scale;$/;"	m	struct:mesh_s	typeref:typename:vec3
-scale	include/render.h	/^	vec3 scale;$/;"	m	struct:model_s	typeref:typename:vec3
+scale	include/render.h	/^  vec3 scale;$/;"	m	struct:mesh_s	typeref:typename:vec3
+scale	include/render.h	/^  vec3 scale;$/;"	m	struct:model_s	typeref:typename:vec3
 scaleToMonitor	glfw/src/internal.h	/^    GLFWbool      scaleToMonitor;$/;"	m	struct:_GLFWwndconfig	typeref:typename:GLFWbool
 scaleToMonitor	glfw/src/win32_platform.h	/^    GLFWbool            scaleToMonitor;$/;"	m	struct:_GLFWwindowWin32	typeref:typename:GLFWbool
 scaler	glfw/deps/nuklear.h	/^    struct nk_style_item scaler;$/;"	m	struct:nk_style_window	typeref:struct:nk_style_item
@@ -27085,8 +27085,8 @@ tr.markdownTableBody:nth-child(even)	glfw/docs/extra.css	/^.sm-dox,.sm-dox a,.sm
 track_cursor	glfw/tests/cursor.c	/^static int track_cursor = GLFW_FALSE;$/;"	v	typeref:typename:int	file:
 trackingArea	glfw/src/cocoa_window.m	/^    NSTrackingArea* trackingArea;$/;"	E	interface:GLFWContentView
 tracking_cursor	glfw/tests/cursor.c	/^static GLFWcursor* tracking_cursor = NULL;$/;"	v	typeref:typename:GLFWcursor *	file:
-transformMatrix	include/render.h	/^	mat4 transformMatrix;$/;"	m	struct:mesh_s	typeref:typename:mat4
-transformMatrix	include/render.h	/^	mat4 transformMatrix;$/;"	m	struct:model_s	typeref:typename:mat4
+transformMatrix	include/render.h	/^  mat4 transformMatrix;$/;"	m	struct:mesh_s	typeref:typename:mat4
+transformMatrix	include/render.h	/^  mat4 transformMatrix;$/;"	m	struct:model_s	typeref:typename:mat4
 translateFlags	glfw/src/cocoa_window.m	/^static int translateFlags(NSUInteger flags)$/;"	f
 translateKey	glfw/src/cocoa_window.m	/^static int translateKey(unsigned int key)$/;"	f
 translateKey	glfw/src/wl_window.c	/^static int translateKey(uint32_t scancode)$/;"	f	typeref:typename:int	file:
@@ -27332,6 +27332,7 @@ vertex	glfw/examples/wave.c	/^struct Vertex vertex[VERTEXNUM];$/;"	v	typeref:str
 vertexAttributeDescriptionCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 vertexAttributeDescriptionCount;$/;"	m	struct:VkPipelineVertexInputStateCreateInfo	typeref:typename:uint32_t
 vertexBindingDescriptionCount	glfw/deps/glad/vulkan.h	/^    uint32_t                 vertexBindingDescriptionCount;$/;"	m	struct:VkPipelineVertexInputStateCreateInfo	typeref:typename:uint32_t
 vertexCount	glfw/deps/glad/vulkan.h	/^    uint32_t                         vertexCount;$/;"	m	struct:VkDrawIndirectCommand	typeref:typename:uint32_t
+vertexExists	src/model/load.c	/^int64_t vertexExists(struct vertex_s* vertex, struct vertex_s* vertices, size_t len){$/;"	f	typeref:typename:int64_t
 vertexOffset	glfw/deps/glad/vulkan.h	/^    int32_t                          vertexOffset;$/;"	m	struct:VkDrawIndexedIndirectCommand	typeref:typename:int32_t
 vertexPipelineStoresAndAtomics	glfw/deps/glad/vulkan.h	/^    VkBool32                 vertexPipelineStoresAndAtomics;$/;"	m	struct:VkPhysicalDeviceFeatures	typeref:typename:VkBool32
 vertex_alignment	glfw/deps/nuklear.h	/^    nk_size vertex_alignment; \/* vertex alignment: Can be obtained by NK_ALIGNOF *\/$/;"	m	struct:nk_convert_config	typeref:typename:nk_size
